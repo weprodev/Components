@@ -1,0 +1,255 @@
+/*========================================================================================
+*********   
+*******     THREE COLUMN BOX 
+*****       
+***         
+*/
+
+    .threeColumn{
+
+        padding     : 2em 2em;
+        overflow    : hidden;
+        @extend %wrapper-flex; 
+
+        /*--------------------------------
+        ***   
+        **	 RESPONSIVE SECTION
+        */            
+        
+        @include led{
+            @include container();
+        }
+
+        article{
+            width       : span(4);
+
+            h2{
+                text-align  : center;
+                line-height : 2;
+                font-size   : 1.7em;
+                margin      : 0.5em auto 1em;
+                color       : $mainColorSite;
+            }
+
+            figure{
+                
+                overflow    : hidden;
+                padding     : 0;
+                // width       : 60%;
+                text-align  : center;
+                // height      : 100%; 
+
+                svg{
+                    width   : 40%;
+                    height  : auto;
+                }
+
+                figcaption{
+                    display     : block;
+                    padding     : 2em 1em;
+                    text-align  : center;
+                    font-size   : 1.2em;
+                    font-weight : bold;
+                }
+
+            }//figure
+            
+            .hasValue{
+                
+                text-align  : center;
+                
+                .number{
+                    display     : block;
+                    font-size   : 3em;
+                    color       : $mainColorSite;
+                }
+                .txt{
+                    display     : block;
+                    padding     : 0.2em 0em;
+                    text-align  : right;
+                    font-size   : 1.5em;
+                    margin-right: 10%;
+                    color       : $mainColorSite;
+                }
+
+            }//hasValue
+
+            /*--------------------------------
+            *** 
+            **  ICONS HAS BACKGROUND
+            */
+
+            &.hasBgIcon{
+
+                h2{
+                    width       : 50%;
+                    line-height : 1.7;
+                    font-size   : 1.3em; 
+                    color       : $thirsColorSite;                         
+                }
+                
+                figure{
+                    overflow        : hidden;
+                    text-align      : center;
+                    height          : 8em;
+                    width           : 8em;
+                    border          : 1px solid transparent;
+                    border-radius   : 100%;
+                    margin          : 1em auto;
+                    padding         : 0;
+                    @include border-radius(100%);
+
+                    /*--------------------------------
+                    *** 
+                    **  RESPONSIVE SECTION ARTICLE
+                    */
+
+                    @include led4k{
+                        height          : 12rem;
+                        width           : 12rem;
+                    }
+
+                    svg{
+                        background  : $mainColorSite; 
+                        width       : auto;
+                        height      : 100%;
+                        padding     : 2em;
+                        
+                        path{
+                            fill        : $white; 
+                        }
+                    }
+    
+                }//figure
+
+                &.onlyStrock{
+
+                    figure{
+                        border  : 1px solid $mainColorSite;
+    
+                        svg{
+                            background  : transparent; 
+                            width       : auto;
+                            height      : 100%;
+                            padding     : 2em;
+                           
+                            
+                            path{
+                                fill        : $mainColorSite; 
+                        
+                            }
+                        }
+        
+                    }//figure
+
+                }
+
+                &::after{
+                    content     : "";
+                    width       : 65%;
+                    height      : 5px;
+                    display     : block;
+                    margin      : 2em auto 1em; 
+                    background  : $thirsColorSite;                                         
+                }
+
+
+                /*--------------------------------
+                *** 
+                **  WHEN CLICK ON ICON AND ADD CLASS ACTIVE
+                */
+
+                &.active{
+
+
+                    h2{
+                        color       : $mainColorSite; 
+                        font-weight : bold;
+                    }
+                    
+                    &::after{
+                        background  : $mainColorSite; 
+                    }
+
+                    // figure{
+                    //     @include border-radius(0);
+                    //     svg{
+                    //         background  : transparent; 
+                    //         padding     : 0;
+                            
+                    //         path{
+                    //             fill        : $mainColorSite; 
+                    //         }
+                    //     }
+        
+                    // }//figure
+
+                }//active
+                
+                
+            }//hasBgIcon
+
+
+            /*--------------------------------
+            *** 
+            **  RESPONSIVE SECTION ARTICLE
+            */
+
+            @include tablet{
+                font-size   : 0.65em;
+            }
+
+            @include mobile{
+                width           : span(12);
+                margin-bottom   : 1em;
+                
+                figure{
+
+                    figcaption{
+                        padding     : 1em;
+                        font-size   : 1.75em;
+                        line-height : 1.7;
+                    }
+                }//figure
+
+                .hasValue{
+                                
+                    .number{
+                        display     : inline-block;
+                        font-size   : 2.2em;
+    
+                    }
+                    .txt{
+                        display     : inline-block;
+                        padding     : 0.2em 0em;
+                        text-align  : right;
+                        font-size   : 1.5em;
+                        margin-left : 1%;
+                    }
+    
+                }//hasValue
+
+                &:not(:last-child)::after{
+                    content     : "";
+                    display     : block;
+                    width       : 70%;
+                    height      : 1px;
+                    background  : lighten($color: $secondColrSite, $amount: 40%); 
+                    margin      : 3em auto 0;
+                }
+
+            }//mobile
+
+        }//article
+
+
+        /*--------------------------------
+        *** 
+        **  RESPONSIVE SECTION threeColumn
+        */
+
+        @include mobile{
+            flex-flow : column;
+        }//mobile
+
+    }//threeColumn

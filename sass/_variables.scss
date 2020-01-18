@@ -1,0 +1,142 @@
+/*========================================================================================
+*********   ALL OF THE VARIABLES TYPE 
+*******     COLORS 
+*****       GRIDS
+***         
+*/
+
+/*========================================================================================*\
+*----------------------------               COLORE              ----------------------------        
+\*========================================================================================*/
+
+    /*--------------------------------
+    *** FLAT UI COLORS 
+    **  flatuicolors.com/palette/defo
+    */
+
+    $WET_ASPHALT    : rgb(052, 073, 094); // #34495e;
+    $MIDNIGHT_BLUE  : rgb(044, 062, 080); // #2c3e50;
+
+    $ALIZARIN       : rgb(231, 076, 060); // #e74c3c;
+    $POMEGRANATE    : rgb(192, 057, 043); // #bdc3c7
+
+    $TURQUOISE      : rgb(026, 188, 156); // #1abc9c;
+    $GREEN_SEA      : rgb(022, 160, 133); // #16a085;
+
+    $EMERALD        : rgb(046, 204, 113); // #2ecc71;
+    $NEPHRITIS      : rgb(039, 174, 096); // #27ae60;
+
+    $PETER_RIVER    : rgb(052, 152, 219); // #3498db;
+    $BELIZE_HOLE    : rgb(041, 128, 185); // #2980b9;
+
+    $AMETHYST       : rgb(155, 089, 182); // #9b59b6;
+    $WISTERIA       : rgb(142, 068, 173); // #8e44ad;
+
+    $SUN_FLOWER     : rgb(241, 196, 015); // #1abc9c;
+    $ORANGE         : rgb(243, 156, 018); // #f39c12;
+
+    $CARROT         : rgb(230, 126, 034); // #e67e22;
+    $PUMPKIN        : rgb(211, 084, 000); // #d35400;
+
+    $CLOUDS         : rgb(236, 240, 241); // #ecf0f1;
+    $SILVER         : rgb(189, 195, 199); // #bdc3c7;
+
+    $CONCRETE       : rgb(149, 165, 166); // #95a5a6
+    $ASBESTOS       : rgb(127, 140, 141); // #7f8c8d
+
+    $black          : rgb(000, 000, 000); // #000
+    $white          : rgb(255, 255, 255); //#fff
+
+    /*--------------------------------
+    *** GENERAL ATTRIBUTES 
+    **
+    */
+
+    $mainColorSite  : $PETER_RIVER;
+    $secondColrSite : $BELIZE_HOLE;
+    $thirsColorSite : $ASBESTOS;
+
+    $borderColor    : $BELIZE_HOLE;
+
+    /*--------------------------------
+    *** HEADER 
+    **
+    */
+
+    $bgHeader       : $white;
+    $bgHeaderMobile : $white;
+    $headShadow     : 0 -5px 11px lighten($black,30%);
+
+    /*--------------------------------
+    *** COLOR LINK 
+    **
+    */
+    
+    $colorLink      : $black;
+    $hoverColorLink : $PETER_RIVER;
+    $hoverBgLink    : lighten($black,96%);
+    $transitionLink : all 0.6s;
+
+
+    /*--------------------------------
+    *** CUSTOM COLOR
+    **
+    */
+
+    $blueGreen  : #0c99bd;
+
+/*========================================================================================*\
+*----------------------------               GRIDS              ----------------------------        
+\*========================================================================================*/
+
+    /*--------------------------------
+    *** SUSY COLUMN 
+    **  SET DIRECTION PROJECT , SET COLUMN NAME
+    */
+
+    $column     : 12;
+    $dir        : setDirection( ltr );  
+    $col_name   : 'span';
+    
+    /*--------------------------------
+    *** BREAKPOINTS
+    **
+    */
+
+    $led4k      : 160em     ;   // 2560px
+    $alpha      : 87.5em    ;   // 1400px
+    $pre-alpha  : 75.0625em ;   // 1201px
+    $beta       : 75em      ;   // 1200px
+    $pre-beta   : 64em      ;   // 1024px
+    $gamma      : 62em      ;   // 992px
+    $delta      : 60em      ;   // 960em
+    $epsilon    : 50em      ;   // 800em
+    $zeta       : 48em      ;   // 768px
+    $pre-zeta   : 47.9375em ;   // 767px
+    $eta        : 40em      ;   // 640px
+    $theta      : 35em      ;   // 560px
+    $lota       : 31.25em   ;   // 500px
+    $kappa      : 25em      ;   // 400px
+    $lambda     : 22.5em    ;   // 360px
+
+
+/*========================================================================================*\
+*----------------------------             DIRECTIONS            ----------------------------        
+\*========================================================================================*/
+
+    /*--------------------------------
+    ***     AFTER SET DIRECTION 
+    **      SET RIGHT AND LEFT 
+    */
+
+    $left   : left;
+    $right  : right;
+        
+    @if $dir != ltr 
+    {
+        
+        $left   : right;
+        $right  : left;
+
+    }
+
