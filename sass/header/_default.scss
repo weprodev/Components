@@ -114,7 +114,7 @@
 
                 li{
                     display         : block;
-                    border-bottom   : 1px solid lighten($color: $black , $amount: 90%);
+                    border-bottom   : 1px solid lighten($color: $BLACK , $amount: 90%);
                 }
 
                 a{
@@ -125,8 +125,8 @@
 
                     padding         : 1em 2em;
                     display         : block; 
-                    background      : lighten($color: $black , $amount: 90%);
-                    border-bottom   : 1px solid lighten($color: $black , $amount: 90%);
+                    background      : lighten($color: $BLACK , $amount: 90%);
+                    border-bottom   : 1px solid lighten($color: $BLACK , $amount: 90%);
 
                 }
 

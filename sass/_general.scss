@@ -112,8 +112,8 @@
         &[type="submit"]{
             background  : $secondColrSite;
             padding     : 1em 1.5em;
-            border      : 1px solid $white;
-            color       : $white;
+            border      : 1px solid $WHITE;
+            color       : $WHITE;
             
             &:hover{
                 cursor      : pointer;
@@ -129,7 +129,7 @@
         padding         : 1em 2em;
         transition      : all 0.7s;
         background      : $mainColorSite;
-        color           : $white;
+        color           : $WHITE;
         font-size       : 1.2rem;
         border-radius   : 3px;
         text-align      : center;
@@ -140,7 +140,7 @@
 
             &:hover{
                 background      : $POMEGRANATE;
-                color           : $white;
+                color           : $WHITE;
             }
         }
 

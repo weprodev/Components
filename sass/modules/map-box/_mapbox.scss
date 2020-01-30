@@ -82,7 +82,7 @@
 
             .item{
                 display         : block;
-                border-bottom   : 1px solid rgba($color: $black, $alpha: 0.1);
+                border-bottom   : 1px solid rgba($color: $BLACK, $alpha: 0.1);
                 padding         : 1em;
                 text-decoration : none;
                 transition      : all 0.7s;
@@ -92,11 +92,11 @@
                 }
 
                 &:hover{
-                    background: rgba($black , 0.02);
+                    background: rgba($BLACK , 0.02);
                 }
                 
                 &.active{
-                    background: rgba($black , 0.03);
+                    background: rgba($BLACK , 0.03);
                 }
 
             }//item

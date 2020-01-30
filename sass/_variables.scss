@@ -46,10 +46,6 @@
 
     $BLACK          : rgb(000, 000, 000); // #000
     $WHITE          : rgb(255, 255, 255); //#fff
-
-    $SILVER-O20     : rgba(189, 195, 199, 0.2); 
-    $SILVER-O40     : rgba(189, 195, 199, 0.4); 
-    $BLACK-O30      :rgba(0,0,0,0.3);
     /*--------------------------------
     *** GENERAL ATTRIBUTES 
     **
@@ -66,18 +62,18 @@
     **
     */
 
-    $bgHeader       : $white;
-    $bgHeaderMobile : $white;
-    $headShadow     : 0 -5px 11px lighten($black,30%);
+    $bgHeader       : $WHITE;
+    $bgHeaderMobile : $WHITE;
+    $headShadow     : 0 -5px 11px lighten($BLACK,30%);
 
     /*--------------------------------
     *** COLOR LINK 
     **
     */
     
-    $colorLink      : $black;
+    $colorLink      : $BLACK;
     $hoverColorLink : $PETER_RIVER;
-    $hoverBgLink    : lighten($black,96%);
+    $hoverBgLink    : lighten($BLACK,96%);
     $transitionLink : all 0.6s;
 
 
