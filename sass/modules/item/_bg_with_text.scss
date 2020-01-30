@@ -1,0 +1,212 @@
+
+    /*--------------------------------
+    ***
+    **  Style For div Whit travel-background class 
+    */
+
+
+
+    .travel-background{
+        background-image: url("../img/bg-with-image/travel-background.jpg");
+        width           : 100%;
+        height          : 18.5em;
+        background-size : cover;
+    }
+    .glass-div{
+        background-color: rgba($color:$BLACK, $alpha: 0.3);
+        float           : left;
+        width           : 50%;
+        height          : 100%;
+        text-align      : left;
+        transition      : all 1s;
+    }  
+    .text-glass{
+        width           : auto;
+        margin-left     : 20em;
+        margin-right    : 3em;
+        line-height     : 18.5em;
+    }  
+    .title-card{
+        color           : $CLOUDS;
+        font-size       : 3.5em;
+        font-weight     : bolder;
+        line-height     : 2em;
+    }
+    .bold-card{
+        color           : $WHITE;
+        font-size       : 1.5em;
+        line-height     : 2em;
+        font-weight     : bold;
+    }
+    .explanation{
+        color           : $WHITE;
+        line-height     : 1.5em;
+    }
+    .Price{
+        font-size       : 1.5em;
+        color           : $SUN_FLOWER ;
+        font-weight     : bold;
+        line-height     : 2em;
+    }  
+
+    
+    /*--------------------------------
+    ***
+    **  Responsiv For div Whit travel-background class 
+    */
+
+    @include led4k{
+
+        div.travel-background{
+            height: 23.5em;
+        }
+        .title-card{
+            font-size: 5em;
+            line-height: 1.8em;
+        }
+        .bold-card{
+            font-size: 2.5em;
+            line-height: 1.8em;
+        }
+        .explanation{
+            font-size: 1.3em;
+        }
+        .Price{
+            font-size: 2.5em;
+        }
+    }
+
+    @include lcd{
+
+        div.text-glass{
+            margin-left : 16em;
+            margin-right: 1em;
+        }
+    }
+
+    @include laptop{
+
+        div.text-glass{
+            margin-left : 10em;
+            margin-right: 0.5em;
+        }
+    }
+
+    @include tablet{
+        
+        .glass-div{
+            width: 62%;
+        }
+        div.text-glass{
+            margin-left : 6em;
+            margin-right: 0.5em;
+            padding-top: 2em;
+        }
+        .title-card{
+            font-size   : 2.5em;
+        }
+        .bold-card{
+            font-size   : 1.1em;
+        }
+        .Price{
+            font-size: 1.3em;
+        }
+
+    }
+
+    @include mobile{
+
+        .travel-background{
+            height      : 21em;
+        }
+        div.glass-div {
+            width       : 100%;
+          
+        }
+        div.text-glass{
+            width       : 100%;
+            margin-left : 0.5em;
+            padding-right: 0.5em;
+            text-align  : center;
+            margin-top  : 0.5em;
+        }
+        .title-card{
+            font-size   : 2.4em;
+        }
+        .Price a{
+            font-size   : 1em;
+        }
+
+    }
+
+
+
+    /*--------------------------------
+    ***
+    **  Preparing for class RTL in body 
+    */
+
+    .rtl{
+
+        .glass-div{
+            float           : right;
+            text-align      : right;
+        }
+        .text-glass{
+            margin-right    : 20em;
+            margin-left     : 3em;
+        }  
+
+        @include led4k{
+
+            div.text-glass{
+                margin-right: 18em;
+                margin-left : 2em;
+            }
+
+        }
+
+        @include lcd{
+
+            div.text-glass{
+                margin-right: 16em;
+                margin-left : 1em;
+            }
+        }
+        @include laptop{
+
+            div.text-glass{
+                margin-right: 10em;
+                margin-left : 0.5em;
+            }
+        }
+    
+        @include mini_laptop{
+            
+            .text-glass{
+            margin-right    : 8em;
+            }
+
+        }
+
+        @include tablet{
+
+            .text-glass{
+                margin-left : 1em;
+            }
+
+        }
+
+        @include mobile{
+
+            .travel-background{
+                height      : 21em;
+            }
+            div.text-glass{
+                margin-left : 0.5em;
+                padding-right: 0.5em;
+                margin-top  : 0.5em;
+            }
+
+        }
+    }
