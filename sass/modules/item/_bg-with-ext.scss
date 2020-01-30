@@ -1,10 +1,11 @@
+/*========================================================================================
+*********    
+*******      
+*****       DIV ELEMENT WITH BACKGROUND AND TEXT MESSAGE ON IT
+***         
+*/
 
-    /*--------------------------------
-    ***
-    **  Style For div Whit travel-background class 
-    */
-
-
+.bg-with-text--item{
 
     .travel-background{
         background-image: url("../img/bg-with-image/travel-background.jpg");
@@ -12,6 +13,7 @@
         height          : 18.5em;
         background-size : cover;
     }
+
     .glass-div{
         background-color: rgba($color:$BLACK, $alpha: 0.3);
         float           : left;
@@ -20,61 +22,70 @@
         text-align      : left;
         transition      : all 1s;
     }  
+
     .text-glass{
         width           : auto;
         margin-left     : 20em;
         margin-right    : 3em;
         line-height     : 18.5em;
     }  
+
     .title-card{
         color           : $CLOUDS;
         font-size       : 3.5em;
         font-weight     : bolder;
         line-height     : 2em;
     }
+
     .bold-card{
         color           : $WHITE;
         font-size       : 1.5em;
         line-height     : 2em;
         font-weight     : bold;
     }
+
     .explanation{
         color           : $WHITE;
         line-height     : 1.5em;
     }
-    .Price{
+
+    .price{
         font-size       : 1.5em;
         color           : $SUN_FLOWER ;
         font-weight     : bold;
         line-height     : 2em;
     }  
 
-    
     /*--------------------------------
-    ***
-    **  Responsiv For div Whit travel-background class 
+    ***  
+    **	 RESPONSIVE SECTION
     */
 
     @include led4k{
 
         div.travel-background{
-            height: 23.5em;
+            height  : 23.5em;
         }
+
         .title-card{
-            font-size: 5em;
-            line-height: 1.8em;
+            font-size   : 5em;
+            line-height : 1.8em;
         }
+
         .bold-card{
-            font-size: 2.5em;
-            line-height: 1.8em;
+            font-size   : 2.5em;
+            line-height : 1.8em;
         }
+
         .explanation{
             font-size: 1.3em;
         }
+
         .Price{
             font-size: 2.5em;
         }
-    }
+
+    }// led4k
 
     @include lcd{
 
@@ -82,7 +93,8 @@
             margin-left : 16em;
             margin-right: 1em;
         }
-    }
+
+    }// lcd
 
     @include laptop{
 
@@ -90,29 +102,34 @@
             margin-left : 10em;
             margin-right: 0.5em;
         }
-    }
+
+    }// laptop
 
     @include tablet{
         
         .glass-div{
             width: 62%;
         }
+        
         div.text-glass{
             margin-left : 6em;
             margin-right: 0.5em;
             padding-top: 2em;
         }
+
         .title-card{
             font-size   : 2.5em;
         }
+
         .bold-card{
             font-size   : 1.1em;
         }
+
         .Price{
             font-size: 1.3em;
         }
 
-    }
+    }// tablet
 
     @include mobile{
 
@@ -124,34 +141,37 @@
           
         }
         div.text-glass{
-            width       : 100%;
+            // width       : 100%;
             margin-left : 0.5em;
             padding-right: 0.5em;
             text-align  : center;
             margin-top  : 0.5em;
         }
+
         .title-card{
             font-size   : 2.4em;
         }
+
         .Price a{
             font-size   : 1em;
         }
 
-    }
-
-
+    }// mobile
 
     /*--------------------------------
-    ***
-    **  Preparing for class RTL in body 
+    ***  
+    **	 WHEN WE WANT TO USE THE RTL DIRECTION
     */
 
     .rtl{
+        
+        direction: rtl;
 
         .glass-div{
             float           : right;
             text-align      : right;
         }
+
         .text-glass{
             margin-right    : 20em;
             margin-left     : 3em;
@@ -173,6 +193,7 @@
                 margin-left : 1em;
             }
         }
+
         @include laptop{
 
             div.text-glass{
@@ -184,7 +205,7 @@
         @include mini_laptop{
             
             .text-glass{
-            margin-right    : 8em;
+                margin-right    : 8em;
             }
 
         }
@@ -202,11 +223,14 @@
             .travel-background{
                 height      : 21em;
             }
+
             div.text-glass{
-                margin-left : 0.5em;
-                padding-right: 0.5em;
-                margin-top  : 0.5em;
+                margin    : 0.5em;
+                padding   : 0 0.5em;
             }
 
-        }
-    }
+        }// mobile
+
+    } // rtl
+
+} // bg-with-text--item
