@@ -1,0 +1,181 @@
+/*========================================================================================
+*********    
+*******      
+*****       SLIDER THIRD ROW AND ACTION TWO ROW
+***         
+*/
+
+    #carouselSlide3Col{
+
+        margin: 1em auto;
+        width                   : 100vw;
+        
+
+        /*--------------------------------
+        ***   
+        **	 GALLERIES SECTION
+        */
+        
+        .galleries{ 
+
+            width       : 300%;
+            transition  : all 1s; 
+
+            .img{
+                width                   : 100vw;
+                height                  : 25em;
+                background-size         : 100% !important;
+                background-repeat       : no-repeat;
+                background-position     : center;   
+                float                   : left;
+            }
+            
+            /*--------------------------------
+            ***  WHEN WE WANT FIXED IMAGE ATTACHMENT 
+            **	 SECTION ADD THIS CLASS
+            */
+
+            &.fixed{
+
+                .img{
+                    width                   : 100vw;
+                    height                  : 25em;
+                    background-attachment   : fixed;
+                    background-size         : cover !important;
+                    background-repeat       : no-repeat;  
+                }
+
+            }// fixed
+
+            /*--------------------------------
+            ***   
+            **	 RESPONSIVE SECTION
+            */            
+            
+            @include led{
+                @include container();
+                overflow: hidden;
+            }
+
+        }//galleries
+        
+        /*--------------------------------
+        ***   
+        **	 ICONS LINK SECTION
+        */
+
+        .icons{
+
+        }//icons
+
+        /*--------------------------------
+        ***   
+        **	 SENTENSES SECTION
+        */
+
+        .txt2colWithIcon{
+            @include container();
+            overflow    : hidden;  
+
+            .containArticles{
+                width       : 300%;
+                transition  : all 0.8s; 
+            }
+
+            article{
+                
+                width   :  1 / 3 * 100%;
+                float   : left;
+
+                img{
+                    width           : 100%;
+                    height          : auto;
+                    padding         : 1em;
+                    border-radius   : 100%;
+                }
+                                
+                .displayIcon{
+                    text-align: center;
+                    
+                    svg{
+                        background  : transparent; 
+                        width       : 80%;
+                        height      : auto;
+                        padding     : 2em 4em;
+                        
+                        path{
+                            fill        : $mainColorSite; 
+                        }
+                    }//svg
+
+                }// displayIcon
+
+                p{
+                    display         : block;
+                    margin-bottom   : 1em;
+                }
+
+                .findMore{
+                    font-size   : 1.7rem;
+                    color       : $mainColorSite;
+
+                    span{
+                        display         : inline-block;
+                        vertical-align  : middle;
+
+                        &[class^="icon"]{
+                            font-size : 2.3rem;
+                        }
+                    }
+                }// findMore
+
+
+                /*--------------------------------
+                ***   
+                **   RESPONSIVE SECTION
+                */
+
+                @include led4k{
+
+                    p{
+                        font-size : 2rem;
+                    }
+
+                    .findMore{
+                        font-size : 2.7rem;
+                    }
+
+                }//led4k
+
+                @include tablet{
+
+                    .displayIcon{
+
+                        svg{
+                            width       : 100%;
+                        }//svg   
+                    }
+
+                }//mobile
+
+                @include mobile{
+
+                    .displayIcon{
+                        display: none;
+                    }
+
+                    .span-8{
+                        @include span(12);
+                    }
+
+                }//mobile
+
+            }// article
+
+
+
+        }        
+
+        
+
+    }//carouselSlide3Col    

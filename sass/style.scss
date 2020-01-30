@@ -1,0 +1,72 @@
+/*========================================================================================
+*********   
+*******     IMPORT ALL OF THE STYLES HERE
+*****       
+***         
+*/
+
+    /*--------------------------------
+    ***  SET DIRECTION BEFORE ANYTHING
+    **   DEFAULT VALUE : LTR     
+    */
+
+        @import "functions/_direction";
+
+    /*--------------------------------
+    ***  IMPORT GENERAL AND IMPORTANT
+    **   VARIABLES , GRIDS , PLACEHOLDERS 
+    */
+
+        @import "_variables";
+        @import "_grids";
+        @import "_placeholders";
+        @import "_general";
+
+    /*--------------------------------
+    ***  
+    **   TYPOGRAPHY
+    */
+        @import "typography/_default";
+        @import "typography/_icomoon";
+
+    /*--------------------------------
+    ***  
+    **   HEADER
+    */    
+
+        @import "header/_default";
+
+    /*--------------------------------
+    ***  
+    **   MODULES
+    */       
+
+        @import "modules/home/_default"; 
+        
+        @import "modules/map-box/_mapbox"; 
+
+        @import "modules/slider/_slider-three-columns"; 
+
+        @import "modules/item/bg-with-ext";
+
+    /*--------------------------------
+    ***  
+    **   FOOTER
+    */       
+
+        @import "footer/_default";
+
+    /*--------------------------------
+    ***  
+    **   WIDGET
+    */       
+
+
+        @import "widget/_three_column_icons";
+    
+    /*--------------------------------
+    ***  
+    **   Table
+    */
+    @import "modules/table/simple_responsive_table";
+    @import "widget/checkbox_radio_buttons";

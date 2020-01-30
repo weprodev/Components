@@ -1,0 +1,187 @@
+/*background table style
+**
+*/
+.tableContiner {
+  background: $bgtable;
+  font-family: $fontFamily;
+  width: 100%;
+}
+/*wrapper table style
+ **
+ */
+.tablewrapper {
+  width: 95%;
+  margin: 0 auto;
+  background: $white;
+  display: block;
+}
+/* filter icon style
+**
+*/
+.img-icon {
+  opacity: 0.4;
+  float: $left;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+/*top input style
+**
+*/
+.inputArea {
+  border: 2px solid $inputBorder;
+  border-radius: $inpAreaRadius;
+  display: inline-block;
+  margin: 1em;
+  float: $left;
+}
+/*textbox in input style
+**
+*/
+.text-box {
+  border: none;
+  float: $left;
+  height: 1.5em;
+  margin-top: 0.7em;
+  opacity: $opacityimage;
+}
+/*none defult stye of input
+**
+*/
+input {
+  transition: none;
+  transform: none;
+}
+/*style of button in top left input area
+**
+*/
+.button {
+  float: $left;
+  border-radius: 35px;
+  width: 4em;
+  margin: 3px;
+  height: 2.7em;
+}
+/*style of right button
+**
+*/
+.right-button {
+  float: $right;
+  border-radius: 25px;
+  background: $rightButton !important;
+  margin: 1em;
+  padding: 1.1em !important;
+}
+/* Properties clear in css
+**
+*/
+.clear {
+  clear: $bothClear;
+}
+
+.tableResponsive {
+  margin-top: 0.5em;
+}
+/* style of table element
+**
+*/
+.td {
+  display: inline-block;
+  width: 16%;
+  text-align: $centerAlighn;
+}
+/*Row table style
+**
+*/
+.Row {
+  width: 99%;
+  margin: 0 auto;
+  padding: 1.4em;
+}
+/*background Row table style
+**
+*/
+.Row:nth-child(odd) {
+  background: $trTablebg;
+  border-radius: 20px;
+}
+/*Down Arrow in one element in row one styles
+**
+*/
+.downArrows {
+  color: $bluecolor;
+  font-size: 1em;
+  margin-left: 1.4em;
+}
+/*styles for green background in td
+**
+*/
+.Row {
+  .green {
+    background: $greenBg;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    color: $greenColor;
+  }
+}
+/*styles for green background in td
+**
+*/
+.Row {
+  .yellow {
+    background: $yellowBg;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    color: $ORANGE;
+  }
+}
+/*styles for green background in td
+**
+*/
+.Row {
+  .blue {
+    background: $blueBg;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    color: $bluecolor;
+  }
+}
+/*styles for green circle in td
+**
+*/
+.dotg {
+  height: 10px;
+  width: 10px;
+  background-color: $greenColor;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+/*styles for blue circle in td
+**
+*/
+.dotb {
+  height: 10px;
+  width: 10px;
+  background-color: $bluecolor;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+/*styles for yellow circle in td
+**
+*/
+.doty {
+  height: 10px;
+  width: 10px;
+  background-color: $ORANGE;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+    /*--------------------------------
+    ***  
+    **	 RESPONSIVE SECTION
+    */

@@ -1,0 +1,275 @@
+/*========================================================================================
+*********    
+*******      STYLE FOR MAPBOX
+*****        CHANGE MARKER AND STYLE TO LISTINGS
+***         
+*/
+
+    %sameP{
+        color           : darken($color: $secondColrSite, $amount: 15%);
+        padding         : 0em 0 0em 2.5em;
+        line-height     : 2.5;
+        font-size       : 0.9em;
+
+        &::before{
+            content             : "";
+            width               : 2em;
+            height              : 2em;
+            font-size           : 1rem; 
+            position            : absolute;
+            left                : 0;
+            background-repeat   : no-repeat;
+            background-position : center;
+            background-size     : contain;
+        }
+
+        /*--------------------------------
+        *** 
+        **	RESPONSIVE SECTION
+        */        
+
+        @include tablet{
+            padding  : 0em 0 0em 3.5em;
+        }//tablet
+
+    }// %sameP
+
+
+    #mapBox{
+
+        @include container();
+
+        margin  : 2em auto 3em;
+
+        .containMap{
+            position : relative;
+        }
+
+        #map{
+            width       : 100%;
+            min-height  : 60vh;
+            max-height  : 60vh;
+        }
+
+        .listings{
+            overflow-y  : scroll;
+            overflow-x  : hidden; 
+            padding     : 0 2em 1em;;
+            min-height  : 60vh;
+            max-height  : 60vh;
+        
+            /*--------------------------------
+            *** 
+            **	STYLE FOR LISTINGS SCROLLBAR
+            */
+
+            &::-webkit-scrollbar {
+                width       : 5px;
+                height      : 5px;
+                border-left : 0;
+                background  : $mainColorSite;
+            }
+            
+            &::-webkit-scrollbar-track {
+                background  : none;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background      : darken($color: $secondColrSite, $amount: 15%);
+                border-radius   : 0;
+            }
+
+
+            .item{
+                display         : block;
+                border-bottom   : 1px solid rgba($color: $BLACK, $alpha: 0.1);
+                padding         : 1em;
+                text-decoration : none;
+                transition      : all 0.7s;
+
+                &:last-child { 
+                    border-bottom: none; 
+                }
+
+                &:hover{
+                    background: rgba($BLACK , 0.02);
+                }
+                
+                &.active{
+                    background: rgba($BLACK , 0.03);
+                }
+
+            }//item
+
+            h4{
+                font-size       : 2em;
+                color           : darken($color: $secondColrSite, $amount: 15%);
+                border-bottom   : 1px solid darken($color: $secondColrSite, $amount: 15%);
+                display         : inline-block;
+                margin          : 0 0 0.5em; 
+            }
+
+            p{
+                margin-bottom   : 0.5em;
+                position        : relative;
+            
+
+                &.discription{
+                    font-size   : 0.9em;
+                }
+
+                &.weather{
+                    @extend %sameP;
+
+                    &::before{
+                        // content             : "";
+                        // width               : 2em;
+                        // height              : 2em;
+                        // position            : absolute;
+                        // left                : 0;
+                        // top                 : 0;
+                        // background-repeat   : no-repeat;
+                        // background-position : center;
+                        // background-size     : contain;
+                        background    : url(../img/ports/weather.svg);
+                    }
+                }
+
+                &.airport{
+                    @extend %sameP;
+                    
+                    &::before{
+                        background-image: url(../img/ports/plain.svg);                    
+                    }            
+                }
+
+                &.facility{
+                    @extend %sameP;
+
+                    &::before{
+                        background-image: url(../img/ports/facility.svg);                    
+                    }            
+                }
+
+                &.railway{
+                    @extend %sameP;
+                    
+                    &::before{
+                        background-image: url(../img/ports/rail.svg);                    
+                    }            
+                }
+
+
+
+            }//p
+            
+        }//listings
+
+        /*--------------------------------
+        *** 
+        **	RESPONSIVE SECTION
+        */        
+
+        @include tablet{
+            
+            .span-8{
+                @include span(6 of 12);
+            }
+            .span-4{
+                @include span(6 of 12);
+            }
+
+            .listings{
+                font-size   : 0.87em;
+                padding     : 0 1em 1em;
+            }
+
+        }//tablet    
+
+        @include mobile{
+            
+            .span-8{
+                @include span(12 of 12);
+                float           : none;
+                clear           : both;
+                margin-bottom   : 1em;
+            }
+            .span-4{
+                @include span(12 of 12);
+                float           : none;
+                clear           : both;
+                margin-bottom   : 1em;
+            }
+
+        }//mobile        
+    
+    }// #mapBox
+
+
+    /*--------------------------------
+    *** 
+    **	POP UP SECTION
+    */   
+
+    .mapboxgl-popup-close-button {
+        display: none;
+    }
+    
+    .mapboxgl-popup-content {
+        padding : 0;
+        width   : 180px;
+    }
+    
+    .mapboxgl-popup-content-wrapper {
+        padding : 1%;
+    }
+    
+    .mapboxgl-popup-content h3 {
+        background      : $mainColorSite;
+        color           : #fff;
+        margin          : 0;
+        display         : block;
+        padding         : 10px;
+        border-radius   : 3px 3px 0 0;
+        font-weight     : 700;
+        margin-top      : -15px;
+    }
+    
+    .mapboxgl-popup-content h4 {
+        margin      : 0;
+        display     : block;
+        padding     : 10px;
+        font-weight : 400;
+    }
+    
+    .mapboxgl-popup-content div {
+        padding : 10px;
+    }
+    
+    .mapboxgl-container .leaflet-marker-icon{
+        cursor  : pointer;
+    }
+    
+    .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+        margin-top  : 15px;
+    }
+    
+    .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+        border-bottom-color : $mainColorSite;
+    }
+
+    .marker {
+        border              : none;
+        cursor              : pointer;
+        height              : 56px;
+        width               : 56px;
+        background-image    : url(../img/marker.png);
+        background-size     : 80%;
+        background-position : center;
+        background-repeat   : no-repeat; 
+        background-color    : rgba(0, 0, 0, 0);
+    }
+
+    .mapboxgl-popup {
+        padding-bottom      : 50px;
+    }
