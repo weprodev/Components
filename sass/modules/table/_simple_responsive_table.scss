@@ -5,6 +5,7 @@
   background: $bgtable;
   font-family: $fontFamily;
   width: 100%;
+  overflow-x: auto;
 }
 /*wrapper table style
  **
@@ -12,8 +13,9 @@
 .tablewrapper {
   width: 95%;
   margin: 0 auto;
-  background: $white;
+  background: $WHITE;
   display: block;
+  overflow-x: auto;
 }
 /* filter icon style
 **
@@ -80,6 +82,8 @@ input {
 
 .tableResponsive {
   margin-top: 0.5em;
+  width: 100%;
+  display: table;
 }
 /* style of table element
 **
@@ -181,7 +185,58 @@ input {
   display: inline-block;
   margin-right: 5px;
 }
-    /*--------------------------------
-    ***  
-    **	 RESPONSIVE SECTION
-    */
+.table {
+  overflow-x: auto;
+}
+/*--------------------------------
+        ***   
+        **   RESPONSIVE SECTION
+        */
+//for lcd
+@include laptop {
+  .control_indicator {
+    left: 0 !important;
+  }
+}
+//for laptops
+@include mini-laptop {
+  .tableResponsive {
+    width: 1000px;
+  }
+  .control_indicator {
+    left: 0 !important;
+  }
+}
+//for tablets
+@include tablet {
+  .tableResponsive {
+    width: 1000px;
+  }
+  .control_indicator {
+    left: 0 !important;
+  }
+}
+//for mobiles
+@include mobile {
+  .tableResponsive {
+    width: 1000px;
+  }
+  .control_indicator {
+    left: 0 !important;
+  }
+  .right-button {
+    float: left;
+  }
+}
+//for mini mobiles
+@include mini_mobile {
+  .tableResponsive {
+    width: 1000px;
+  }
+  .control_indicator {
+    left: 0 !important;
+  }
+  .img-icon {
+    display: none;
+  }
+}
