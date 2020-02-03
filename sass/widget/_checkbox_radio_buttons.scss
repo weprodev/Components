@@ -18,7 +18,7 @@
   /*check box style
 **
 */
-.control_indicator {
+.control-indicator {
   position: absolute;
   top: -0.1em;
   left: 15%;
@@ -31,20 +31,20 @@
 /*check box hover style
 **
 */
-.control:hover input ~ .control_indicator,
-.control input:focus ~ .control_indicator {
+.control:hover input ~ .control-indicator,
+.control input:focus ~ .control-indicator {
   background: $SILVER;
 }
 /*check box checked style
 **
 */
-.control input:checked ~ .control_indicator {
+.control input:checked ~ .control-indicator {
   background:$bluecolor;
 }
 /*check box checked style
 **
 */
-.control_indicator:after {
+.control-indicator:after {
   box-sizing: unset;
   content: '';
   position: absolute;
@@ -53,10 +53,10 @@
 /*check box checked style
 **
 */
-.control input:checked ~ .control_indicator:after {
+.control input:checked ~ .control-indicator:after {
   display: block;
 }
-.control-checkbox .control_indicator:after {
+.control-checkbox .control-indicator:after {
   left: 8px;
   top: 4px;
   width: 3px;
@@ -65,7 +65,7 @@
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-.control-checkbox .control_indicator::before {
+.control-checkbox .control-indicator::before {
   content: '';
   display: block;
   position: absolute;
@@ -111,9 +111,9 @@
       transform: scale(1);
   }
 }
-.control-checkbox input + .control_indicator::before {
+.control-checkbox input + .control-indicator::before {
   animation: s-ripple 250ms ease-out;
 }
-.control-checkbox input:checked + .control_indicator::before {
+.control-checkbox input:checked + .control-indicator::before {
   animation-name: s-ripple-dup;
 }

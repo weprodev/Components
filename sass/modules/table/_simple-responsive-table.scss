@@ -1,0 +1,409 @@
+/*========================================================================================
+*********   SET STYLE OF TABLE IN PROJECT
+*******      
+*****       
+***         
+*/
+
+
+    /*--------------------------------
+    ***     BACKGROUND TABLE STYLES
+    **	    
+    */
+
+    .table-continer {
+      background: $bgtable;
+      font-family: $fontFamily;
+      width: 100%;
+      overflow-x: auto;
+    }//background color and general styles
+
+
+    .table-wrapper {
+      width: 95%;
+      margin: 0 auto;
+      background: $WHITE;
+      display: block;
+      overflow-x: auto;
+    }//table wrapper style for responsive table
+
+    
+    /*--------------------------------
+    ***     LEFT TOP INPUT AREA
+    **	    
+    */
+
+    .input-area {
+      border: 2px solid $inputBorder;
+      border-radius: $inpAreaRadius;
+      display: inline-block;
+      margin: 1em;
+      float: $left;
+
+
+    .img-icon {
+      opacity: 0.4;
+      float: $left;
+      margin-top: 0.3em;
+      margin-left: 0.3em;
+      font-size: 30px;
+    }//icon styles
+
+
+    .text-box {
+      border: none;
+      float: $left;
+      height: 1.5em;
+      margin-top: 0.7em;
+      opacity: $opacityimage;
+    }//input text styles
+
+
+    .button {
+      background:#f3f5f7;
+      float: $left;
+      border-radius: 35px;
+      width: 4em;
+      margin: 3px;
+      height: 2.7em;
+    }//button in input area styles
+
+
+    .button:hover{
+      background:#f3f5f7;
+    }//delet defult style of input
+    
+  }//input area styles
+  
+  
+    input {
+      transition: none;
+      transform: none;
+    }//none general style for inputs
+
+
+    /*--------------------------------
+    ***   RIGHT TOP BUTTON STYLES
+    **	    
+    */
+
+
+    .right-button {
+      float: $right;
+      border-radius: 25px;
+      margin: 1em;
+      padding: 1.1em !important;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      color: white;
+      border: none;
+    }//right button general style
+    
+
+    .clear {
+      clear: $bothClear;
+    }//clear fix
+
+
+    /*--------------------------------
+    ***       TABLE STYLES
+    **	    
+    */
+
+
+    .table-responsive {
+      margin-top: 0.5em;
+      width: 100%;
+      display: table;
+    }//table general styles
+
+
+    .row {
+      width: 99%;
+      margin: 0 auto;
+      padding: 1.4em;
+    }//row in table styles
+
+
+    .td {
+      display: inline-block;
+      width: 16%;
+      text-align: $centerAlighn;
+    }//td in table styles
+
+    
+    .row:nth-child(odd) {
+      background: $trTablebg;
+      border-radius: 20px;
+    }//One in between row table styles
+
+
+    .down-arrows {
+      color: $bluecolor;
+      font-size: 1em;
+      margin-left: 1.4em;
+    }
+
+
+    .row {
+      .green {
+        background: $greenBg;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 20px;
+        color: $greenColor;
+      }
+    }//green td in table styles
+
+
+    .row {
+      .yellow {
+        background: $yellowBg;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 20px;
+        color: $ORANGE;
+      }
+    }//yellow td in table styles
+
+
+    .row {
+      .blue {
+        background: $blueBg;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 20px;
+        color: $bluecolor;
+      }
+    }//blue td in table styles
+
+
+    .dotg {
+      height: 10px;
+      width: 10px;
+      background-color: $greenColor;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+    }//green circle in td in table
+
+
+    .dotb {
+      height: 10px;
+      width: 10px;
+      background-color: $bluecolor;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+    }//blue circle in td in table
+
+
+    .doty {
+      height: 10px;
+      width: 10px;
+      background-color: $ORANGE;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+    }//yellow circle in td in table
+
+
+    .table {
+      overflow-x: auto;
+      }//div for Respond table
+
+
+      /*--------------------------------
+      ***   
+      **   RESPONSIVE SECTION
+      */
+
+
+    @include laptop {
+      .control-indicator {
+        left: 0 !important;
+      }
+    }//for laptops
+
+    @include mini-laptop {
+      .table-responsive {
+        width: 1000px;
+      }
+      .control-indicator {
+        left: 0 !important;
+      }
+    }// for mini laftops
+
+    @include tablet {
+      .table-responsive {
+        width: 1000px;
+      }
+      .control-indicator {
+        left: 0 !important;
+      }
+    }//for tablets
+
+    @include mobile {
+      .tabler-responsive {
+        width: 1000px;
+      }
+      .control-indicator {
+        left: 0 !important;
+      }//for mobiles
+      .right-button {
+        float: left;
+      }
+    }
+
+    @include mini_mobile {
+      .table-responsive {
+        width: 1000px;
+      }
+      .control-indicator {
+        left: 0 !important;
+      }
+      .img-icon {
+        display: none;
+      }
+    }//for mini mobiles
+      
+    
+      /*--------------------------------
+      ***   
+      **   rtl styles
+      */
+    
+    .title{
+      text-align: center;
+    }//title in center of two table styles
+
+
+      .rtl {
+      direction: rtl;
+    }//right direction for all of project
+
+
+      /*--------------------------------
+      ***   
+      **   HEADER STYLE
+      */
+
+
+    .rtl{
+      .img-icon{
+        float: right;
+        margin-right:0.3em;
+        margin-left: 0em;
+      }
+      
+
+      .control-indicator{
+        right: 15%;
+      }
+
+      .dotg{
+        margin-left: 5px;
+      }
+
+      .dotb{
+        margin-left: 5px;
+      }
+
+      .doty{
+        margin-left: 5px;
+      }
+
+    }
+    /*--------------------------------
+    ***   
+    **   responsive styles
+    */
+
+
+    @include laptop {
+     .rtl{
+      .control-indicator {
+        right: 0 !important;
+      }
+    }//for laptops
+     }
+
+
+    @include mini-laptop {
+      .rtl{
+        .table-responsive {
+          width: 1000px;
+        }
+        .control-indicator {
+          right: 0 !important;
+        }
+      }// for mini laftops
+      }
+      
+
+    @include tablet {
+      .table-responsive {
+        width: 1000px;
+      }
+      .control-indicator {
+        right: 0 !important;
+      }
+    }//for tablets
+
+
+    @include mobile {
+      .rtl{
+        .tabler-responsive {
+          width: 1000px;
+        }
+        .control-indicator {
+          right: 0 !important;
+        }
+        .right-button {
+          float: left;
+        }
+        }
+      }//for mobiles
+      
+
+    @include mini_mobile {
+      .rtl{
+        .table-responsive {
+          width: 1000px;
+        }
+        .control-indicator {
+          right: 0 !important;
+        }
+        .img-icon {
+          display: none;
+        }
+      }//for mini mobiles
+      }
+
+
+      /*--------------------------------
+      ***   
+      **   styles for show scrollbar
+      */
+
+
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
