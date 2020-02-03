@@ -5,13 +5,12 @@
 ***         
 */
     .picture-background{
-        background-image    : url("../img/menu-food/bg-menu-food.jpg");
+        background-image    : url("../img/item/bg-menu-food.jpg");
         width               : 100%;
         height              : 40em;
         background-size     : cover;
         position            : relative;
     }
-
     .menu-div{
         width               : 40%;
         height              : 36em;
@@ -23,7 +22,6 @@
         transition          : all 0.6s;
         border-radius       : 0.5em;
     }
-
     .logo-menu{
         width               : 100%;
         font-size           : 2em;
@@ -32,11 +30,9 @@
         line-height         : 2em;
         display             : inline-block;
     }
-
     .icon-coin-dollar{
         display             : inline-block;
     }
-
     .border-bottom-logo{
         height              : 0.2em;
         border-bottom       : 0.05em solid $CLOUDS;
@@ -45,7 +41,6 @@
         position            : relative;
         margin-bottom       : 2em;
     }
-
     .title-menu{
         width               : 95%;
         height              : auto;
@@ -55,50 +50,47 @@
         top                 : 4.6em;
         line-height         : 1.4em;
     }
-
     .p-title-menu{
         width               : 12em;
         background-color    : $WHITE;
         margin-left         : auto;
         margin-right        : auto;
     }
-
     .left-menu{
         width               : 50%;
         height              : 62%;
         float               : left;
         display             : block;
     }
-
     .right-menu{
         width               : 50%;
         height              : 62%;
         float               : right;
         display             : block;
     }
-
-    .bolder{
-        font-size           : 1.1em;
-        color               : $BLACK;
-        font-weight         : bolder;
-        line-height         : 1.5em;
+    .section{
+        width               : 100%;
+        height              : 33%;
     }
-
-    .food-contents{
-        font-size           : 0.8em;
-        color               : $ASBESTOS;
-        line-height         : 1.2em;
-    }
-
     .name-food{
         width               : 65%;
         height              : 33%;
         float               : left;
         padding-left        : 1em;
     }
-
+    .bolder{
+        font-size           : 1.1em;
+        color               : $BLACK;
+        font-weight         : bolder;
+        line-height         : 1.5em;
+    }
+    .food-contents{
+        font-size           : 0.8em;
+        color               : $ASBESTOS;
+        line-height         : 1.2em;
+    }
     .price{
-        width               : 35%;
+        width               : 20%;
         height              : 33%;
         float               : right;
         font-size           : 1.4em;
@@ -108,17 +100,13 @@
         line-height         : 4em;
         padding-right       : 0.5em;
     }
-
-
     .button{
         width: 100%;
         text-align          : center;
         padding-top         : 20px;
         display             : block;
-
     }
-
-    .button button{
+    .button-view{
         font-size           : 1em;
         background-color    : $CRIMSON;
         color               : $WHITE;
@@ -135,86 +123,56 @@
     @include led4k{
 
         .food-contents{
-
             font-size       : 1.4em;
             line-height     : 1.4em;
-
         }
-
         .price{
-
             font-size       : 1.8em;
             line-height     : 4.4em;
-
         }
-
         .bolder{
-
             font-size       : 1.6em;
             line-height     : 2em;
-
         }
-
     }//led4k
 
     @include lcd{
 
         .menu-div{
-
             width           : 50%;
             position        : absolute;
             top             : 2em;
             left            : 25%;
-
         }
-
         .food-contents{
-
             font-size       : 0.8em;
             line-height     : 1.3em;
-
         }
-
         .price{
-
             font-size       : 1.5em;
             line-height     : 4em;
-
         }
-
         .bolder{
-
             font-size       : 1.1em;
             line-height     : 1.7em;
-
         }
     }//lcd
 
     @include laptop{
 
         .menu-div{
-
             width           : 60%;
             position        : absolute;
             top             : 2em;
             left            : 20%;
-
         }
-
         .name-food{
-
             width           : 66%;
-
         }
-
         .price{
-
             width           : 34%;
-
         }
-
     }//laptop    
-
 
     @include tablet{
 
@@ -222,7 +180,6 @@
             height          : 30em;
         }
         .menu-div{
-
             width           : 100%;
             height          : auto;
             position        : absolute;
@@ -230,58 +187,39 @@
             left            : 0;
             border-radius   : 0;
         }
-
         .left-menu{
-
-            width           : 50%;
+            width          : 50%;
             float           : left;
-
         }
-
         .right-menu{
-
             width           : 50%;
             float           : left;
-
         }
-
         .name-food {
-
             margin-top      : 1em;
             margin-bottom   : 1em;
             width           : 68%;
-
         }
-
         .bolder{
-
             font-size       : 1.1em;
             line-height     : 1.5em;
-
         }
-        
         .food-contents{
-
             font-size       : 0.8em;
             line-height     : 1.1em;
-
         }
-
         .price{
-
             margin-top      : 1em;
             font-size       : 1.1em;
             width: 32%;
             font-size       : 1.2em;
             line-height     : 3em;
         }        
-
     }//tablet
 
     @include mobile{
 
         .menu-div{
-
             width           : 100%;
             height          : auto;
             position        : absolute;
@@ -289,51 +227,32 @@
             left            : 0;
             border-radius   : 0;
         }
-
         .left-menu{
-
             width           : 100%;
             float           : none;
-
         }
-
         .right-menu{
-
             width           : 100%;
             float           : none;
-
         }
-
         .name-food {
-
             margin-top      : 1em;
             margin-bottom   : 1em;
             width           : 68%;
-
         }
-
         .bolder{
-
             font-size       : 1em;
             line-height     : 1.4em;
-
         }
-        
         .food-contents{
-
             font-size       : 0.8em;
             line-height     : 1.1em;
-
         }
-
         .price{
-
             margin-top      : 1em;
             font-size       : 1.1em;
             width           : 32%;
-
         }
-
     }//mobile
 
     /*--------------------------------
@@ -342,77 +261,52 @@
     */
 
     .rtl{
-
         .name-food{
 
             float           : right;
             text-align      : right;
             padding-right   : 1em;
-
         }
 
        .price{
-
             float           : left;
             text-align      : right;
-
         }
 
-        
     @include led4k{
 
         .food-contents{
-
             font-size       : 0.9em;
-
         }
-
     }//led4k
 
     @include laptop{
 
         .name-food{
-
             width           : 69%;
-
         }
-
         .price{
-
             width           : 31%;
-
         }
-
     }//laptop
 
     @include tablet{
 
         .menu-div{
-
             border-radius   : 0;
-
         }
-
     }//tablet
 
     @include mobile{
 
         .menu-div{
-
             border-radius   : 0;
-
         }
         .name-food{
-
             width           : 71%;
-
         }
-
         .price{
-
             width           : 29%;
-
         }
-
     }//mobile
 }
