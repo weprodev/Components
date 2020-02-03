@@ -72,7 +72,7 @@
         width               : 100%;
         height              : 33%;
     }
-    .name-food{
+    .name-and-contents{
         width               : 65%;
         height              : 33%;
         float               : left;
@@ -84,7 +84,7 @@
         font-weight         : bolder;
         line-height         : 1.5em;
     }
-    .food-contents{
+    .contents{
         font-size           : 0.8em;
         color               : $ASBESTOS;
         line-height         : 1.2em;
@@ -122,7 +122,7 @@
 
     @include led4k{
 
-        .food-contents{
+        .contents{
             font-size       : 1.4em;
             line-height     : 1.4em;
         }
@@ -144,7 +144,7 @@
             top             : 2em;
             left            : 25%;
         }
-        .food-contents{
+        .contents{
             font-size       : 0.8em;
             line-height     : 1.3em;
         }
@@ -166,7 +166,7 @@
             top             : 2em;
             left            : 20%;
         }
-        .name-food{
+        .name-and-contents{
             width           : 66%;
         }
         .price{
@@ -195,7 +195,7 @@
             width           : 50%;
             float           : left;
         }
-        .name-food {
+        .name-and-contents{
             margin-top      : 1em;
             margin-bottom   : 1em;
             width           : 68%;
@@ -204,7 +204,7 @@
             font-size       : 1.1em;
             line-height     : 1.5em;
         }
-        .food-contents{
+        .contents{
             font-size       : 0.8em;
             line-height     : 1.1em;
         }
@@ -235,7 +235,7 @@
             width           : 100%;
             float           : none;
         }
-        .name-food {
+        .name-and-contents{
             margin-top      : 1em;
             margin-bottom   : 1em;
             width           : 68%;
@@ -244,7 +244,7 @@
             font-size       : 1em;
             line-height     : 1.4em;
         }
-        .food-contents{
+        .contents{
             font-size       : 0.8em;
             line-height     : 1.1em;
         }
@@ -261,7 +261,7 @@
     */
 
     .rtl{
-        .name-food{
+        .name-and-contents{
 
             float           : right;
             text-align      : right;
@@ -275,14 +275,14 @@
 
     @include led4k{
 
-        .food-contents{
+        .contents{
             font-size       : 0.9em;
         }
     }//led4k
 
     @include laptop{
 
-        .name-food{
+        .name-and-contents{
             width           : 69%;
         }
         .price{
@@ -302,7 +302,7 @@
         .menu-div{
             border-radius   : 0;
         }
-        .name-food{
+        .name-and-contents{
             width           : 71%;
         }
         .price{
