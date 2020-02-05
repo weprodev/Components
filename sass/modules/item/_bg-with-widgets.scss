@@ -1,0 +1,108 @@
+/*========================================================================================
+*********    
+*******      
+*****       DIV ELEMENT BACKGROUND AND WIDGETS
+***         
+*/
+    header{
+        background-image: url("../img/item/bg-widgets.jpg");
+        width           : 100%;
+        height          : 25em;
+        background-size : cover;
+        padding-left    : 0;
+        padding-right   : 0;
+    }
+    .widgets{
+        width           : 100%;
+        height          : 100%;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        padding-top     : 4em;
+        padding-left    : 10%;
+        transition      : all 0.5s;
+    }
+    .width-height{
+        width           : 22%;
+        height          : 20em;
+        float           : left;
+        text-align      : center;
+        padding-left    : 2em;
+        padding-right   : 2em;
+        display         : block;
+    }
+    .icon{
+        height          : 23%;
+        color           : $WHITE;
+        font-size       : 4em;
+    }
+    .number{
+        height          : 25%;
+        font-size       : 5em;
+        color           : $WHITE;
+    }
+    .title{
+        height          : 17%;
+        color           : $WHITE;
+        font-size       : 1em;
+        font-weight     : bold;
+        padding-top     : 1em;
+    }
+    .explanation{
+        height          : 35%;
+        color           : $WHITE;
+    }
+
+    /*--------------------------------
+    ***  
+    **	 RESPONSIVE SECTION
+    */
+
+    @include laptop{
+
+        .widgets{
+            padding-left: 10%;
+        }
+        .width-height{
+            width       : 22%;
+        }
+
+    }//laptop
+
+    @include mini_laptop{
+
+        .widgets{
+            padding-left: 0;
+        }
+        .width-height{
+            width       : 25%;
+        }
+
+    }//mini_laptop
+
+    @include tablet{
+
+        header{
+            height      : 44em;
+        }
+        .widgets{
+            padding-left: 0;
+        }
+        .width-height{
+            width       : 50%;
+        }
+
+    }//tablet
+
+    @include mobile{
+
+        header{
+            height      : 86em;
+        }
+        .widgets{
+            padding-left: 0;
+        }
+        .width-height{
+            width       : 100%;
+            margin-bottom: 1em;
+        }
+
+    }//mobile
