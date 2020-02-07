@@ -4,8 +4,11 @@
 *****       DIV ELEMENT FOOD MENU
 ***         
 */
+
+.menu-widget--item{
+
     .picture-background{
-        background-image    : url("../img/menu-food/bg-menu-food.jpg");
+        background-image    : url("../img/item/bg-menu-food.jpg");
         width               : 100%;
         height              : 40em;
         background-size     : cover;
@@ -77,6 +80,18 @@
         display             : block;
     }
 
+    .section{
+        width               : 100%;
+        height              : 33%;
+    }
+
+    .name-and-contents{
+        width               : 65%;
+        height              : 33%;
+        float               : left;
+        padding-left        : 1.5em;
+    }
+
     .bolder{
         font-size           : 1.1em;
         color               : $BLACK;
@@ -84,17 +99,10 @@
         line-height         : 1.5em;
     }
 
-    .food-contents{
+    .contents{
         font-size           : 0.8em;
         color               : $ASBESTOS;
         line-height         : 1.2em;
-    }
-
-    .name-food{
-        width               : 65%;
-        height              : 33%;
-        float               : left;
-        padding-left        : 1em;
     }
 
     .price{
@@ -106,19 +114,17 @@
         font-weight         : bolder;
         text-align          : center;
         line-height         : 4em;
-        padding-right       : 0.5em;
+        padding-right       : 0.7em;
     }
-
 
     .button{
         width: 100%;
         text-align          : center;
         padding-top         : 20px;
         display             : block;
-
     }
 
-    .button button{
+    .button-view{
         font-size           : 1em;
         background-color    : $CRIMSON;
         color               : $WHITE;
@@ -126,7 +132,10 @@
         margin-top          : 1.3em;
         padding             : 0.7em;
     }
-
+    .button-view span{
+        padding-left        : 0.5em;
+        padding-right       : 0.5em;
+    }
     /*--------------------------------
     ***  
     **	 RESPONSIVE SECTION
@@ -134,25 +143,17 @@
 
     @include led4k{
 
-        .food-contents{
-
+        .contents{
             font-size       : 1.4em;
             line-height     : 1.4em;
-
         }
-
         .price{
-
             font-size       : 1.8em;
             line-height     : 4.4em;
-
         }
-
         .bolder{
-
             font-size       : 1.6em;
             line-height     : 2em;
-
         }
 
     }//led4k
@@ -160,69 +161,50 @@
     @include lcd{
 
         .menu-div{
-
             width           : 50%;
             position        : absolute;
             top             : 2em;
             left            : 25%;
-
         }
-
-        .food-contents{
-
+        .contents{
             font-size       : 0.8em;
             line-height     : 1.3em;
-
         }
-
         .price{
-
             font-size       : 1.5em;
             line-height     : 4em;
-
         }
-
         .bolder{
-
             font-size       : 1.1em;
             line-height     : 1.7em;
-
         }
+
     }//lcd
 
     @include laptop{
 
         .menu-div{
-
             width           : 60%;
             position        : absolute;
             top             : 2em;
             left            : 20%;
-
         }
-
-        .name-food{
-
+        .name-and-contents{
             width           : 66%;
-
         }
-
         .price{
-
             width           : 34%;
-
         }
 
     }//laptop    
-
 
     @include tablet{
 
         .picture-background{
             height          : 30em;
         }
-        .menu-div{
 
+        .menu-div{
             width           : 100%;
             height          : auto;
             position        : absolute;
@@ -232,56 +214,44 @@
         }
 
         .left-menu{
-
-            width           : 50%;
+            width          : 50%;
             float           : left;
-
         }
 
         .right-menu{
-
             width           : 50%;
             float           : left;
-
         }
 
-        .name-food {
-
+        .name-and-contents{
             margin-top      : 1em;
             margin-bottom   : 1em;
             width           : 68%;
-
         }
 
         .bolder{
-
             font-size       : 1.1em;
             line-height     : 1.5em;
-
         }
-        
-        .food-contents{
 
+        .contents{
             font-size       : 0.8em;
             line-height     : 1.1em;
-
         }
 
         .price{
-
             margin-top      : 1em;
             font-size       : 1.1em;
             width: 32%;
             font-size       : 1.2em;
             line-height     : 3em;
-        }        
+        }   
 
     }//tablet
 
     @include mobile{
 
         .menu-div{
-
             width           : 100%;
             height          : auto;
             position        : absolute;
@@ -291,47 +261,35 @@
         }
 
         .left-menu{
-
             width           : 100%;
             float           : none;
-
         }
 
         .right-menu{
-
             width           : 100%;
             float           : none;
-
         }
 
-        .name-food {
-
+        .name-and-contents{
             margin-top      : 1em;
             margin-bottom   : 1em;
             width           : 68%;
-
         }
 
         .bolder{
-
             font-size       : 1em;
             line-height     : 1.4em;
-
         }
-        
-        .food-contents{
 
+        .contents{
             font-size       : 0.8em;
             line-height     : 1.1em;
-
         }
 
         .price{
-
             margin-top      : 1em;
             font-size       : 1.1em;
             width           : 32%;
-
         }
 
     }//mobile
@@ -343,76 +301,56 @@
 
     .rtl{
 
-        .name-food{
+        .name-and-contents{
 
             float           : right;
             text-align      : right;
             padding-right   : 1em;
-
         }
 
        .price{
-
             float           : left;
             text-align      : right;
-
         }
 
-        
-    @include led4k{
+        @include led4k{
 
-        .food-contents{
+            .contents{
+                font-size       : 0.9em;
+            }
+        }//led4k
 
-            font-size       : 0.9em;
+        @include laptop{
 
-        }
+            .name-and-contents{
+                width           : 69%;
+            }
+            .price{
+                width           : 31%;
+            }
+        }//laptop
 
-    }//led4k
+        @include tablet{
 
-    @include laptop{
+            .menu-div{
+                border-radius   : 0;
+            }
+        }//tablet
 
-        .name-food{
+        @include mobile{
 
-            width           : 69%;
+            .menu-div{
+                border-radius   : 0;
+            }
+            .name-and-contents{
+                width           : 71%;
+            }
+            .price{
+                width           : 29%;
+                padding-top     : 1.5em;
+                
+            }
+        }//mobile
 
-        }
-
-        .price{
-
-            width           : 31%;
-
-        }
-
-    }//laptop
-
-    @include tablet{
-
-        .menu-div{
-
-            border-radius   : 0;
-
-        }
-
-    }//tablet
-
-    @include mobile{
-
-        .menu-div{
-
-            border-radius   : 0;
-
-        }
-        .name-food{
-
-            width           : 71%;
-
-        }
-
-        .price{
-
-            width           : 29%;
-
-        }
-
-    }//mobile
+    }// rtl
 }
