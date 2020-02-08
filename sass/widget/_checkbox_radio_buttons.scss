@@ -1,119 +1,118 @@
-/*general style for check boxes
-**
-*/
-.control {
-  font-family: arial;
-  display: block;
-  position: relative;
-  cursor: pointer;
-}
-/*check box general style
-**
-*/
-  .control input {
+    /*========================================================================================
+    *********   checkbox styles 
+    *******      
+    *****       
+    ***         
+    */
+
+    /*general style for check boxes
+    **
+    */
+    .control {
+      font-family: arial;
+      display: block;
+      position: relative;
+      cursor: pointer;
+    }
+
+      .control input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+      }
+    
+    .control-indicator {
       position: absolute;
-      z-index: -1;
-      opacity: 0;
-  }
-  /*check box style
-**
-*/
-.control-indicator {
-  position: absolute;
-  top: -0.1em;
-  left: 15%;
-  height: 1.2em;
-  width: 1.2em;
-  background: #e6e6e6;
-  border: 0px solid $BLACK;
-  border-radius: 5px;
-}
-/*check box hover style
-**
-*/
-.control:hover input ~ .control-indicator,
-.control input:focus ~ .control-indicator {
-  background: $SILVER;
-}
-/*check box checked style
-**
-*/
-.control input:checked ~ .control-indicator {
-  background:$bluecolor;
-}
-/*check box checked style
-**
-*/
-.control-indicator:after {
-  box-sizing: unset;
-  content: '';
-  position: absolute;
-  display: none;
-}
-/*check box checked style
-**
-*/
-.control input:checked ~ .control-indicator:after {
-  display: block;
-}
-.control-checkbox .control-indicator:after {
-  left: 8px;
-  top: 4px;
-  width: 3px;
-  height: 8px;
-  border: solid $SILVER;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-.control-checkbox .control-indicator::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 4.5rem;
-  height: 4.5rem;
-  margin-left: -1.3rem;
-  margin-top: -1.3rem;
-  background: #2aa1c0;
-  border-radius: 3rem;
-  opacity: 0.6;
-  z-index: 99999;
-  transform: scale(0);
-}
-/*check box transform style
-**
-*/
-@keyframes s-ripple {
-  0% {
+      top: -0.1em;
+      left: 15%;
+      height: 1.2em;
+      width: 1.2em;
+      background: #e6e6e6;
+      border: 0px solid $BLACK;
+      border-radius: 5px;
+    }
+    /*check box hover style
+    **
+    */
+    .control:hover input ~ .control-indicator,
+    .control input:focus ~ .control-indicator {
+      background: $SILVER;
+    }
+    /*check box checked style
+    **
+    */
+    .control input:checked ~ .control-indicator {
+      background:$blue-color;
+    }
+
+    .control-indicator:after {
+      box-sizing: unset;
+      content: '';
+      position: absolute;
+      display: none;
+    }
+
+    .control input:checked ~ .control-indicator:after {
+      display: block;
+    }
+    .control-checkbox .control-indicator:after {
+      left: 8px;
+      top: 4px;
+      width: 3px;
+      height: 8px;
+      border: solid $SILVER;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    .control-checkbox .control-indicator::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-left: -1.3rem;
+      margin-top: -1.3rem;
+      background: #2aa1c0;
+      border-radius: 3rem;
+      opacity: 0.6;
+      z-index: 99999;
       transform: scale(0);
-  }
-  20% {
-      transform: scale(1);
-  }
-  100% {
-      opacity: 0;
-      transform: scale(1);
-  }
-}
-@keyframes s-ripple-dup {
- 0% {
-     transform: scale(0);
-  }
- 30% {
-      transform: scale(1);
-  }
-  60% {
-      transform: scale(1);
-  }
-  100% {
-      opacity: 0;
-      transform: scale(1);
-  }
-}
-.control-checkbox input + .control-indicator::before {
-  animation: s-ripple 250ms ease-out;
-}
-.control-checkbox input:checked + .control-indicator::before {
-  animation-name: s-ripple-dup;
-}
+    }
+    /*check box transform style
+    **
+    */
+    @keyframes s-ripple {
+      0% {
+          transform: scale(0);
+      }
+      20% {
+          transform: scale(1);
+      }
+      100% {
+          opacity: 0;
+          transform: scale(1);
+      }
+    }
+    @keyframes s-ripple-dup {
+    0% {
+        transform: scale(0);
+      }
+    30% {
+          transform: scale(1);
+      }
+      60% {
+          transform: scale(1);
+      }
+      100% {
+          opacity: 0;
+          transform: scale(1);
+      }
+    }
+    .control-checkbox input + .control-indicator::before {
+      animation: s-ripple 250ms ease-out;
+    }
+    .control-checkbox input:checked + .control-indicator::before {
+      animation-name: s-ripple-dup;
+    }
