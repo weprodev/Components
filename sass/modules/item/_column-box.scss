@@ -1,0 +1,110 @@
+/*========================================================================================
+*********   COLUMN-BOX
+*******     STYLES 
+*****       
+***         
+*/
+
+/*--------------------------------
+	***  general items wrapper styles
+	**	
+    */
+
+.column-box {
+  width: $one-handred-persent;
+
+  .items-wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    .item-1 {
+      width: 22%;
+      float: left;
+      margin: 1em;
+      .item-img {
+        background: url("../img/colmn-box/books.jpg");
+        background-size: $cover-size;
+        width: $one-handred-persent;
+        height: $height-item;
+      }
+    }
+      .item-2 {
+        width: 22%;
+        float: left;
+        margin: 1em;
+      .item-img {
+        background-image: url("../img/colmn-box/horse.jpg");
+        background-size: $cover-size;
+        width: $one-handred-persent;
+        height: $height-item;
+      }
+    }
+      .item-3 {
+        width: 22%;
+        float: left;
+        margin: 1em;
+      .item-img {
+        background-image: url("../img/colmn-box/mountains.jpg");
+        background-size: $cover-size;
+        width: $one-handred-persent;
+        height: $height-item;
+      }
+    }
+    .item-4 {
+        width: 22%;
+        float: left;
+        margin: 1em;
+      .item-img {
+        background-image: url("../img/colmn-box/old-school.jpg");
+        background-size: $cover-size;
+        width: $one-handred-persent;
+        height: $height-item;
+      }
+    }
+    .item-5 {
+        width: 22%;
+        float: left;
+        margin: 1em;
+      .item-img {
+        background-image: url("../img/colmn-box/showcase.jpg");
+        background-size: $cover-size;
+        width: $one-handred-persent;
+        height: $height-item;
+      }
+    }
+    .item-6 {
+        width: 22%;
+        float: left;
+        margin: 1em;
+      .item-img {
+        background-image: url("../img/colmn-box/sunset.jpg");
+        background-size: $cover-size;
+        width: $one-handred-persent;
+        height: $height-item;
+      }
+    }
+    .item-7 {
+        width: 22%;
+        float: left;
+        margin: 1em;
+      .item-img {
+        background-image: url("../img/colmn-box/tajikistan.jpg");
+        background-size: $cover-size;
+        width: $one-handred-persent;
+        height: $height-item;
+      }
+    }
+    .item-8 {
+        width: 22%;
+        float: left;
+        margin: 1em;
+      .item-img {
+        background-image: url("../img/colmn-box/ural-owl.jpg");
+        background-size: $cover-size;
+        width: $one-handred-persent;
+        height: $height-item;
+      }
+      
+    }
+  }
+}
