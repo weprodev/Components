@@ -25,6 +25,11 @@
         background-size: $cover-size !important;
         width: $one-handred-persent;
         height: $height-item;
+        
+        >span{
+          font-size: 20px;
+          color: red;
+        }
       }
       .item-img-1 {
         background-image: url("../img/colmn-box/horse.jpg");
