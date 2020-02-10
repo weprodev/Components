@@ -26,10 +26,17 @@
         width: $one-handred-persent;
         height: $height-item;
       }
+      
       .hover-item{
-        font-size: 40px;
-        display: inline-block;
+        font-size: 1.2em;
+        display:inline-block;
         margin: 0 auto;
+
+        >span{
+          background: #fff;
+          padding: 0.9em;
+          border-radius: 50%;
+        }
       }
       .item-img-1 {
         background-image: url("../img/colmn-box/horse.jpg");
