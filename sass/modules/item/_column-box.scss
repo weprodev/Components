@@ -12,6 +12,7 @@
 
 .column-box {
   width: $one-handred-persent;
+  direction: ltr;
 
   .items-wrapper {
     width: 80%;
@@ -21,23 +22,39 @@
       width: 22%;
       float: left;
       margin: 1em;
+
       .item-img {
         background-size: $cover-size !important;
         width: $one-handred-persent;
         height: $height-item;
-      }
-      
-      .hover-item{
-        font-size: 1.2em;
-        display:inline-block;
-        margin: 0 auto;
+        position: relative;
+        
+        .hover-item{
+          display: none;
+          position: absolute;
+          top: 8em;
+          left: 3em;
 
         >span{
           background: #fff;
           padding: 0.9em;
           border-radius: 50%;
+          font-size: 1.2em;
+          cursor: pointer;
+          display: inline-block;
+
+          &:hover{
+            background: #f47e68;
+          }
         }
       }
+    }
+
+    &:hover{
+      .hover-item{
+        display:block;
+      }
+    }
       .item-img-1 {
         background-image: url("../img/colmn-box/horse.jpg");
       }
@@ -77,3 +94,29 @@
     }
   }
 }
+
+
+  /*--------------------------------
+	***  responsive styles
+	**	
+  */
+
+
+      @include led{
+        .hover-item{
+          left: 2em !important;
+        }
+    }
+
+    @include laptop{
+      .hover-item{
+        left: 0em !important;
+      }
+  }
+
+  @include tablet{
+    .hover-item>span{
+        display: block!important;
+    }
+  }
+
