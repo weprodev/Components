@@ -41,16 +41,17 @@
     **   MODULES
     */       
 
-        @import "modules/home/_default"; 
+        @import "modules/home/default"; 
         
-        @import "modules/map-box/_mapbox"; 
+        @import "modules/map-box/mapbox"; 
 
-        @import "modules/slider/_slider-three-columns"; 
+        @import "modules/slider/slider-three-columns"; 
 
-        @import "modules/item/bg-with-ext";
+        @import "modules/item/bg-with-text";
 
         @import "modules/item/menu-food";
 
+        
     /*--------------------------------
     ***  
     **   FOOTER
