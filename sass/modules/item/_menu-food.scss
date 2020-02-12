@@ -318,9 +318,9 @@
 
         @include led4k{
 
-            .contents{
-                font-size       : 0.9em;
-            }
+        .contents{
+            font-size       : 0.9em;
+        }
         }//led4k
 
         @include laptop{
@@ -350,7 +350,7 @@
             }
             .price{
                 width           : 29%;
-                padding-top     : 1.5em;
+                padding-top     : 1.1em;
                 
             }
         }//mobile
