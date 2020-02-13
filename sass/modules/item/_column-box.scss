@@ -9,114 +9,71 @@
 	***  general items wrapper styles
 	**	
     */
+.column-box{
+  width: 100%;
 
-.column-box {
-  width: $one-handred-persent;
-  direction: ltr;
-
-  .items-wrapper {
+  >section{
     width: 80%;
     margin: 0 auto;
 
-    .item {
-      width: 22%;
+    >article{
       float: left;
-      margin: 1em;
+      width: 18.7em;
+      height:18.7em;
+      margin: 0.5em;
+      position: relative;
 
-      .item-img {
-        background-size: $cover-size !important;
-        width: $one-handred-persent;
-        height: $height-item;
-        position: relative;
-        
-        .hover-item{
-          display: none;
-          position: absolute;
-          top: 8em;
-          left: 3em;
+      >figure{
+        width: 100%;
+        height: 90%;
+
+        >img{
+          width: 100%;
+          height: 90%;
+        }
+      }
+      .hover-item{
+        position: absolute;
+        display: none;
+        top: 27%;
+        right: 27%;
 
         >span{
-          background: #fff;
-          padding: 0.9em;
-          border-radius: 50%;
-          font-size: 1.2em;
-          cursor: pointer;
+          font-size: 2em;
           display: inline-block;
-
+          padding: 0.2em;
+          background: #fff;
+          border-radius: 50%;
+          
           &:hover{
-            background: #f47e68;
+            background: $ORANGE;
+            cursor: pointer;
           }
         }
       }
-    }
-
-    &:hover{
-      .hover-item{
-        display:block;
+        &:hover{
+        .hover-item{
+          display: block;
+        }
       }
     }
-      .item-img-1 {
-        background-image: url("../img/colmn-box/horse.jpg");
-      }
-      .item-img-2 {
-        background: url("../img/colmn-box/books.jpg");
-      }
-      .item-img-3 {
-        background-image: url("../img/colmn-box/mountains.jpg");
-      }
-      .item-img-4 {
-        background-image: url("../img/colmn-box/old-school.jpg");
-      }
-      .item-img-5 {
-        background-image: url("../img/colmn-box/showcase.jpg");
-      }
-      .item-img-6 {
-        background-image: url("../img/colmn-box/sunset.jpg");
-      }
-      .item-img-7 {
-        background-image: url("../img/colmn-box/tajikistan.jpg");
-      }
-      .item-img-8 {
-        background-image: url("../img/colmn-box/ural-owl.jpg");
-      }
-      .item-name{
-        display: block;
-        margin: 0.6em 0;
-      }
-      .price{
-        color:$ALIZARIN;
-      }
-      .off{
-        margin-left: 0.7em;
-        opacity: 0.5;
-        text-underline-position: over;
-      }
+    .price{
+      color: red;
     }
+    .off{
+      text-decoration-line:line-through;
+      opacity: 0.5;
+    }
+    .triangle-top-right {
+      position: absolute;
+      top: 0em;
+      right: 0em;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 200px 200px 0;
+      border-color: transparent #6980fe transparent transparent;
+  }
   }
 }
-
-
-  /*--------------------------------
-	***  responsive styles
-	**	
-  */
-
-
-      @include led{
-        .hover-item{
-          left: 2em !important;
-        }
-    }
-
-    @include laptop{
-      .hover-item{
-        left: 0em !important;
-      }
-  }
-
-  @include tablet{
-    .hover-item>span{
-        display: block!important;
-    }
-  }
-
