@@ -53,6 +53,8 @@
 
         @import "modules/item/bg-with-widgets";
 
+        @import "modules/table/simple-responsive-table";
+
         
     /*--------------------------------
     ***  
@@ -68,4 +70,6 @@
 
 
         @import "widget/_three_column_icons";
+
+        @import "widget/checkbox_radio_buttons";
 

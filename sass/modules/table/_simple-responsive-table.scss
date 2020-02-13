@@ -1,0 +1,436 @@
+/*========================================================================================
+*********   
+*******      SIMPLE RESPONSIVE TABLE 
+*****       
+***         
+*/
+
+.simple-responsive--table{
+
+    /*--------------------------------
+    ***     BACKGROUND TABLE STYLES
+    **	    
+    */
+
+    .table-continer {
+      background  : $bgtable;
+      font-family : $fontFamily;
+      width       : 100%;
+      overflow-x  : auto;
+    }
+
+    .table-wrapper {
+      width     : 95%;
+      margin    : 0 auto;
+      background: $WHITE;
+      display   : block;
+      overflow-x: auto;
+    }
+
+    
+    /*--------------------------------
+    ***     LEFT TOP INPUT AREA
+    **	    
+    */
+
+    .input-area {
+
+      border        : 2px solid $inputBorder;
+      border-radius : $inpAreaRadius;
+      display       : inline-block;
+      margin        : 1em;
+      float         : $left;
+
+
+          .img-icon {
+            opacity     : 0.4;
+            float       : $left;
+            margin-top  : 0.3em;
+            margin-left : 0.3em;
+            font-size   : 30px;
+          }
+
+
+          .text-box {
+            border    : none;
+            float     : $left;
+            height    : 1.5em;
+            margin-top: 0.7em;
+            opacity   : $opacityimage;
+          }
+
+
+          .button {
+            background    :#f3f5f7;
+            float         : $left;
+            border-radius : 35px;
+            width         : 4em;
+            margin        : 3px;
+            height        : 2.7em;
+          }
+
+
+          .button:hover{
+            background  :#f3f5f7;
+          }
+    
+  }// input-area
+  
+  
+    input {
+      transition: none;
+      transform : none;
+    }
+
+
+    /*--------------------------------
+    ***   RIGHT TOP BUTTON STYLES
+    **	    
+    */
+
+
+    .right-button {
+      float         : $right;
+      margin        : 1em;
+      padding       : 1.1em !important;
+      font          : inherit;
+      cursor        : pointer;
+      outline       : inherit;
+      color         : white;
+      border        : none;
+      border-radius : 25px;
+    }
+    
+
+    .clear {
+      clear: $bothClear;
+    }
+
+
+    /*--------------------------------
+    ***       TABLE STYLES
+    **	    
+    */
+
+
+    .table-responsive {
+      margin-top: 0.5em;
+      width     : 100%;
+      display   : table;
+    }
+
+
+    .td {
+      display   : inline-block;
+      width     : 16%;
+      text-align: $centerAlighn;
+    }
+
+    
+    .row:nth-child(odd) {
+      background    : $trTablebg;
+      border-radius : 20px;
+    }
+
+
+    .down-arrows {
+      color       : $bluecolor;
+      font-size   : 1em;
+      margin-left : 1.4em;
+    }
+
+
+    .row {
+
+      width   : 99%;
+      margin  : 0 auto;
+      padding : 1.4em;      
+
+      .green {
+        background    : $greenBg;
+        padding       : 10px;
+        display       : inline-block;
+        color         : $greenColor;
+        border-radius : 20px;
+      }
+    
+      .yellow {
+        background    : $yellowBg;
+        padding       : 10px;
+        display       : inline-block;
+        color         : $ORANGE;
+        border-radius : 20px;
+      }
+
+      .blue {
+        background    : $blueBg;
+        padding       : 10px;
+        display       : inline-block;
+        color         : $bluecolor;
+        border-radius : 20px;
+      }
+
+
+    }// row
+
+    // .status{
+
+    //   // .status > span
+    //   > span{
+    //     height          : 10px;
+    //     width           : 10px;
+    //     border-radius   : 50%;
+    //     display         : inline-block;
+    //     margin-right    : 5px;
+
+    //     // .status > span::before
+    //     &::before{
+    //       display  : inline-block;
+    //       content  : "";
+    //     }
+
+    //   }
+        
+    //   // .status.confirmed > span::before
+    //   &.confirmed > span::before{
+    //     background-color: $greenColor;
+    //   }
+
+    // }
+
+    .dotg {
+      height          : 10px;
+      width           : 10px;
+      border-radius   : 50%;
+      display         : inline-block;
+      margin-right    : 5px;
+      background-color: $greenColor;
+    }
+
+    .dotb {
+      height          : 10px;
+      width           : 10px;
+      border-radius   : 50%;
+      margin-right    : 5px;
+      display         : inline-block;
+      background-color: $bluecolor;
+    }
+
+    .doty {
+      height          : 10px;
+      width           : 10px;
+      border-radius   : 50%;
+      display         : inline-block;
+      margin-right    : 5px;
+      background-color: $ORANGE;
+    }
+
+    .table {
+      overflow-x: auto;
+    }
+
+
+      /*--------------------------------
+      ***   
+      **   RESPONSIVE SECTION
+      */
+
+
+    @include laptop {
+
+      .control-indicator {
+        left  : 0 !important;
+      }
+
+    }
+
+    @include mini-laptop {
+
+      .table-responsive {
+        width : 1000px;
+      }
+
+      .control-indicator {
+        left  : 0 !important;
+      }
+
+    }
+
+    @include tablet {
+
+      .table-responsive {
+        width : 1000px;
+      }
+
+      .control-indicator {
+        left  : 0 !important;
+      }
+
+    }
+
+    @include mobile {
+      
+      .tabler-responsive {
+        width: 1000px;
+      }
+      .control-indicator {
+        left: 0 !important;
+      }//for mobiles
+      .right-button {
+        float: left;
+      }
+
+    }
+
+    @include mini_mobile {
+
+      .table-responsive {
+        width: 1000px;
+      }
+
+      .control-indicator {
+        left: 0 !important;
+      }
+
+      .img-icon {
+        display: none;
+      }
+
+    }
+      
+    
+      /*-------------------------------------------------------
+      ---------------------------------------------------------
+      ***   
+      **   RTL SECTION
+      */
+      
+    .rtl {
+      direction: rtl;
+        
+      .title{
+        text-align: center;
+      }
+
+      /*--------------------------------
+      ***   
+      **   HEADER STYLE
+      */
+
+      .img-icon{
+        float       : right;
+        margin-right:0.3em;
+        margin-left : 0em;
+      }
+      
+      .control-indicator{
+        right: 15%;
+      }
+
+      .dotg{
+        margin-left: 5px;
+      }
+
+      .dotb{
+        margin-left: 5px;
+      }
+
+      .doty{
+        margin-left: 5px;
+      }
+
+      /*--------------------------------
+      ***   
+      **   responsive styles
+      */
+
+      @include laptop {
+  
+        .control-indicator {
+          right: 0 !important;
+        }
+
+      }
+
+      @include mini-laptop {
+  
+          .table-responsive {
+            width: 1000px;
+          }
+
+          .control-indicator {
+            right: 0 !important;
+          }
+      
+      }
+
+      @include tablet {
+
+        .table-responsive {
+          width: 1000px;
+        }
+        .control-indicator {
+          right: 0 !important;
+        }
+
+      }
+
+      @include mobile {
+      
+          .tabler-responsive {
+            width: 1000px;
+          }
+
+          .control-indicator {
+            right: 0 !important;
+          }
+
+          .right-button {
+            float: left;
+          }
+      }
+
+      @include mini_mobile {
+  
+          .table-responsive {
+            width: 1000px;
+          }
+
+          .control-indicator {
+            right: 0 !important;
+          }
+
+          .img-icon {
+            display: none;
+          }
+
+      }
+
+    }// rtl
+
+
+        /*--------------------------------
+    ***   
+    **   STYLE OF THE TABLE'S SCROLL
+    */
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+}
