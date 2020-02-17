@@ -36,7 +36,7 @@
     .input-area {
 
       border        : 2px solid $input-border;
-      border-radius : $in-Area-radius;
+      border-radius : $in-area-radius;
       display       : inline-block;
       margin        : 1em;
       float         : $left;
@@ -67,6 +67,8 @@
             width         : 4em;
             margin        : 3px;
             height        : 2.7em;
+            padding: 0em !important;
+            color: gray;
           }
 
 
@@ -98,7 +100,7 @@
       outline       : inherit;
       color         : white;
       border        : none;
-      border-radius : 25px;
+      border-radius : 3em;
     }
     
 
@@ -125,13 +127,13 @@
       width     : 16%;
       text-align: $center-align;
     }
-
-    
-    .row:nth-child(odd) {
-      background    : $TR_BG_COLOR;
-      border-radius : 20px;
+    .row:first-child{
+      background:#f3f4fb !important;
     }
 
+    .row:nth-child(odd) {
+      background    : $TR_BG_COLOR;
+    }
 
     .down-arrows {
       color       : $BELIZE_HOLE;
@@ -145,6 +147,12 @@
       width   : 99%;
       margin  : 0 auto;
       padding : 1.4em;
+      border-radius: 1em;
+
+      &:hover{
+        cursor: pointer;
+        background:#f3f4fb;
+      }
 
     }// row
 
@@ -153,6 +161,8 @@
        > span{
         padding: 0.5em;
         border-radius: 2em;
+        display: inline-block;
+        line-height: 1.3em;
 
          // .status > span::before
          &::before{
@@ -194,6 +204,9 @@
       overflow-x: auto;
     }
 
+    .table{
+      overflow-y: hidden;
+    }
 
       /*--------------------------------
       ***   
@@ -283,7 +296,7 @@
       */
       
       .control-indicator{
-        right: 15%;
+        right: 0;
       }
 
       /*--------------------------------
@@ -356,7 +369,7 @@
     }// rtl
 
 
-        /*--------------------------------
+    /*--------------------------------
     ***   
     **   STYLE OF THE TABLE'S SCROLL
     */
