@@ -1,10 +1,18 @@
 @font-face {
   font-family: 'icomoon';
+<<<<<<< HEAD
   src:  url('fonts/icomoon.eot?uyw8qt');
   src:  url('fonts/icomoon.eot?uyw8qt#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?uyw8qt') format('truetype'),
     url('fonts/icomoon.woff?uyw8qt') format('woff'),
     url('fonts/icomoon.svg?uyw8qt#icomoon') format('svg');
+=======
+  src:  url('fonts/icomoon.eot?iv8c3i');
+  src:  url('fonts/icomoon.eot?iv8c3i#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?iv8c3i') format('truetype'),
+    url('fonts/icomoon.woff?iv8c3i') format('woff'),
+    url('fonts/icomoon.svg?iv8c3i#icomoon') format('svg');
+>>>>>>> 56bfbd9f65109267cb6d830ce2a75871e5ed92fc
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +33,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
 .icon-lock:before {
   content: "\e922";
 }
@@ -40,6 +49,11 @@
 .icon-favorite:before {
   content: "\e923";
 }
+=======
+.icon-filter:before {
+  content: "\e922";
+}
+>>>>>>> 56bfbd9f65109267cb6d830ce2a75871e5ed92fc
 .icon-chevron-down:before {
   content: "\e902";
 }
