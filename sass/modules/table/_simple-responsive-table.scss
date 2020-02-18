@@ -170,22 +170,22 @@
           border-radius   : 50%;
           display         : inline-block;
           margin-right    : 5px;
-          display  : inline-block;
-          content  : "";
+          display         : inline-block;
+          content         : "";
          }
 
        }
 
        &.confirmed > span{
-        background-color: $TR_BG__blue_COLOR;
+        background-color: $TR_BG_BLUE_COLOR;
         color: $CIRCEL_BLUE;
       }
       &.fulfilled > span{
-        background-color: $TR_BG__GREEN_COLOR;
+        background-color: $TR_BG_GREEN_COLOR;
         color: $CIRCEL_GREEN;
       }
       &.partially-shipped > span{
-        background-color: $TR_BG__ORANGE_COLOR;
+        background-color: $TR_BG_ORANGE_COLOR;
         color: $CIRCEL_ORANGE;
       }
         
