@@ -50,8 +50,12 @@
         @import "modules/item/bg-with-text";
 
         @import "modules/item/menu-food";
-
+        
         @import "modules/item/column-box";
+
+        @import "modules/item/bg-with-widgets";
+
+        @import "modules/table/simple-responsive-table";
 
         
     /*--------------------------------
@@ -68,4 +72,6 @@
 
 
         @import "widget/_three_column_icons";
+
+        @import "widget/checkbox_radio_buttons";
 

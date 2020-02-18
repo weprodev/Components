@@ -1,10 +1,18 @@
 @font-face {
   font-family: 'icomoon';
+<<<<<<< HEAD
   src:  url('fonts/icomoon.eot?5sy53h');
   src:  url('fonts/icomoon.eot?5sy53h#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?5sy53h') format('truetype'),
     url('fonts/icomoon.woff?5sy53h') format('woff'),
     url('fonts/icomoon.svg?5sy53h#icomoon') format('svg');
+=======
+  src:  url('fonts/icomoon.eot?iv8c3i');
+  src:  url('fonts/icomoon.eot?iv8c3i#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?iv8c3i') format('truetype'),
+    url('fonts/icomoon.woff?iv8c3i') format('woff'),
+    url('fonts/icomoon.svg?iv8c3i#icomoon') format('svg');
+>>>>>>> 56bfbd9f65109267cb6d830ce2a75871e5ed92fc
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,8 +33,100 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
 .icon-loop-alt3:before {
   content: "\e924";
+=======
+.icon-filter:before {
+  content: "\e922";
+}
+.icon-chevron-down:before {
+  content: "\e902";
+}
+.icon-chevron-left:before {
+  content: "\e905";
+}
+.icon-chevron-right:before {
+  content: "\e906";
+}
+.icon-chevron-up:before {
+  content: "\e907";
+}
+.icon-chevrons-down:before {
+  content: "\e908";
+}
+.icon-chevrons-left:before {
+  content: "\e909";
+}
+.icon-chevrons-right:before {
+  content: "\e90a";
+}
+.icon-chevrons-up:before {
+  content: "\e90b";
+}
+.icon-menu5:before {
+  content: "\e5d2";
+}
+.icon-more_horiz:before {
+  content: "\e5d3";
+}
+.icon-more_vert:before {
+  content: "\e5d4";
+}
+.icon-add-outline:before {
+  content: "\e90c";
+}
+.icon-add-solid:before {
+  content: "\e90d";
+}
+.icon-cheveron-down:before {
+  content: "\e90e";
+}
+.icon-cheveron-left:before {
+  content: "\e90f";
+}
+.icon-cheveron-right:before {
+  content: "\e910";
+}
+.icon-cheveron-up:before {
+  content: "\e911";
+}
+.icon-close:before {
+  content: "\e914";
+}
+.icon-compose:before {
+  content: "\e915";
+}
+.icon-credit-card2:before {
+  content: "\e916";
+}
+.icon-envelope:before {
+  content: "\e917";
+}
+.icon-link2:before {
+  content: "\e918";
+}
+.icon-list3:before {
+  content: "\e919";
+}
+.icon-list-add:before {
+  content: "\e91a";
+}
+.icon-list-bullet:before {
+  content: "\e91b";
+}
+.icon-menu6:before {
+  content: "\e91c";
+}
+.icon-network:before {
+  content: "\e91d";
+}
+.icon-question2:before {
+  content: "\e91e";
+}
+.icon-view-list:before {
+  content: "\e921";
+>>>>>>> 56bfbd9f65109267cb6d830ce2a75871e5ed92fc
 }
 .icon-home:before {
   content: "\e900";
