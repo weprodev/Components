@@ -21,7 +21,7 @@
 .control-indicator {
   position: absolute;
   top: -0.1em;
-  left: 15%;
+  left: 0%;
   height: 1.2em;
   width: 1.2em;
   background: #e6e6e6;
@@ -39,7 +39,7 @@
 **
 */
 .control input:checked ~ .control-indicator {
-  background:$bluecolor;
+  background:$CIRCEL_BLUE;
 }
 /*check box checked style
 **
