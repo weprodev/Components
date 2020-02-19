@@ -2,6 +2,7 @@
   font-family: 'icomoon';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   src:  url('fonts/icomoon.eot?5sy53h');
   src:  url('fonts/icomoon.eot?5sy53h#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?5sy53h') format('truetype'),
@@ -15,11 +16,16 @@
     url('fonts/icomoon.svg?iv8c3i#icomoon') format('svg');
 >>>>>>> 56bfbd9f65109267cb6d830ce2a75871e5ed92fc
 =======
+=======
+>>>>>>> 5f7ff2c08483ea97231c3f7539263ac39e87a14c
   src:  url('fonts/icomoon.eot?uyw8qt');
   src:  url('fonts/icomoon.eot?uyw8qt#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?uyw8qt') format('truetype'),
     url('fonts/icomoon.woff?uyw8qt') format('woff'),
     url('fonts/icomoon.svg?uyw8qt#icomoon') format('svg');
+<<<<<<< HEAD
+>>>>>>> 5f7ff2c08483ea97231c3f7539263ac39e87a14c
+=======
 >>>>>>> 5f7ff2c08483ea97231c3f7539263ac39e87a14c
   font-weight: normal;
   font-style: normal;
@@ -43,10 +49,13 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .icon-loop-alt3:before {
   content: "\e924";
 =======
 =======
+=======
+>>>>>>> 5f7ff2c08483ea97231c3f7539263ac39e87a14c
 .icon-lock:before {
   content: "\e922";
 }
@@ -62,6 +71,9 @@
 .icon-favorite:before {
   content: "\e923";
 }
+<<<<<<< HEAD
+>>>>>>> 5f7ff2c08483ea97231c3f7539263ac39e87a14c
+=======
 >>>>>>> 5f7ff2c08483ea97231c3f7539263ac39e87a14c
 .icon-filter:before {
   content: "\e922";
@@ -156,7 +168,13 @@
 .icon-view-list:before {
   content: "\e921";
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 56bfbd9f65109267cb6d830ce2a75871e5ed92fc
+=======
+}
+.icon-loop-alt3:before {
+  content: "\e924";
+>>>>>>> 5f7ff2c08483ea97231c3f7539263ac39e87a14c
 =======
 }
 .icon-loop-alt3:before {
