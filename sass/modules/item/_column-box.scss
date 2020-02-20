@@ -1,197 +1,196 @@
-/*========================================================================================
-*********   COLUMN-BOX
-*******     STYLES 
-*****       
-***         
-*/
-
-  /*--------------------------------
-	***  general items wrapper styles
-	**	
+  /*========================================================================================
+  *********   COLUMN-BOX
+  *******     STYLES 
+  *****       
+  ***         
   */
-.column-box{
-  width: 100%;
 
-  >section{
-    width: 80%;
-    margin: 0 auto;
+/*--------------------------------
+***  general items wrapper styles
+**	
+*/
+.column-box {
+    width: 100%;
 
-    >article{
-      float: left;
-      width: 18.7em;
-      height:18.7em;
-      margin: 0.5em;
-      position: relative;
+    > section {
+      width: 80%;
+      margin: 0 auto;
 
-      >figure{
-        width: 100%;
-        height: 90%;
+    > article {
+        float: left;
+        width: 18.7em;
+        height: 18.7em;
+        margin: 0.5em;
         position: relative;
 
-        .hot{
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 0 50px 50px 50px;
-          border-color: transparent transparent #f87c69 transparent;
-          position: absolute;
-          top: -0.47em;
-          right: -2.05em;
-          transform: rotate(44.6deg);
-
-          >span{
-            position: absolute;
-            top: 1.3em;
-            left: -0.6em;
-            color: white;
-            display: block;
-          }//hot text on lable styles
-        }//hot lable styles
-
-        .new{
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 0 50px 50px 50px;
-          border-color: transparent transparent #7f9eb4 transparent;
-          position: absolute;
-          top: -0.49em;
-          right: -2.06em;
-          transform: rotate(44.6deg);
-
-          >span{
-            position: absolute;
-            top: 1.3em;
-            left: -1em;
-            color: white;
-            display: block;
-          }//new text on lable styles
-        }//new lable styles
-
-        >img{
+    > figure {
           width: 100%;
           height: 90%;
-        }
-      }//image in item styles
+          position: relative;
 
+      .hot {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 50px 50px 50px;
+            border-color: transparent transparent #f87c69 transparent;
+            position: absolute;
+            top: -0.47em;
+            right: -2.05em;
+            transform: rotate(44.6deg);
 
-      .hover-item{
-        position: absolute;
-        display: none;
-        top: 27%;
-        right: 27%;
-        transition: display 1s;
+        > span {
+              position: absolute;
+              top: 1.3em;
+              left: -0.6em;
+              color: white;
+              display: block;
+            } //hot text on lable styles
+          } //hot lable styles
 
-        >span{
-          font-size: 2em;
-          display: inline-block;
-          padding: 0.2em;
-          background: #fff;
-          border-radius: 50%;
-          transition:0.3s;
-          
-          &:hover{
-            background: $ELEMENT_BG_COLOR;
-            cursor: pointer;
+      .new {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 50px 50px 50px;
+            border-color: transparent transparent #7f9eb4 transparent;
+            position: absolute;
+            top: -0.49em;
+            right: -2.06em;
+            transform: rotate(44.6deg);
+
+        > span {
+              position: absolute;
+              top: 1.3em;
+              left: -1em;
+              color: white;
+              display: block;
+            } //new text on lable styles
+          } //new lable styles
+
+        > img {
+            width: 100%;
+            height: 90%;
           }
-        }
-      }//item hover styles
+        } //image in item styles
 
-        &:hover{
-        .hover-item{
-          display: block;
-        }
+        .hover-item {
+          position: absolute;
+          display: none;
+          top: 27%;
+          right: 27%;
+          transition: display 1s;
+
+        > span {
+            font-size: 2em;
+            display: inline-block;
+            padding: 0.2em;
+            background: #fff;
+            border-radius: 50%;
+            transition: 0.3s;
+
+        &:hover {
+              background: $ELEMENT_BG_COLOR;
+              cursor: pointer;
+            }
+          }
+        } //item hover styles
+
+        &:hover {
+          .hover-item {
+            display: block;
+          }
+          }
+        } //article styles
+      .price {
+        color: red;
       }
-    }//article styles
-    .price{
-      color: red;
-    }
-    .off{
-      text-decoration-line:line-through;
-      opacity: 0.5;
+      .off {
+        text-decoration-line: line-through;
+        opacity: 0.5;
+      }
     }
   }
-}
   /*--------------------------------
-	***  general items wrapper styles
-	**	
-  */ 
-    @include led{
-      .hot{
-        top: -0.37em!important;
-        right: -1.45em!important;
+    ***  general items wrapper styles
+    **	
+    */
+  @include led {
+    .hot {
+      top: -0.37em !important;
+      right: -1.45em !important;
 
-        >span{
-          top: 0.9em!important;
-          left: -0.7em!important;
-        }
-      }
-
-      .new{
-        top: -0.39em!important;
-        right: -1.5em!important;
-
-        >span{
-          top: 1em!important;
-          left: -1em!important;
-        }
+      > span {
+        top: 0.9em !important;
+        left: -0.7em !important;
       }
     }
 
-    @include lcd{
-      .hot{
-        top: -0.47em!important;
-        right: -2.05em!important;
+    .new {
+      top: -0.39em !important;
+      right: -1.5em !important;
 
-        >span{
-          top: 1.3em!important;
-          left: -0.6em!important;
-        }
+      > span {
+        top: 1em !important;
+        left: -1em !important;
       }
+    }
+  }
 
-      .new{
-        top: -0.49em!important;
-        right: -2.06em!important;
+  @include lcd {
+    .hot {
+      top: -0.47em !important;
+      right: -2.05em !important;
 
-        >span{
-          top: 1.3em!important;
-          left: -1em!important;
-        }
+      > span {
+        top: 1.3em !important;
+        left: -0.6em !important;
       }
+    }
 
-      .column-box{
-        >section{
-          >article{
-            width: 17em;
-            height: 17em;
-          }
+    .new {
+      top: -0.49em !important;
+      right: -2.06em !important;
+
+      > span {
+        top: 1.3em !important;
+        left: -1em !important;
+      }
+    }
+
+    .column-box {
+      > section {
+        > article {
+          width: 17em;
+          height: 17em;
         }
       }
     }
-    @include laptop{
-      .column-box{
-        >section{
-          >article{
+  }
+  @include laptop {
+    .column-box {
+      > section {
+        > article {
           width: 11.8em;
           height: 11.8em;
 
-          .price{
+          .price {
             display: block;
             margin-top: 1em;
           }
-          }
         }
+      }
     }
   }
 
-  @include tablet{
-    .column-box{
-      >section{
-        >article{
+  @include tablet {
+    .column-box {
+      > section {
+        > article {
           width: 18.2em;
           height: 18.2em;
 
-          .price{
+          .price {
             margin-top: 0em;
           }
         }
@@ -199,14 +198,14 @@
     }
   }
 
-  @include mobile{
-    .column-box{
-      >section{
-        >article{
+  @include mobile {
+    .column-box {
+      > section {
+        > article {
           width: 20.5em;
           height: 20.5em;
 
-          .price{
+          .price {
             margin-top: 0em;
           }
         }
@@ -214,14 +213,14 @@
     }
   }
 
-  @include mini_mobile{
-    .column-box{
-      >section{
-        >article{
+  @include mini_mobile {
+    .column-box {
+      > section {
+        > article {
           width: 16em;
           height: 16em;
 
-          .price{
+          .price {
             margin-top: 0em;
           }
         }
