@@ -72,7 +72,7 @@
                     color           : $WHITE;
                     border          : 2px solid transparent;
                 }
-                .article-1{
+                .article-one{
                     width           : 49%;
                     height          : 30em;
                     float           : left;
@@ -85,42 +85,42 @@
                     @include mobile{
                         width       : 100%;
                     }
-                    .image-article-1{
+                    .image-article-one{
                         width       : 100%;
                         height      : 50%;
                         background-image: url("../img/item/bg-article-1.jpg");
                         background-size: cover;
                     }
-                    .white-article-1{
+                    .white-article-one{
                         width           : 100%;
                         height          : 50%;
                         background-color: $WHITE;
                         text-align      : center;
                         position        : relative;
 
-                        .Arrow{
-                            width       : 0em;
-                            height      : 0em;
-                            border-left : 1em solid transparent;
-                            border-right: 1em solid transparent;
-                            border-bottom: 1em solid $WHITE;
-                            position    : absolute;
-                            top         : -0.9em;
-                            left        : 48%;
-                        }
-                        .text-article-1{
+                        &::before{
+                            content: "";
+                            width           : 0em;
+                            height          : 0em;
+                            border          : 1em solid transparent;
+                            border-bottom   : 1em solid $WHITE;
+                            position        : absolute;
+                            top             : -2em;
+                            left            : 48%;
+                          }
+                        .text-article-one{
                             width           : 100%;
                             height          : 100%;
                             padding-top     : 2em;
                             padding-left    : 0.4em;
                             padding-right   : 0.4em;
 
-                            .red-text-article-1{
+                            .red-text-article-one{
                                 color       : red;
                                 word-spacing: 1em;
                                 display     : block;
                             }
-                            .title-text-article-1{
+                            .title-text-article-one{
                                 color       : $BLACK;
                                 font-size   : 1.8em;
                                 line-height : 2em;
@@ -131,26 +131,26 @@
                                     font-size: 1.2em;
                                 }
                             }
-                            .below-title-article-1{
+                            .below-title-article-one{
                                 color           : $ASBESTOS;
                                 font-size       : 0.9em;
                                 display         : block;
                                 margin-bottom   : 1.2em;
                             }
-                            .description-article-1{
+                            .description-article-one{
                                 color       : $ASBESTOS;
                                 font-size   : 0.9em;
                                 display     : block ;
                             }
-                            .link-article-1{
+                            .link-article-one{
                                 display     : block;
                                 margin-top  : 1.2em;
                                 font-weight : bold;
                             }
                         }
                     }
-                }//article-1
-                .article-2{
+                }//article-one
+                .article-two{
                     width   : 51%;
                     height  : 15em;
                     float   : right;
@@ -162,14 +162,14 @@
                     @include mobile{
                         width: 100%;
                     }
-                    .image-article-2{
+                    .image-article-two{
                         width           : 50%;
                         height          : 100%;
                         background-image: url("../img/item/bg-article-2.jpg");
                         background-size : cover;
                         float           : right;
                     }
-                    .white-article-2{
+                    .white-article-two{
                         width           : 50%;
                         height          : 100%;
                         float           : left;
@@ -177,51 +177,51 @@
                         text-align      : center;
                         position        : relative;
 
-                        .Arrow{
+                        &::before{
+                            content: "";
                             width           : 0em;
-                            height          : 0em;
-                            border-top      : 1em solid transparent;
-                            border-left     : 1em solid $WHITE;
-                            border-bottom   : 1em solid transparent;
-                            position        : absolute;
-                            right           : -0.9em;
-                            top             : 43%;
-                        }
-                        .text-article-2{
+                           height          : 0em;
+                           border         : 1em solid transparent;
+                           border-left    : 1em solid $WHITE;
+                           position        : absolute;
+                           right            : -2em;
+                           top             : 43%;
+                          }
+                        .text-article-two{
                             width           : 100%;
                             height          : 100%;
                             padding-top     : 3em;
                             padding-left    : 0.4em;
                             padding-right   : 0.4em;
 
-                            .red-text-article-2{
+                            .red-text-article-two{
                                 color           : red;
                                 word-spacing    : 1em;
                                 display         : block;
                                 margin-bottom   : 0.7em;
                             }
-                            .title-text-article-2{
+                            .title-text-article-two{
                                 color           : $BLACK;
                                 font-size       : 1.2em;
                                 margin-bottom   : 0.7em;
                                 font-weight     : bold;
                                 display         : block;
                             }
-                            .below-title-article-2{
+                            .below-title-article-two{
                                 color           : $ASBESTOS;
                                 font-size       : 0.9em;
                                 display         : block;
                                 margin-bottom   : 1.2em;
                             }
-                            .link-article-2{
+                            .link-article-two{
                                 display     : block;
                                 margin-top  : 1.4em;
                                 font-weight : bold;
                             }
                         }
                     }
-                }//article-2
-                .article-3{
+                }//article-two
+                .article-three{
                     width       : 51%;
                     height      : 15em;
                     float       : right;
@@ -233,7 +233,7 @@
                     @include mobile{
                         width: 100%;
                     }
-                    .image-article-3{
+                    .image-article-three{
                         width           : 50%;
                         height          : 100%;
                         background-image: url("../img/item/bg-article-3.jpg");
@@ -241,7 +241,7 @@
                         float           : left;
                         
                     }
-                    .white-article-3{
+                    .white-article-three{
                         width           : 50%;
                         height          : 100%;
                         background-color: $WHITE;
@@ -249,49 +249,49 @@
                         position        : relative;
                         float           : right;
                         
-                        .Arrow{
+                        &::before{
+                            content: "";
                             width           : 0em;
                             height          : 0em;
-                            border-top      : 1em solid transparent;
+                            border          : 1em solid transparent;
                             border-right    : 1em solid $WHITE;
-                            border-bottom   : 1em solid transparent; 
                             position        : absolute;
-                            left            : -0.9em;
+                            left            : -2em;
                             top             : 43%;
-                        }
-                        .text-article-3{
+                          }
+                        .text-article-three{
                             width       : 100%;
                             height      : 100%;
                             padding-top : 3em;
                             
                         
-                            .red-text-article-3{
+                            .red-text-article-three{
                                 color           : red;
                                 word-spacing    : 1em;
                                 display         : block;
                                 margin-bottom   : 0.7em;
                             }
-                            .title-text-article-3{
+                            .title-text-article-three{
                                 color           : $BLACK;
                                 font-size       : 1.2em;
                                 margin-bottom   : 0.7em;
                                 font-weight     : bold;
                                 display         : block;
                             }
-                            .below-title-article-3{
+                            .below-title-article-three{
                                 color           : $ASBESTOS;
                                 font-size       : 0.9em;
                                 display         : block;
                                 margin-bottom   : 1.2em;
                             }
-                            .link-article-3{
+                            .link-article-three{
                                 display     : block;
                                 margin-top  : 1.4em;
                                 font-weight : bold;
                             }
                         }
                     }
-                }//article-3
+                }//article-three
 
             }//post-column
 
