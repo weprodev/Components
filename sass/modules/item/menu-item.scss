@@ -13,21 +13,71 @@
     .header-area{
         margin-top: 10em;
         margin-bottom: 2em;
+        width: 100%;
 
-        .header-title{
+        >h2{
             display: block;
             text-align: center;
-            color:red;
+            color:$ALIZARIN;
         }
 
-        .sub-title{
-            display: block;
+        >h3{
+            display:block;
             text-align: center;
-        }
+            opacity: 0.5;
+            position: relative;
 
-        .sub-title-2{
+            &:before{
+                content: "";
+                width: 10em;
+                height: 1px;
+                background: $SILVER;
+                position: absolute;
+                right: 40%;
+                top: 0.5em;
+                z-index: 1000;
+           }
+           
+            
+            &::after{
+                content: "";
+                width: 10em;
+                height: 1px;
+                background: $SILVER;
+                position: absolute;
+                left: 40%;
+                top: 0.5em;
+                z-index: 1000;
+           }
+        }
+        span{
             display: block;
             text-align: center;
+            opacity: 0.5;
+            position: relative;
+
+            &:before{
+                content: "";
+                width: 10em;
+                height: 1px;
+                background: $SILVER;
+                position: absolute;
+                right: 40%;
+                top: 0em;
+                z-index: 1000;
+           }
+
+            &::after{
+                content: "";
+                width: 10em;
+                height: 1px;
+                background:$SILVER;
+                position: absolute;
+                left: 40%;
+                top: 0em;
+                z-index: 1000;
+           
+            }
         }
     }
 
@@ -58,6 +108,7 @@
             }
                 .item-describtion{
                     width: 40%;
+                    height: 5em;
                     float: left;
                     margin: 1em;
 
@@ -68,7 +119,8 @@
 
                 .item-title{
                     display: block;
-                    font-weight: bold;  
+                    font-weight: bold; 
+                    margin-bottom: 0.5em; 
                     opacity: 1!important;
             }
 
@@ -77,8 +129,8 @@
 
                 >span{
                     display: inline-block;
-                    background: lightblue;
-                    color: red;
+                    background: $SILVER;
+                    color: $ALIZARIN;
                     padding: 0.5em;
                 }
             }
@@ -90,11 +142,12 @@
     }
 
         input[type=submit]{
-            background: red;
+            background: $ALIZARIN;
             text-align: center;
             margin: 0 auto;
             margin-left: 40%;
             margin-top: 1em;
+            transition: none;
     }
 }
 
@@ -103,6 +156,34 @@
     **	 RESPONSIVE SECTION
     */
 
+ /*   @include led{
+
+        .header-area{
+        >h3{
+
+            &:before{
+                left: 19em!important;
+            }
+
+            &::after{
+                left: 43em!important;
+            }
+        }
+            >span{
+
+                &:before{
+                    left: 19em!important;
+                }
+
+                &::after{
+                    left: 43em!important;
+                
+            }
+        }
+        }
+    }
+
+*/
     @include tablet{
         .column{
             width: 49% !important;
@@ -126,3 +207,30 @@
             }
         }
     }
+
+    /*--------------------------------
+    ***  
+    **	 RTL SECTION
+    */
+
+    .rtl{
+        direction: rtl;
+
+        .sub-header{
+            margin-right: 1em;
+        }
+
+    .item{
+
+        .img-item{
+            float: right!important;
+        }
+
+        .item-describtion{
+            float: right!important;
+        }
+    }
+    input[type=submit]{
+        margin-right: 40%!important;
+    }
+}
