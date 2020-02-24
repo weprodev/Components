@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-loop-alt3:before {
+  content: "\e924";
+}
 .icon-lock:before {
   content: "\e922";
 }
@@ -132,6 +135,9 @@
 }
 .icon-view-list:before {
   content: "\e921";
+}
+.icon-loop-alt3:before {
+  content: "\e924";
 }
 .icon-loop-alt3:before {
   content: "\e924";
