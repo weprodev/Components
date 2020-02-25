@@ -17,12 +17,12 @@
             height          : 75em;
         }
         @include mobile{
-            height          : 75em;
+            height          : 97em;
         }
         .blur-bg-black{
             width           : 100%;
             height          : 100%;
-            background-color: rgba($color: #000000, $alpha: 0.4);
+            background-color: rgba($color: #000000, $alpha: 0.6);
             padding-top     : 4%;
 
             .post-column{
@@ -58,9 +58,8 @@
                 .header{
                     width   : 100%;
                     height  : 15%;
-
-                    @include retinaMobile{
-                        height      : 6em;
+                    @include mobile{
+                        height: 7%;
                     }
                     h2{
                         font-size   : 2em;
@@ -88,8 +87,7 @@
                     .image-article-one{
                         width       : 100%;
                         height      : 50%;
-                        background-image: url("../img/item/bg-article-1.jpg");
-                        background-size: cover;
+                        margin-bottom: -3px;
                     }
                     .white-article-one{
                         width           : 100%;
@@ -117,7 +115,6 @@
 
                             .red-text-article-one{
                                 color       : red;
-                                word-spacing: 1em;
                                 display     : block;
                             }
                             .title-text-article-one{
@@ -131,24 +128,21 @@
                                     font-size: 1.2em;
                                 }
                             }
-                            .below-title-article-one{
-                                color           : $ASBESTOS;
-                                font-size       : 0.9em;
-                                display         : block;
-                                margin-bottom   : 1.2em;
-                            }
                             .description-article-one{
                                 color       : $ASBESTOS;
                                 font-size   : 0.9em;
                                 display     : block ;
+                                line-height: 1.3em;
                             }
-                            .link-article-one{
+                            a{
                                 display     : block;
                                 margin-top  : 1.2em;
                                 font-weight : bold;
+                                color       : $BLACK;
+                                background-color: transparent;
                             }
-                        }
-                    }
+                        }//text-article-three
+                    }//white-article-one
                 }//article-one
                 .article-two{
                     width   : 51%;
@@ -160,14 +154,17 @@
                         width: 100%;
                     }
                     @include mobile{
-                        width: 100%;
+                        width   : 100%;
+                        height  : 30em;
                     }
                     .image-article-two{
                         width           : 50%;
                         height          : 100%;
-                        background-image: url("../img/item/bg-article-2.jpg");
-                        background-size : cover;
                         float           : right;
+                        @include mobile{
+                            width   : 100%;
+                            height  : 50%;
+                        }
                     }
                     .white-article-two{
                         width           : 50%;
@@ -176,16 +173,30 @@
                         background-color: $WHITE;
                         text-align      : center;
                         position        : relative;
+                        @include mobile{
+                            width   : 100%;
+                            height  : 50%;
+                        }
 
                         &::before{
-                            content: "";
+                            content        : "";
+                            width          : 0em;
+                            height         : 0em;
+                            border         : 1em solid transparent;
+                            border-left    : 1em solid $WHITE;
+                            position       : absolute;
+                            right          : -2em;
+                            top            : 43%;
+                           @include mobile{
+                            content         : "";
                             width           : 0em;
-                           height          : 0em;
-                           border         : 1em solid transparent;
-                           border-left    : 1em solid $WHITE;
-                           position        : absolute;
-                           right            : -2em;
-                           top             : 43%;
+                            height          : 0em;
+                            border          : 1em solid transparent;
+                            border-bottom   : 1em solid $WHITE;
+                            position        : absolute;
+                            top             : -2em;
+                            left            : 48%;
+                           }
                           }
                         .text-article-two{
                             width           : 100%;
@@ -196,7 +207,6 @@
 
                             .red-text-article-two{
                                 color           : red;
-                                word-spacing    : 1em;
                                 display         : block;
                                 margin-bottom   : 0.7em;
                             }
@@ -212,14 +222,17 @@
                                 font-size       : 0.9em;
                                 display         : block;
                                 margin-bottom   : 1.2em;
+                                line-height     : 1.3em;
                             }
-                            .link-article-two{
+                            a{
                                 display     : block;
                                 margin-top  : 1.4em;
                                 font-weight : bold;
+                                color       : $BLACK;
+                                background-color: transparent;
                             }
-                        }
-                    }
+                        }//text-article-two
+                    }//white-article-two
                 }//article-two
                 .article-three{
                     width       : 51%;
@@ -231,15 +244,17 @@
                         width: 100%;
                     }
                     @include mobile{
-                        width: 100%;
+                        width   : 100%;
+                        height  : 30em;
                     }
                     .image-article-three{
                         width           : 50%;
                         height          : 100%;
-                        background-image: url("../img/item/bg-article-3.jpg");
-                        background-size : cover;
                         float           : left;
-                        
+                        @include mobile{
+                            width   : 100%;
+                            height  : 50%;
+                        }
                     }
                     .white-article-three{
                         width           : 50%;
@@ -249,8 +264,12 @@
                         position        : relative;
                         float           : right;
                         
+                        @include mobile{
+                            width   : 100%;
+                            height  : 50%;
+                        }
                         &::before{
-                            content: "";
+                            content         : "";
                             width           : 0em;
                             height          : 0em;
                             border          : 1em solid transparent;
@@ -258,6 +277,16 @@
                             position        : absolute;
                             left            : -2em;
                             top             : 43%;
+                            @include mobile{
+                            content         : "";
+                            width           : 0em;
+                            height          : 0em;
+                            border          : 1em solid transparent;
+                            border-bottom   : 1em solid $WHITE;
+                            position        : absolute;
+                            top             : -2em;
+                            left            : 48%;
+                            }
                           }
                         .text-article-three{
                             width       : 100%;
@@ -267,7 +296,6 @@
                         
                             .red-text-article-three{
                                 color           : red;
-                                word-spacing    : 1em;
                                 display         : block;
                                 margin-bottom   : 0.7em;
                             }
@@ -283,14 +311,18 @@
                                 font-size       : 0.9em;
                                 display         : block;
                                 margin-bottom   : 1.2em;
+                                line-height     : 1.3em;
                             }
-                            .link-article-three{
+                            a{
                                 display     : block;
                                 margin-top  : 1.4em;
                                 font-weight : bold;
+                                font-weight : bold;
+                                color       : $BLACK;
+                                background-color: transparent;
                             }
-                        }
-                    }
+                        }//text-article-three
+                    }//white-article-three
                 }//article-three
 
             }//post-column
