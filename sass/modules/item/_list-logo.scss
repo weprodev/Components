@@ -8,45 +8,117 @@
 .list-logo--item{
 
     .section{
-        width: 100%;
-        height: 15em;
-        border: 1px solid red;
+        width   : 100%;
+        height  : 18em;
+        @include mobile{
+            padding: 1em;
+        }
+        @include mini_mobile{
+            padding: 0.4em;
+        }
 
         .header{
-            width: 30%;
-            height: 5em;
-            margin-left: auto;
+            width       : 30%;
+            height      : 7em;
+            margin-left : auto;
             margin-right: auto;
-            text-align: center;
-            border: 1px solid green;
+            text-align  : center;
+            transition  : all 0.3s;
+            @include laptop{
+                width: 50%;
+            }
+            @include tablet{
+                width: 60%;
+            }
+            @include mobile{
+                width   : 100%;
+                height  : 7em;
+            }
 
             .title-header{
-                font-size: 2em;
-                font-weight: bolder;
-                display: block;
-                line-height: 1.7em;
+                font-size   : 2em;
+                font-weight : bolder;
+                display     : block;
+                line-height : 1.7em;
+
+                @include mobile{
+                    font-size: 1.4em;
+                }
+                @include mini_mobile{
+                    font-size: 1.2em;
+                }
             }
             .description-title{
-                font-size: 1em;
-                color: $ASBESTOS;
-                line-height: 1.2em;
+                font-size   : 1em;
+                color       : $ASBESTOS;
+                line-height : 1.2em;
+                display     : block;
+
+                @include mobile{
+                    font-size: 0.9em;
+                }
             }
         }//header
 
         .article-list-logo{
-            width: 60%;
-            height: 10em;
-            border: 1px solid blue;
-            margin-left: auto;
+            width       : 70%;
+            height      : 11em;
+            margin-left : auto;
             margin-right: auto;
-
-            .size{
-                width: 16.6%;
-                height: 100%;
-                border: 1px solid saddlebrown;
-                display: block;
-                float: left;
+            display     : block;
+            @include led4k{
+                width: 60%;
             }
+            @include laptop{
+                width: 80%;
+            }
+            @include mobile{
+                width: 100%;
+            }
+            .size{
+                width       : 16.6%;
+                height      : 100%;
+                display     : block;
+                float       : left;
+                text-align  : center;
+                transition  : all 0.3s;
+
+                @include laptop{
+                    width: 16%;
+                }
+                @include tablet{
+                    width: 33%;
+                    height: 12em;
+                }
+                @include mobile{
+                    width   : 50%;
+                    height  : 14em;
+                }
+                @include mini_mobile{
+                    width: 100%;
+                }
+                .image-logo{
+                    width           : 6.2em;
+                    height          : 6.2em;
+                    border-radius   : 5em;
+                    margin-bottom   : 0.7em;
+                }
+                a{
+                    font-size   : 1.5em;
+                    font-weight : bolder;
+                    display     : block;
+                    line-height : 1.3em;
+
+                    &:hover{
+                        background-color: transparent;
+                        color           : $BLACK;
+                    }
+                }
+                .capital{
+                    line-height: 1.6em;
+                }
+            }//size
+            
         }//article-list-logo
 
     }//section
