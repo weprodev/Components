@@ -68,9 +68,50 @@
                 }//header
 
                 article{
-                    color           : $WHITE;
-                    border          : 2px solid transparent;
+                    color   : $WHITE;
+                    border  : 2px solid transparent;
                 }
+
+////---------------------------
+///
+///     STYLE FOR ALL ARTICLE
+//
+                .text-article{
+                    width           : 100%;
+                    height          : 100%;
+                    padding-top     : 3em;
+
+                    .red-text{
+                        color           : red;
+                        display         : block;
+                        margin-bottom   : 0.7em;
+                    }
+                    .title-text{
+                        color           : $BLACK;
+                        font-size       : 1.2em;
+                        margin-bottom   : 0.7em;
+                        font-weight     : bold;
+                        display         : block;
+                    }
+                    .below-title{
+                        color           : $ASBESTOS;
+                        font-size       : 0.9em;
+                        display         : block;
+                        margin-bottom   : 1.2em;
+                        line-height     : 1.3em;
+                    }
+                    .link-read-more{
+                        display     : block;
+                        margin-top  : 1.2em;
+                        font-weight : bold;
+                        color       : $BLACK;
+                        background-color: transparent;
+                    } 
+                }//text-article
+//                
+///         END STYLE FOR ALL ARTICLE                
+///
+////--------------------------
                 .article-one{
                     width           : 49%;
                     height          : 30em;
@@ -107,22 +148,16 @@
                             left            : 48%;
                           }
                         .text-article-one{
-                            width           : 100%;
-                            height          : 100%;
-                            padding-top     : 2em;
                             padding-left    : 0.4em;
                             padding-right   : 0.4em;
 
                             .red-text-article-one{
-                                color       : red;
-                                display     : block;
+                                margin-bottom: 0em;
                             }
                             .title-text-article-one{
-                                color       : $BLACK;
                                 font-size   : 1.8em;
+                                margin-bottom: 0em;
                                 line-height : 2em;
-                                font-weight : bold;
-                                display     : block;
 
                                 @include tablet{
                                     font-size: 1.2em;
@@ -133,13 +168,6 @@
                                 font-size   : 0.9em;
                                 display     : block ;
                                 line-height: 1.3em;
-                            }
-                            a{
-                                display     : block;
-                                margin-top  : 1.2em;
-                                font-weight : bold;
-                                color       : $BLACK;
-                                background-color: transparent;
                             }
                         }//text-article-three
                     }//white-article-one
@@ -188,48 +216,16 @@
                             right          : -2em;
                             top            : 43%;
                            @include mobile{
-                            content         : "";
-                            width           : 0em;
-                            height          : 0em;
                             border          : 1em solid transparent;
                             border-bottom   : 1em solid $WHITE;
-                            position        : absolute;
                             top             : -2em;
                             left            : 48%;
                            }
                           }
-                        .text-article-two{
-                            width           : 100%;
-                            height          : 100%;
-                            padding-top     : 3em;
-                            padding-left    : 0.4em;
-                            padding-right   : 0.4em;
+                        .text-article{
 
-                            .red-text-article-two{
-                                color           : red;
-                                display         : block;
-                                margin-bottom   : 0.7em;
-                            }
-                            .title-text-article-two{
-                                color           : $BLACK;
-                                font-size       : 1.2em;
-                                margin-bottom   : 0.7em;
-                                font-weight     : bold;
-                                display         : block;
-                            }
-                            .below-title-article-two{
-                                color           : $ASBESTOS;
-                                font-size       : 0.9em;
-                                display         : block;
-                                margin-bottom   : 1.2em;
-                                line-height     : 1.3em;
-                            }
                             a{
-                                display     : block;
                                 margin-top  : 1.4em;
-                                font-weight : bold;
-                                color       : $BLACK;
-                                background-color: transparent;
                             }
                         }//text-article-two
                     }//white-article-two
@@ -278,48 +274,16 @@
                             left            : -2em;
                             top             : 43%;
                             @include mobile{
-                            content         : "";
-                            width           : 0em;
-                            height          : 0em;
                             border          : 1em solid transparent;
                             border-bottom   : 1em solid $WHITE;
-                            position        : absolute;
                             top             : -2em;
                             left            : 48%;
                             }
                           }
-                        .text-article-three{
-                            width       : 100%;
-                            height      : 100%;
-                            padding-top : 3em;
+                        .text-article{
                             
-                        
-                            .red-text-article-three{
-                                color           : red;
-                                display         : block;
-                                margin-bottom   : 0.7em;
-                            }
-                            .title-text-article-three{
-                                color           : $BLACK;
-                                font-size       : 1.2em;
-                                margin-bottom   : 0.7em;
-                                font-weight     : bold;
-                                display         : block;
-                            }
-                            .below-title-article-three{
-                                color           : $ASBESTOS;
-                                font-size       : 0.9em;
-                                display         : block;
-                                margin-bottom   : 1.2em;
-                                line-height     : 1.3em;
-                            }
                             a{
-                                display     : block;
                                 margin-top  : 1.4em;
-                                font-weight : bold;
-                                font-weight : bold;
-                                color       : $BLACK;
-                                background-color: transparent;
                             }
                         }//text-article-three
                     }//white-article-three
