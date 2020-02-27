@@ -21,23 +21,6 @@
               font-size: 1.5em;
             }
 
-            .border{
-              position: relative;
-              margin: 0.5em;
-              display: inline-block;
-
-              &:after{
-                position: absolute;
-                content: "";
-                height: 2px;
-                background-color: #000000;
-                opacity: 0.3;
-                width: 3em;
-                margin-left: 40.7em;
-                top: 70%;
-              }
-            }
-
             h2{
               text-align: center;
               margin-top: 0.75em;
@@ -55,15 +38,15 @@
               margin: 0.5em;
               margin-left: 0.3em;
               font-size: 1.5em;
-              color: $general-color;
+              color: $GENERAL_COLOR;
             }
 
             .name{
               position: relative;
               display: inline-block;
               width: 89%;
-              background: white;
-              z-index: -10;              
+              height: 100%;
+              background: white;             
 
               &::after{
                 position: absolute;
@@ -74,7 +57,6 @@
                 left: 0em;
                 width: 100%;
                 top: 70%;
-                z-index: 10;
               }
             }
 
@@ -96,3 +78,22 @@
     ***  
     **	 RTL SECTION
     */
+
+    .rtl{
+      direction: rtl;
+      
+      .price{
+        float: left!important;
+      }
+    }
+
+    /*--------------------------------
+    ***  
+    **	 responsive section
+    */
+
+    @include mobile{
+.item{
+  width: 100%!important;
+}
+    }//mobile
