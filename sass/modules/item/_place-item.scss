@@ -1,0 +1,112 @@
+/*========================================================================================
+*********    
+*******      
+*****       PLACE ITEM STYLES
+***         
+*/
+
+.place-item{
+    width: 70%;
+    margin: 0 auto;
+
+    .header{
+        margin-top: 10em;
+        border-bottom: 2px solid #dddddd;
+        padding-bottom: 2em;
+
+        h2{
+            font-size: 2em;
+            font-weight: bold;
+        }
+    }
+
+    .content{
+        .center{
+            margin-right:1em;
+            margin-left:1em;
+        }
+        .item{
+            position: relative;
+            margin-top: 1em;
+            float: left;
+
+            .img-box{
+            width: 22.41em;
+            height: 14em;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+            .describtion{
+                width: 100%;
+                position: absolute;
+                top: 5em;
+                left: 0;
+
+                h3{
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    color: $WHITE;
+                    text-align: center;
+                }
+
+                p{
+                    font-size: 1.2em;
+                    color: #d6d6d8;
+                    text-align: center;
+                    margin-top: 0.5em;
+                }
+            }
+        
+        }
+    }
+}
+    /*--------------------------------
+    ***  
+    **	rtl section
+    */
+
+    .rtl{
+
+        margin-top: 40em;
+        direction: rtl;
+    }
+
+    /*--------------------------------
+    ***  
+    **	responsive section
+    */
+
+    @include lcd{
+        .img-box{
+            width: 20.3em;
+            height: 12em;
+        }
+    }
+
+    @include laptop{
+        .img-box{
+            width: 14.2em;
+            height: 8em;
+        }
+
+        .describtion{
+            top:2.5em;
+        }
+    }
+
+    @include mini_laptop{
+        .img-box{
+            width: 15em;
+            height: 8em;
+        }
+
+        .center{
+            margin-right:0;
+            margin-left:0;
+        }
+    }
