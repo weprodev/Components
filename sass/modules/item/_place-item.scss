@@ -18,7 +18,7 @@
             font-size: 2em;
             font-weight: bold;
         }
-    }
+    }//top header styles
 
     .content{
         .center{
@@ -39,7 +39,7 @@
                 width: 100%;
                 object-fit: cover;
             }
-        }
+        }// content of styles
 
             .describtion{
                 width: 100%;
@@ -81,32 +81,55 @@
     **	responsive section
     */
 
+    @include led{
+        .img-box{
+            width: 22.41em!important;
+            height: 14em!important;
+        }
+    }//led
+
     @include lcd{
         .img-box{
-            width: 20.3em;
-            height: 12em;
+            width: 20.3em!important;
+            height: 12em!important;
         }
-    }
-
-    @include laptop{
-        .img-box{
-            width: 14.2em;
-            height: 8em;
-        }
-
-        .describtion{
-            top:2.5em;
-        }
-    }
+    }//lcd
 
     @include mini_laptop{
         .img-box{
-            width: 15em;
-            height: 8em;
+            width: 14em!important;
+            height: 8em!important;
         }
 
-        .center{
-            margin-right:0;
-            margin-left:0;
+        .describtion{
+            top: 2.5em!important;
         }
-    }
+    }//mini laptop
+
+    @include tablet{
+        .center{
+            margin-right: 0em!important;
+            margin-left: 0em!important;
+        }
+
+        .item{
+            margin: 1em!important;
+        }
+
+        .img-box{
+            width: 14.8em!important;
+        }
+    }//tablet
+
+    @include mobile{
+        .img-box{
+            width: 100%!important;
+            margin-left: 0em!important;
+            margin-right: 0em!important;
+        }
+
+        .item{
+            margin-left: 0em!important;
+            margin-right: 0em!important;
+        }
+    }//mobile
