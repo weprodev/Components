@@ -1,0 +1,213 @@
+/*========================================================================================
+*********    
+*******      
+*****       DIV ELEMENT POST COLUMN 
+***         
+*/
+.tour--item{
+
+    .section-card{
+        width   : 100%;
+        height  : 39em;
+        
+        .header{
+            width       : 31%;
+            height      : 9em;
+            margin-left : auto;
+            margin-right: auto;
+            text-align  : center;
+            margin-top  : 0.5em;
+
+            @include tablet{
+                width: 45%;
+            }
+            @include mobile{
+                width: 100%;
+            }
+
+            .title-header{
+                font-size   : 2em;
+                font-weight : bolder;
+                line-height : 1.7em;
+
+                @include mini_mobile{
+                    font-size: 1.5em;
+                }
+            }
+            .description-header{
+                font-size   : 1em;
+                color       : $ASBESTOS;
+                line-height : 1.2em;
+
+                @include mini_mobile{
+                    font-size: 1em;
+                }
+            }
+        }//header
+        .box-card{
+            width       : 100%;
+            height      : 29em;
+            text-align  : center;
+
+            @include mini_mobile{
+                padding-left    : 0.5em;
+                padding-right   : 0.5em;
+            }
+            .card{
+                width       : 22%;
+                height      : 28em;
+                display     : block;
+                float       : left;
+                margin-left : 2.3%;
+                margin-right: 0em;
+                position    : relative;
+                overflow    : hidden;
+                transition  : all 0.3s;
+
+                @include led4k{
+                    height: 32em;
+                }
+                @include laptop{
+                    width       : 27%;
+                    margin-left : 15%;
+                }
+                @include mini_laptop{
+                    width       : 30%;
+                    margin-left : 13%;
+                }
+                @include tablet{
+                    width       : 35%;
+                    margin-left : 10%;
+                }
+                @include retinaMobile{
+                    width       : 42%;
+                    margin-left : 5%;
+                }
+                @include mobile{
+                    width       : 70%;
+                    margin-left : 15%;
+                }
+                @include mini_mobile{
+                    width       : 100%;
+                    margin-left : 0em;
+                }
+////-------------------------------
+///-----------------------
+//  SECTION HOVER CARD
+//
+                .hover-card{
+                    width           : 100%;
+                    height          : 100%;
+                    position        : absolute;
+                    top             : 101%;
+                    transition      : all 0.7s;
+                    transition-delay: 0.2s;
+                    z-index         : 501;
+
+                    .text-hover-card{
+                        position    : absolute;
+                        bottom      : 3em;
+                        left        : 3em;
+                        right       : 2em;
+                        text-align  : left;
+                        color       : $WHITE;
+                        @include laptop{
+                            right: 0.5em;
+                        }
+
+                        .p-hover-card{
+                            line-height: 1.2em;
+                            @include led4k{
+                                font-size: 1.2em;
+                            }
+                        }
+
+                        .button-hover-card{
+                            border          : none;
+                            margin-top      : 1em;
+                            color           : $WHITE;
+                            font-weight     : bold;
+                            font-size       : 0.8em;
+                            background-color: $BLACK;
+                            padding         : 0.5em 2em;
+                            border-radius   : 2em;
+                            @include led4k{
+                                font-size: 1.2em;
+                            }
+                        }
+                    }//text-hover-card
+                }//hover-card
+                &:hover{
+                    .hover-card{
+                        position: absolute;
+                        top     : 0%;
+                    }
+                }
+            
+//---------------------------
+///-----------------------------------
+
+                .text-card{
+                    display     : block;
+                    z-index     : 500;
+                    position    : absolute;
+                    bottom      : 3em;
+                    left        : 3em;
+                    text-align  : left;
+
+                    .title-card{
+                        color       : $WHITE;
+                        font-size   : 2em;
+                        line-height : 1.5em;
+                    }
+                    .price{
+                        color       : $SUN_FLOWER;
+                        font-size   : 1.2em;
+                        line-height : 1.2;
+                        font-weight : bold;
+
+                        @include led4k{
+                            font-size: 1.5em;
+                        }
+                    }
+                }//text-card
+                .img-card{
+                    width           : 100%;
+                    height          : 100%;
+                    background-size : cover;
+                    display         : block;
+                    z-index         : -1;
+                    position        : absolute;
+                    top             : 0em;
+                }
+            }//card
+            .card-one{
+                margin-bottom: 5em;
+                .hover-card{
+                    background-color: rgba($color: $NEPHRITIS, $alpha: 0.9);
+                }
+            }
+            .card-two{
+                margin-bottom: 5em;
+                .hover-card{
+                    background-color: rgba($color: $CARROT, $alpha: 0.9);
+                }
+            }
+            .card-three{
+                margin-bottom: 5em;
+                .hover-card{
+                    background-color: rgba($color: $PUMPKIN, $alpha: 0.9);
+                }
+            }
+            .card-four{
+                margin-bottom: 3em;
+                .hover-card{
+                    background-color: rgba($color: $BELIZE_HOLE, $alpha: 0.9);
+                }
+            }
+
+        }//box-card
+
+    }//box-card
+
+}//tour--item
