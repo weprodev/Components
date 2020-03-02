@@ -10,105 +10,303 @@
 .footer--item{
 
     footer{
-        width: 70%;
-        height: 25em;
-        // border: 1px solid red;
-        margin-left: auto;
+        width       : 70%;
+        height      : 25em;
+        margin-left : auto;
         margin-right: auto;
-        padding-top: 2em;
+        padding-top : 2em;
+
+        @include laptop{
+            width: 80%;
+        }
+        @include mini_laptop{
+            width: 98%;
+        }
 
         .top{
-            width: 100%;
-            height: 68%;
-            border-bottom: 1px solid $SILVER;
+            width           : 100%;
+            height          : 72%;
+            border-bottom   : 1px solid $SILVER;
+            
+            @include tablet{
+                height: 32em;
+            }
+            @include mobile{
+                height: 46em;
+            }
             section{
-                height: 15em;
-                float: left;
-                text-align: left;
-                display: block;
+                height      : 15em;
+                float       : left;
+                text-align  : left;
+                display     : block;
     
                 .head-line{
-                    font-size: 0.9em;
-                    line-height: 2em;
-                    font-weight: bold;
-                    margin-top: 0.3em;
-                    margin-bottom: 1.5em;
+                    font-size       : 0.9em;
+                    line-height     : 2em;
+                    font-weight     : bold;
+                    margin-top      : 0.3em;
+                    margin-bottom   : 1.5em;
                 }
                 .a-link{
-                    width: 100%;
-                    height: 2em;
-                    display: block;
+                    width   : 100%;
+                    height  : 2.3em;
+                    display : block;
     
                     .text-link{
                         font-size: 0.8em;
+
+                        @include led4k{
+                            font-size: 0.9em;
+                        }
+
                         &:hover{
                             background-color: transparent;
-                            color: $ASBESTOS;
+                            color           : $ASBESTOS;
                         }
                         span{
-                            margin-left: -0.2em;
+                            margin-left : -0.2em;
                             margin-right: 0.7em;
-                            line-height: 1em;
-                            display: inline-block;
+                            line-height : 1em;
+                            display     : inline-block;
                         }
-                    }
-                }
-            }
+                    }//text-link
+                }//a-link
+            }//section
+
             .section-one{
-                width: 35%;
-                padding-right: 1.5em;
+                width           : 35%;
+                padding-right   : 1.5em;
+
+                @include tablet{
+                    width: 50%;
+                }
+                @include mobile{
+                    width       : 90%;
+                    margin-left : 1em;
+                }
     
                 .title-footer{
-                    font-size: 1.7em;
-                    font-weight: bolder;
-                    line-height: 1em;
-                    margin-bottom: 1em;
+                    font-size       : 1.7em;
+                    font-weight     : bolder;
+                    line-height     : 1em;
+                    margin-bottom   : 1em;
                 }
                 .description{
-                    font-size: 0.8em;
+                    font-size   : 0.8em;
+                    line-height : 1.5em;
+
+                    @include led4k{
+                        font-size: 0.9em;
+                    }
                 }
                 .phone-number{
-                    font-size: 0.9em;
-                    margin-top: 1.8em;
-                    margin-bottom: 1em;
-                    display: block;
+                    font-size       : 0.9em;
+                    margin-top      : 1.8em;
+                    margin-bottom   : 1em;
+                    display         : block;
                 }
                 span{
-                    font-size: 0.9em;
+                    font-size   : 0.9em;
                     margin-right: 0.7em;
                 }
                 a{
                     &:hover{
                         background-color: transparent;
-                        color: $ASBESTOS;
+                        color           : $ASBESTOS;
                     }
                 }
-            }
+            }//section-one
+
             .section-two{
                 width: 15%;
+
+                @include tablet{
+                    width: 50%;
+                }
+                @include mobile{
+                    width       : 40%;
+                    margin-left : 1em;
+                }
             }
             .section-three{
                 width: 15%;
-            }
-            .section-four{
-                width: 35%;
-    
-                .text-sign-up{
-                    font-size: 0.85em;
+
+                @include tablet{
+                    width: 50%;
+                }
+                @include mobile{
+                    width       : 40%;
+                    margin-left : 1em;
                 }
             }
-        }
+            .section-four{
+                width   : 35%;
+                display : block;
+
+                @include tablet{
+                    width: 45%;
+                }
+                @include mobile{
+                    width       : 90%;
+                    margin-left : 1em;
+                }
+    
+                .text-sign-up{
+                    font-size   : 0.85em;
+                    height      : 2em;
+
+                    @include led4k{
+                        font-size: 0.95em;
+                    }
+                }
+                .search-box{
+                    width   : 90%;
+                    height  : 2.5em;
+                    border  : 1px solid $SILVER;
+                    
+                    @include mobile{
+                        width: 100%;
+                    }
+
+                    .text-box{
+                        width   : 70%;
+                        height  : 100%;
+                        border  : none;
+                        float   : left;
+                    }
+                    .submit{
+                        width           : 30%;
+                        height          : 102%;
+                        border          : none;
+                        border-radius   : 0em;
+                        float           : right;
+                        padding         : 0;
+                        margin          : 0;
+                        margin-top      : -1px;
+                        background-color: $CARROT;
+
+                        @include tablet{
+                            margin-right: -1px;
+                        }
+                        
+                    }
+                }//search-box
+
+                .accept{
+                    height      : 3em;
+                    width       : 100%;
+                    font-size   : 0.8em;
+                    padding-top : 2em;
+                    font-weight : bold;
+                } 
+                .picture-accept{
+                    width       : 115%;
+                    height      : 2.5em;
+                    margin-top  : 1.5em;
+
+                    img{
+                        width       : 3.5em;
+                        height      : 100%;
+                        margin-right: 0.5em;
+
+                        @include laptop{
+                            width   : 3em;
+                            height  : 80%;
+                        }
+                    }
+                }//picture-accept
+
+            }//section-four
+
+        }//top
 
         .bottom{
-            width: 100%;
-            height: 20%;
-            padding-top: 3em;
-            
-            span{
-                margin-right: 0.8em;
+            width           : 100%;
+            height          : 20%;
+            padding-top     : 3em;
+            margin-bottom   : 2em;
+
+            @include mobile{
+                text-align  : center;
+                padding-top : 1em;
             }
+            .left{
+                width       : 20%;
+                height      : 100%;
+                float       : left;
+                font-size   : 0.8em;
+
+                @include tablet{
+                    width: 25%;
+                }
+                @include mobile{
+                    width   : 95%;
+                    height  : 75%;
+                }
+                
+                .icon-book{
+                    margin-right: 0.6em;
+                    display     : inline;
+                }
+                h3{
+                    display: inline;
+                }
+            }//left
+
+            .social{
+                width       : 20%;
+                height      : 100%;
+                float       : left;
+                margin-top  : -0.5em;
+
+                @include tablet{
+                    width: 25%;
+                }
+                @include mobile{
+                    width           : 95%;
+                    height          : 2em;
+                    padding-bottom  : 3em;
+                    margin-left     : 25%;
+                }
+
+                .circle{
+                    width           : 2em;
+                    height          : 2em;
+                    border          : 1px solid $SILVER;
+                    border-radius   : 3em;
+                    margin-right    : 0.5em;
+                    float           : left;
+                    text-align      : center;
+                    line-height     : 1.9em;
+
+                    &:hover{
+                        border          : none;
+                        background-color: $CARROT;
+                        color           : $WHITE;
+                    }
+                }//circle
+
+            }//social
+
+            .right{
+                font-size   : 0.9em;
+                float       : right;
+
+                @include mobile{
+                    width           : 95%;
+                    font-size       : 0.8em;
+                    margin-bottom   : 2em;
+                }
+                a{
+                    &:hover{
+                        background-color: transparent;
+                        color           : $ASBESTOS;
+                    }
+                }
+            }//right
             
-        }
+        }//bottom
         
     }//footer
+
 }//footer--item
