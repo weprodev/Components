@@ -7,7 +7,7 @@
 
 .our-picks{
     width: 80%;
-    height: 30em;
+    //height: 30em;
     margin: 0 auto;
     margin-top: 10em;
     background: #f8fafb;
@@ -45,10 +45,11 @@
             margin: 1em;
             margin-top: 0;
             margin-bottom: 0em;
+            overflow: hidden;
 
             img{
                 width: 100%;
-                height: 100%;
+                height:cover;
             }
         }
 
@@ -70,18 +71,14 @@
                 float: left;
                 padding: 0 1em;
                 border-right: 1px solid #f9f9f9;
+                
+                &:first-child{
+                    padding-left: 0em!important;
+                }
 
                 &:last-child{
                     border-right: none;
                 }
-
-                &::first-child{
-                    padding-left: 0em;
-                }
-            }
-
-            .sub-item:first-child{
-                padding-left: 5em;
             }
 
             .title{
@@ -94,7 +91,49 @@
     .clear{
         clear: both;
     }
-
-
-
 }
+    /*--------------------------------
+    ***  
+    **	 RESPONSIVE SECTION
+    */
+    .rtl{
+        direction: rtl;
+        margin-top: 10em;
+
+
+        .sub-item{
+            float: right!important;
+            border-right: none!important;
+            border-left: 1px solid #f9f9f9;
+        }
+    }
+
+
+    /*--------------------------------
+    ***  
+    **	 RESPONSIVE SECTION
+    */
+
+    @include lcd{
+        .item{
+            margin-left: 1em!important;
+        }
+    }
+
+    /*@include laptop{
+        .item{
+            width: 22em!important;
+            .img-item{
+                margin-left: 5em!important;
+            }
+        }
+
+        .rtl{
+            .item{
+                width: 18em!important;
+                .img-item{
+                    margin-left: 4em!important;
+                }
+            }   
+        }
+    }*/
