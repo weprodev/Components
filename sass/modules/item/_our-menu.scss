@@ -94,8 +94,8 @@
     **	 responsive section
     */
 
-    @include mobile{
-.item{
-  width: 100%!important;
-}
-    }//mobile
+    @include tablet{
+      .item{
+        width: 100%!important;
+      }
+  }
