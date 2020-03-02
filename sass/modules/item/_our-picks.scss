@@ -1,0 +1,100 @@
+/*========================================================================================
+*********   
+*******        OUR PICKS STYLES
+*****       
+***         
+*/
+
+.our-picks{
+    width: 80%;
+    height: 30em;
+    margin: 0 auto;
+    margin-top: 10em;
+    background: #f8fafb;
+
+
+    .header{
+        padding-top: 1em;
+        
+        h2{
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        h4{
+            text-align: center;
+            opacity: 0.6;
+            margin-top: 1em;
+        }
+    }
+
+    .item{
+        float: left;
+        background: $WHITE;
+        padding: 1em;
+        margin-top: 3em;
+        margin-left: 2em;
+
+
+        .img-item{
+            float: left;
+            display: inline-block;
+            width: 8em;
+            height: 8em;
+            margin: 1em;
+            margin-top: 0;
+            margin-bottom: 0em;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .describtion{
+            float: left;
+            h3{
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-top: 0.5em;
+                margin-bottom: 0.75em;
+            }
+
+            h5{
+                opacity: 0.6;
+                margin-bottom: 2em;
+            }
+
+            .sub-item{
+                float: left;
+                padding: 0 1em;
+                border-right: 1px solid #f9f9f9;
+
+                &:last-child{
+                    border-right: none;
+                }
+
+                &::first-child{
+                    padding-left: 0em;
+                }
+            }
+
+            .sub-item:first-child{
+                padding-left: 5em;
+            }
+
+            .title{
+                opacity: 0.5;
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+
+    .clear{
+        clear: both;
+    }
+
+
+
+}
