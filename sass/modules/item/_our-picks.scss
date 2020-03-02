@@ -120,20 +120,8 @@
         }
     }
 
-    /*@include laptop{
+    @include laptop{
         .item{
-            width: 22em!important;
-            .img-item{
-                margin-left: 5em!important;
-            }
+            width: 90%!important;
         }
-
-        .rtl{
-            .item{
-                width: 18em!important;
-                .img-item{
-                    margin-left: 4em!important;
-                }
-            }   
-        }
-    }*/
+    }
