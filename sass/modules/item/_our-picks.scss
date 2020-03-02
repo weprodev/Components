@@ -125,3 +125,30 @@
             width: 90%!important;
         }
     }
+
+    @include tablet{
+        .img-item{
+            margin: 0.5em!important;
+        }
+    }
+
+    @include mobile{
+
+        .item{
+            margin: 1em!important;
+        }
+
+        .sub-item{
+            padding: 0 0.5em!important;
+        }
+
+        .img-item{
+            margin-left: 4em!important;
+        }
+
+        .rtl{
+            .img-item{
+                margin-left: 2em!important;
+            }
+        }
+    }
