@@ -15,52 +15,53 @@
         padding-bottom: 2em;
 
         h2{
-            font-size: 2em;
-            font-weight: bold;
+        font-size: 2em;
+        font-weight: bold;
         }
     }//top header styles
 
     .content{
         .center{
-            margin-right:1em;
-            margin-left:1em;
+        margin-right:1em;
+        margin-left:1em;
         }
+
         .item{
-            position: relative;
-            margin-top: 1em;
-            float: left;
+        position: relative;
+        margin-top: 1em;
+        float: left;
 
-            .img-box{
-            width: 22.41em;
-            height: 14em;
-            overflow: hidden;
+        .img-box{
+        width: 22.41em;
+        height: 14em;
+        overflow: hidden;
 
-            img{
-                width: 100%;
-                object-fit: cover;
-            }
+        img{
+        width: 100%;
+        object-fit: cover;
+        }
         }// content of styles
 
-            .describtion{
-                width: 100%;
-                position: absolute;
-                top: 5em;
-                left: 0;
+        .describtion{
+        width: 100%;
+        position: absolute;
+        top: 5em;
+        left: 0;
 
-                h3{
-                    font-size: 1.5em;
-                    font-weight: bold;
-                    color: $WHITE;
-                    text-align: center;
-                }
+        h3{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $WHITE;
+        text-align: center;
+        }
 
-                p{
-                    font-size: 1.2em;
-                    color: #d6d6d8;
-                    text-align: center;
-                    margin-top: 0.5em;
-                }
-            }
+        p{
+        font-size: 1.2em;
+        color: #d6d6d8;
+        text-align: center;
+        margin-top: 0.5em;
+        }
+        }
         
         }
     }
@@ -82,54 +83,59 @@
     */
 
     @include led{
+
         .img-box{
-            width: 22.41em!important;
-            height: 14em!important;
+        width: 22.41em!important;
+        height: 14em!important;
         }
     }//led
 
     @include lcd{
+
         .img-box{
-            width: 20.3em!important;
-            height: 12em!important;
+        width: 20.3em!important;
+        height: 12em!important;
         }
     }//lcd
 
     @include mini_laptop{
+
         .img-box{
-            width: 14em!important;
-            height: 8em!important;
+        width: 14em!important;
+        height: 8em!important;
         }
 
         .describtion{
-            top: 2.5em!important;
+        top: 2.5em!important;
         }
     }//mini laptop
 
     @include tablet{
+
         .center{
-            margin-right: 0em!important;
-            margin-left: 0em!important;
+        margin-right: 0em!important;
+        margin-left: 0em!important;
         }
 
         .item{
-            margin: 1em!important;
+        margin: 1em!important;
         }
 
         .img-box{
-            width: 14.8em!important;
+        width: 14.8em!important;
         }
     }//tablet
 
     @include mobile{
+
         .img-box{
-            width: 100%!important;
-            margin-left: 0em!important;
-            margin-right: 0em!important;
+        width: 100%!important;
+        margin-left: 0em!important;
+        margin-right: 0em!important;
         }
 
         .item{
-            margin-left: 0em!important;
-            margin-right: 0em!important;
+        margin-left: 0em!important;
+        margin-right: 0em!important;
         }
     }//mobile
