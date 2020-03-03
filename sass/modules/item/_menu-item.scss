@@ -106,7 +106,6 @@
         margin-top       : 1em;
         transition       : none;
   }
-}
 
     /*--------------------------------
     ***  
@@ -145,6 +144,9 @@
 
     .rtl {
         direction            : rtl;
+    .price{
+        float                : right!important;
+    }
 
     .sub-header {
         margin-right         : 1em;
@@ -163,4 +165,5 @@
     input[type="submit"] {
         margin-right          : 40% !important;
     }
+}
 }
