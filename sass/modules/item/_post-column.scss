@@ -1,0 +1,299 @@
+/*========================================================================================
+*********    
+*******      
+*****       DIV ELEMENT POST COLUMN 
+***         
+*/
+
+.post-column--item{
+
+    .background-image{
+        background-image    : url("../img/item/bg-post-column.jpg");
+        width               : 100%;
+        height              : 45em;
+        background-size     : cover;
+
+        @include retinaMobile{
+            height          : 75em;
+        }
+        @include mobile{
+            height          : 97em;
+        }
+        .blur-bg-black{
+            width           : 100%;
+            height          : 100%;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+            padding-top     : 4%;
+
+            .post-column{
+                width       : 65%;
+                height      : 90%;
+                margin-left : auto;
+                margin-right: auto;
+                color       : $WHITE;
+                text-align  : center;
+                transition  : all 0.3s;
+                position    : relative;
+
+                @include laptop{
+                    
+                    width   : 75%;
+                    
+                }
+                @include tablet{
+                    width   : 95%;
+                }
+                @include tablet{
+                    width   : 95%;
+                }
+                @include retinaMobile{
+                    width   : 60%;
+                }
+                @include mobile{
+                    width   : 80%;
+                }
+                @include mini-mobile{
+                    width   : 100%;
+                }
+                .header{
+                    width   : 100%;
+                    height  : 15%;
+                    @include mobile{
+                        height: 7%;
+                    }
+                    h2{
+                        font-size   : 2em;
+                        line-height : 1.5em;
+                    }
+                }//header
+
+                article{
+                    color   : $WHITE;
+                    border  : 2px solid transparent;
+                }
+
+////---------------------------
+///
+///     STYLE FOR ALL ARTICLE
+//
+                .text-article{
+                    width           : 100%;
+                    height          : 100%;
+                    padding-top     : 3em;
+
+                    .red-text{
+                        color           : red;
+                        display         : block;
+                        margin-bottom   : 0.7em;
+                    }
+                    .title-text{
+                        color           : $BLACK;
+                        font-size       : 1.2em;
+                        margin-bottom   : 0.7em;
+                        font-weight     : bold;
+                        display         : block;
+                    }
+                    .below-title{
+                        color           : $ASBESTOS;
+                        font-size       : 0.9em;
+                        display         : block;
+                        margin-bottom   : 1.2em;
+                        line-height     : 1.3em;
+                    }
+                    .link-read-more{
+                        display     : block;
+                        margin-top  : 1.2em;
+                        font-weight : bold;
+                        color       : $BLACK;
+                        background-color: transparent;
+                    } 
+                }//text-article
+//                
+///         END STYLE FOR ALL ARTICLE                
+///
+////--------------------------
+                .article-one{
+                    width           : 49%;
+                    height          : 30em;
+                    float           : left;
+                    display         : block;
+
+                    @include retinaMobile{
+                        float       : right;
+                        width       : 100%;
+                    }
+                    @include mobile{
+                        width       : 100%;
+                    }
+                    .image-article-one{
+                        width       : 100%;
+                        height      : 50%;
+                        margin-bottom: -3px;
+                    }
+                    .white-article-one{
+                        width           : 100%;
+                        height          : 50%;
+                        background-color: $WHITE;
+                        text-align      : center;
+                        position        : relative;
+
+                        &::before{
+                            content: "";
+                            width           : 0em;
+                            height          : 0em;
+                            border          : 1em solid transparent;
+                            border-bottom   : 1em solid $WHITE;
+                            position        : absolute;
+                            top             : -2em;
+                            left            : 48%;
+                          }
+                        .text-article-one{
+                            padding-left    : 0.4em;
+                            padding-right   : 0.4em;
+
+                            .red-text-article-one{
+                                margin-bottom: 0em;
+                            }
+                            .title-text-article-one{
+                                font-size   : 1.8em;
+                                margin-bottom: 0em;
+                                line-height : 2em;
+
+                                @include tablet{
+                                    font-size: 1.2em;
+                                }
+                            }
+                            .description-article-one{
+                                color       : $ASBESTOS;
+                                font-size   : 0.9em;
+                                display     : block ;
+                                line-height: 1.3em;
+                            }
+                        }//text-article-three
+                    }//white-article-one
+                }//article-one
+                .article-two{
+                    width   : 51%;
+                    height  : 15em;
+                    float   : right;
+                    display : block;
+
+                    @include retinaMobile{
+                        width: 100%;
+                    }
+                    @include mobile{
+                        width   : 100%;
+                        height  : 30em;
+                    }
+                    .image-article-two{
+                        width           : 50%;
+                        height          : 100%;
+                        float           : right;
+                        @include mobile{
+                            width   : 100%;
+                            height  : 50%;
+                        }
+                    }
+                    .white-article-two{
+                        width           : 50%;
+                        height          : 100%;
+                        float           : left;
+                        background-color: $WHITE;
+                        text-align      : center;
+                        position        : relative;
+                        @include mobile{
+                            width   : 100%;
+                            height  : 50%;
+                        }
+
+                        &::before{
+                            content        : "";
+                            width          : 0em;
+                            height         : 0em;
+                            border         : 1em solid transparent;
+                            border-left    : 1em solid $WHITE;
+                            position       : absolute;
+                            right          : -2em;
+                            top            : 43%;
+                           @include mobile{
+                            border          : 1em solid transparent;
+                            border-bottom   : 1em solid $WHITE;
+                            top             : -2em;
+                            left            : 48%;
+                           }
+                          }
+                        .text-article{
+
+                            a{
+                                margin-top  : 1.4em;
+                            }
+                        }//text-article-two
+                    }//white-article-two
+                }//article-two
+                .article-three{
+                    width       : 51%;
+                    height      : 15em;
+                    float       : right;
+                    display     : block;
+
+                    @include retinaMobile{
+                        width: 100%;
+                    }
+                    @include mobile{
+                        width   : 100%;
+                        height  : 30em;
+                    }
+                    .image-article-three{
+                        width           : 50%;
+                        height          : 100%;
+                        float           : left;
+                        @include mobile{
+                            width   : 100%;
+                            height  : 50%;
+                        }
+                    }
+                    .white-article-three{
+                        width           : 50%;
+                        height          : 100%;
+                        background-color: $WHITE;
+                        text-align      : center;
+                        position        : relative;
+                        float           : right;
+                        
+                        @include mobile{
+                            width   : 100%;
+                            height  : 50%;
+                        }
+                        &::before{
+                            content         : "";
+                            width           : 0em;
+                            height          : 0em;
+                            border          : 1em solid transparent;
+                            border-right    : 1em solid $WHITE;
+                            position        : absolute;
+                            left            : -2em;
+                            top             : 43%;
+                            @include mobile{
+                            border          : 1em solid transparent;
+                            border-bottom   : 1em solid $WHITE;
+                            top             : -2em;
+                            left            : 48%;
+                            }
+                          }
+                        .text-article{
+                            
+                            a{
+                                margin-top  : 1.4em;
+                            }
+                        }//text-article-three
+                    }//white-article-three
+                }//article-three
+
+            }//post-column
+
+        }//blur-bg-black
+
+    }//background-image
+
+}//.post-column--item
+

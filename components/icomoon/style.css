@@ -25,8 +25,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-fastfood:before {
-  content: "\e928";
+.icon-loop-alt3:before {
+  content: "\e924";
+}
+.icon-lock:before {
+  content: "\e922";
+}
+.icon-heart:before {
+  content: "\e923";
+}
+.icon-love:before {
+  content: "\e923";
+}
+.icon-like:before {
+  content: "\e923";
+}
+.icon-favorite:before {
+  content: "\e923";
+}
+.icon-filter:before {
+  content: "\e922";
 }
 .icon-chevron-down:before {
   content: "\e902";
@@ -135,6 +153,9 @@
 }
 .icon-view-list:before {
   content: "\e921";
+}
+.icon-loop-alt3:before {
+  content: "\e924";
 }
 .icon-loop-alt3:before {
   content: "\e924";
