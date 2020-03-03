@@ -1,0 +1,221 @@
+/*========================================================================================
+*********    
+*******      
+*****       DIV ELEMENT WITH BACKGROUND AND TEXT MESSAGE ON IT
+***         
+*/
+
+.carousel-box--item{
+
+    .section{
+        width           : 100%;
+        height          : 40em;
+        padding-top     : 3em;
+        padding-bottom  : 3em;
+         
+        .header{
+            width           : 80%;
+            height          : 2em;
+            margin-left     : auto;
+            margin-right    : auto;
+            border-left     : 0.2em solid $CARROT;
+            padding-left    : 1em;
+            margin-bottom   : 2em;
+
+            @include tablet{
+                width: 90%;
+            }
+            @include mobile{
+                width: 95%;
+            }
+
+            .headline{
+                font-size   : 1.5em;
+                line-height : 1.3em;
+                float       : left;
+                
+                @include mobile{
+                    font-size   : 1em;
+                    line-height : 2em;
+                }
+            }
+            .left-right{
+                width   : 9%;
+                height  : 100%;
+                float   : right;
+                
+                @include laptop{
+                    width: 11%;
+                }
+                @include tablet{
+                    width: 12%;
+                }
+                @include retinaMobile{
+                    width: 14.5%;
+                }
+                @include mobile{
+                    width: 22%;
+                }
+                @include mini_mobile{
+                    width: 27%;
+                }
+                
+                .icon{
+                    font-size   : 2.5em;
+                    color       : $SILVER;
+
+                    @include mobile{
+                        font-size: 2em;
+                    }
+
+                    &:hover{
+                        background-color: transparent;
+                    }
+                }
+                .icon-left{
+                    float: left;
+                }
+                .icon-right{
+                    float: right;
+                }
+            }
+         }//header
+
+         .section-card{
+             width          : 80%;
+             height         : 35em;
+             margin-left    : auto;
+             margin-right   : auto;
+
+             @include laptop{
+                 width: 98%;
+             }
+
+             .card{
+                width       : 48.5%;
+                height      : 100%;
+                float       : left;
+                transition  : all 0.4s;
+
+                @include mobile{
+                    height: 80%;
+                }
+                @include mini_mobile{
+                    height: 70%;
+                }
+
+                @include tablet{
+                    width       : 70%;
+                    margin-left : 15%;
+                }
+                @include mobile{
+                    width       : 90%;
+                    margin-left : 5%;
+                }
+                @include mini_mobile{
+                    width       : 96%;
+                    margin-left : 2%;
+                }
+
+                .picture-div{
+                    width   : 100%;
+                    height  : 20em;
+                    position: relative;
+
+                    @include mobile{
+                        height: 15em;
+                    }
+                    @include mini_mobile{
+                        height: 12em;
+                    }
+
+                    &:hover{
+                        .date{
+                            display: block;
+                        }
+                    }
+
+                    .img-card{
+                        width   : 100%;
+                        height  : 100%;
+                        display : inline;
+                        z-index : -1;
+                    }
+                    .date{
+                        position: absolute;
+                        bottom          : 0;
+                        right           : 0;
+                        z-index         : 20;
+                        color           : $WHITE;
+                        padding         : 1em;
+                        background-color: $CARROT;
+                        display         : none;
+                    }
+                }//picture-div
+                .text-card{
+                    width       : 100%;
+                    height      : 15em;
+                    padding-top : 1.5em;
+
+                    .title-card{
+                        font-size       : 1.2em;
+                        line-height     : 1.5em;
+                        font-weight     : bold;
+                        display         : block;
+                        margin-bottom   : 0.5em;
+
+                        @include mobile{
+                            font-size: 1em;
+                        }
+                    }
+                    .below-title{
+                        color           : $ASBESTOS;
+                        line-height     : 2em;
+                        font-size       : 1em;
+                        margin-bottom   : 1.7em;
+
+                        @include mobile{
+                            font-size: 0.9em;
+                        }
+
+                        .manufacturer{
+                            margin-right: 0.43em;
+                        }
+                        .comments{
+                            margin-left: 0.4em;
+                        }
+                    }
+                    .read-more{
+                        font-size:       1em;
+                        color           : $BLACK;
+                        line-height     : 2em;
+                        text-decoration : underline;
+
+                        &:hover{
+                            background-color: transparent;
+                            color           : $BLACK;
+                        }
+                    }
+                }//text-card
+
+             }//card
+             
+             .card-two{
+                 margin-left: 3%;
+
+                @include tablet{
+                    margin-left: 15%;
+                }
+                @include  mobile{
+                    margin-left: 5%;
+                }
+                @include mini_mobile{
+                    margin-left: 2%;
+                }
+             }
+
+         }//section-card
+
+    }//section
+
+}//carousel-box--item
