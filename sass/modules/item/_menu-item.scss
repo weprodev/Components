@@ -6,15 +6,15 @@
 */
 
 .food--item {
-  direction             : ltr;
-  width                 : 80%;
-  margin                : 0 auto;
-  overflow              : hidden;
+    direction             : ltr;
+    width                 : 80%;
+    margin                : 0 auto;
+    overflow              : hidden;
 
     .header-area {
-      margin-top        : 10em;
-      margin-bottom     : 2em;
-      width: 100%;
+        margin-top        : 10em;
+        margin-bottom     : 2em;
+        width: 100%;
 
         h2 {
             display           : block;
@@ -38,8 +38,8 @@
     } // header styles
 
     .column {
-      float             : left;
-      width             : 32%;
+        float             : left;
+        width             : 32%;
 
         .sub-header {
             margin-left      : 1em;
