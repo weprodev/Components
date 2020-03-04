@@ -1,0 +1,156 @@
+/*========================================================================================
+*********   
+*******        OUR PICKS STYLES
+*****       
+***         
+*/
+
+.our-picks{
+    width                   : 80%;
+    margin                  : 0 auto;
+    margin-top              : 10em;
+    background              : #f8fafb;
+
+
+    .header{
+        padding-top         : 1em;
+        
+        h2{
+            text-align          : center;
+            font-size           : 2em;
+            font-weight         : bold;
+        }
+
+        h4{
+            text-align          : center;
+            opacity             : 0.6;
+            margin-top          : 1em;
+        }
+    }//header of styles
+
+    .item{
+        float               : left;
+        background          : $WHITE;
+        padding             : 1em;
+        margin-top          : 3em;
+        margin-left         : 2em;
+
+
+        .img-item{
+            float               : left;
+            display             : inline-block;
+            width               : 8em;
+            height              : 8em;
+            margin              : 1em;
+            margin-top          : 0;
+            margin-bottom       : 0em;
+            overflow            : hidden;
+
+            img{
+                width               : 100%;
+                height              :cover;
+            }
+        }
+
+        .describtion{
+            float               : left;
+
+            h3{
+                font-size           : 1.5em;
+                font-weight         : bold;
+                margin-top          : 0.5em;
+                margin-bottom       : 0.75em;
+            }
+
+            h5{
+                opacity             : 0.6;
+                margin-bottom       : 2em;
+            }
+
+            .sub-item{
+                float               : left;
+                padding             : 0 1em;
+                border-right        : 1px solid #f9f9f9;
+                
+                &:first-child{
+                    padding-left        : 0em!important;
+                }
+
+                &:last-child{
+                    border-right        : none;
+                }
+            }
+
+            .title{
+                opacity             : 0.5;
+                margin-bottom       : 0.5em;
+            }
+        }
+    }
+
+    .clear{
+        clear               : both;
+    }// describtion of in item styles
+
+    /*--------------------------------
+    ***  
+    **	 RESPONSIVE SECTION
+    */
+
+    .rtl{
+        direction           : rtl;
+        margin-top          : 10em;
+
+
+        .sub-item{
+            float               : right!important;
+            border-right        : none!important;
+            border-left         : 1px solid #f9f9f9;
+        }
+    }
+
+
+    /*--------------------------------
+    ***  
+    **	 RESPONSIVE SECTIONs
+    */
+
+    @include lcd{
+        .item{
+            margin-left         : 1em!important;
+        }
+    }//lcd
+
+    @include laptop{
+        .item{
+            width               : 90%!important;
+        }
+    }//laptop
+
+    @include tablet{
+        .img-item{
+            margin              : 0.5em!important;
+        }
+    }//tablet
+
+    @include mobile{
+
+        .item{
+            margin              : 1em!important;
+        }
+
+        .sub-item{
+            padding             : 0 0.5em!important;
+        }
+
+        .img-item{
+            margin-left         : 4em!important;
+        }
+
+        .rtl{
+            .img-item{
+                margin-left         : 2em!important;
+            }
+        }
+    }//mobile
+}
