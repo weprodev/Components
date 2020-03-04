@@ -71,11 +71,11 @@
         text-align      : center;
         margin-top      : 0.5em;
       }
-    }
+    }//direction
         
-    }
-    }
-}
+    }//item
+    }//content
+
     /*--------------------------------
     ***  
     **	rtl section
@@ -86,6 +86,7 @@
         margin-top      : 40em;
         direction       : rtl;
     }
+
 
     /*--------------------------------
     ***  
@@ -99,41 +100,42 @@
         height          : 9em!important;
         }
     }//lcd
-
+    
     @include tablet{
-
-        .item{
+    
+    .item{
         width           : 45%!important;
         margin-left     : 1em!important;
-
-        &:nth-child(2){
-        margin-right    :0!important;
-        margin-left     : 1em!important;
-        }
     
-        &:nth-child(5){
-        margin-right    :0!important;
-        margin-left     :1em!important;
-        }
-        }
-    }//tablet
-
-    @include mobile{
-
-    .item{
-        width           : 100%!important;
-        margin-right    : 0em!important;
-        margin-left     : 0em!important;
-
     &:nth-child(2){
         margin-right    :0!important;
-        margin-left     : 0em!important;
+        margin-left     : 1em!important;
         }
         
     &:nth-child(5){
         margin-right    :0!important;
+        margin-left     :1em!important;
+        }
+        }//item
+    }//tablet
+    
+    @include mobile{
+    
+    .item{
+        width           : 100%!important;
+        margin-right    : 0em!important;
+        margin-left     : 0em!important;
+    
+    &:nth-child(2){
+        margin-right    :0!important;
+        margin-left     : 0em!important;
+        }
+            
+    &:nth-child(5){
+        margin-right    :0!important;
         margin-left     :0em!important;
         }
-    }
-
-    }//mobile
+        }//item
+    
+        }//mobile
+}
