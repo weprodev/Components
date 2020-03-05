@@ -29,6 +29,7 @@
     }//header of styles
 
     .item{
+        width               : 48%;
         float               : left;
         background          : $WHITE;
         padding             : 1em;
@@ -39,8 +40,8 @@
         .img-item{
             float               : left;
             display             : inline-block;
-            width               : 8em;
-            height              : 8em;
+            width               : 7em;
+            height              : 7em;
             margin              : 1em;
             margin-top          : 0;
             margin-bottom       : 0em;
@@ -69,7 +70,7 @@
 
             .sub-item{
                 float               : left;
-                padding             : 0 1em;
+                padding             : 0 0.5em;
                 border-right        : 1px solid #f9f9f9;
                 
                 &:first-child{
@@ -101,6 +102,15 @@
         direction           : rtl;
         margin-top          : 10em;
 
+        .img-item{
+            float: right;
+        }
+
+        .describtion{
+            float: right;
+            width: 50%;
+        }
+
 
         .sub-item{
             float               : right!important;
@@ -117,39 +127,47 @@
 
     @include lcd{
         .item{
-            margin-left         : 1em!important;
+            margin-left         : 1em !important;
+        }
+
+        .describtion{
+            width               : 60% !important;
         }
     }//lcd
 
     @include laptop{
         .item{
-            width               : 90%!important;
+            width               : 90% !important;
         }
     }//laptop
 
     @include tablet{
         .img-item{
-            margin              : 0.5em!important;
+            margin              : 0.5em !important;
         }
     }//tablet
 
     @include mobile{
 
         .item{
-            margin              : 1em!important;
+            margin              : 1em !important;
+        }
+
+        .describtion{
+            width               : 100% !important;
         }
 
         .sub-item{
-            padding             : 0 0.5em!important;
+            padding             : 0 0.5em !important;
         }
 
         .img-item{
-            margin-left         : 4em!important;
+            margin-left         : 4em !important;
         }
 
         .rtl{
             .img-item{
-                margin-left         : 2em!important;
+                margin-right         : 2em !important;
             }
         }
     }//mobile
