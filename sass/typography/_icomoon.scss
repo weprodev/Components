@@ -30,21 +30,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-lock:before {
-  content: "\e922";
-}
-.icon-heart:before {
-  content: "\e923";
-}
-.icon-love:before {
-  content: "\e923";
-}
-.icon-like:before {
-  content: "\e923";
-}
-.icon-favorite:before {
-  content: "\e923";
+.icon-fastfood:before {
+  content: "\e928";
 }
 .icon-chevron-down:before {
   content: "\e902";
@@ -81,6 +68,24 @@
 }
 .icon-filter:before {
   content: "\e925";
+}
+.icon-food:before {
+  content: "\e927";
+}
+.icon-lock:before {
+  content: "\e922";
+}
+.icon-heart:before {
+  content: "\e923";
+}
+.icon-love:before {
+  content: "\e923";
+}
+.icon-like:before {
+  content: "\e923";
+}
+.icon-favorite:before {
+  content: "\e923";
 }
 .icon-add-outline:before {
   content: "\e90c";
@@ -411,6 +416,9 @@
 }
 .icon-linkedin2:before {
   content: "\eaca";
+}
+.icon-trophy:before {
+  content: "\e926";
 }
 
     
