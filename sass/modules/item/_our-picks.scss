@@ -155,7 +155,6 @@
     @include mobile{
 
         .item{
-<<<<<<< HEAD
             width               : 90%!important;
             margin-left         : 0.7em!important;
             line-height         : 1.3em!important;
@@ -192,26 +191,6 @@
                 &:last-child{
                     border-left       : none !important;
                 }
-=======
-            margin              : 1em !important;
-        }
-
-        .describtion{
-            width               : 100% !important;
-        }
-
-        .sub-item{
-            padding             : 0 0.5em !important;
-        }
-
-        .img-item{
-            margin-left         : 4em !important;
-        }
-
-        .rtl{
-            .img-item{
-                margin-right         : 2em !important;
->>>>>>> ea070f251c9022663f2c107a720a895dd8e2724d
             }
         }
     }//mobile
