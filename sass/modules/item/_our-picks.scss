@@ -44,13 +44,13 @@
             width               : 7em;
             height              : 7em;
             margin              : 1em;
-            margin-top          : 0;
+            margin-top          : 2em;
             margin-bottom       : 0em;
             overflow            : hidden;
 
             img{
-                width           : 100%;
-                height          : cover;
+                width               : 100%;
+                height              :auto;
             }
         }
 
@@ -60,7 +60,7 @@
             h3{
                 font-size           : 1.5em;
                 font-weight         : bold;
-                margin-top          : 0.5em;
+                margin-top          : 1.5em;
                 margin-bottom       : 0.75em;
             }
 
@@ -71,12 +71,8 @@
 
             .sub-item{
                 float               : left;
-                padding             : 0 0.5em;
+                padding             : 0 1em;
                 border-right        : 1px solid #f9f9f9;
-                
-                &:first-child{
-                    padding-left        : 0em !important;
-                }
 
                 &:last-child{
                     border-right        : none;
@@ -93,6 +89,7 @@
     .clear{
         clear               : both;
     }// describtion of in item styles
+}
 
     /*--------------------------------
     ***  
@@ -103,10 +100,6 @@
         direction           : rtl;
         margin-top          : 10em;
 
-        .item{
-            float           : right !important;
-        }
-
         .describtion{
             float           : right !important;
             width: 50%;
@@ -116,7 +109,7 @@
         .sub-item{
             float           : right !important;
             border-right    : none !important;
-            border-left     : 1px solid #f9f9f9!important;
+            border-left     : 1px solid #f9f9f9 !important;
 
             &:last-child{
                 border-left : none !important;
@@ -146,19 +139,16 @@
         }
     }//laptop
 
-    @include tablet{
-        .img-item{
-            margin              : 0.5em !important;
-        }
-    }//tablet
-
     @include mobile{
+
+        .header{
+            line-height: 1.7em;
+        }
 
         .item{
             width               : 90% !important;
-            margin-left         : 0.7em !important;
-            line-height         : 1.3em !important;
-            padding-left        : 0.5em !important;
+            margin-left         : 0.8em !important;
+            line-height         : 1.7em !important;
         }
 
         .describtion{
@@ -177,7 +167,7 @@
 
         .img-item{
             width           : 100% !important;
-            height          : cover !important;
+            height          : auto !important;
 
         }
 
@@ -194,4 +184,4 @@
             }
         }
     }//mobile
-}
+
