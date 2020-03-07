@@ -1,0 +1,80 @@
+/*========================================================================================
+*********    
+*******      
+*****       DIV ELEMENT ALL INDEX FILE IN WEPRODIV
+***         
+*/
+body{
+    background-color: $CLOUDS;
+}
+
+.all-file--item{
+
+    .box-image{
+        width: 100%;
+
+        .column{
+            width           : 25%;
+            height          : 100%;
+            float           : left;
+            padding-top     : 2em;
+            padding-left    : 1em;
+            padding-right   : 1em;
+
+            @include laptop{
+                width           : 50%;
+                padding-left    : 7%;
+                padding-right   : 7%;
+            }
+            @include tablet{
+                width           : 50%;
+                padding-left    : 2%;
+                padding-right   : 2%;
+            }
+            @include mobile{
+                width           : 100%;
+                padding-left    : 2em;
+                padding-right   : 2em;
+            }
+            @include mini-mobile{
+                padding-left    : 0.5em;
+                padding-right   : 0.5em;
+            }
+            a{
+                width   : 100%;
+                height  : 13em;
+                display : block;
+
+                &:hover{
+                    background-color: transparent;
+                }
+
+                .image{
+                    width           : 100%;
+                    height          : 100%;
+                    display         : block;
+                    padding-bottom  : 1.5em;
+                }
+            }//a-tag
+
+            .index-bg-with-widgets{
+                height: 11em;
+            }
+            .index-list-logo{
+                height: 11em;
+            }
+            .mapbox{
+                height: 12em;
+            }
+            .mapbox{
+                height: 12em;
+            }
+            .index-tour{
+                height: 12em;
+            }
+
+        }//column
+
+    }//box-image
+
+}//all-file--item
