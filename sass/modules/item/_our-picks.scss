@@ -49,8 +49,8 @@
             overflow            : hidden;
 
             img{
-                width               : 100%;
-                height              :cover;
+                width           : 100%;
+                height          : cover;
             }
         }
 
@@ -75,7 +75,7 @@
                 border-right        : 1px solid #f9f9f9;
                 
                 &:first-child{
-                    padding-left        : 0em!important;
+                    padding-left        : 0em !important;
                 }
 
                 &:last-child{
@@ -155,14 +155,14 @@
     @include mobile{
 
         .item{
-            width               : 90%!important;
-            margin-left         : 0.7em!important;
-            line-height         : 1.3em!important;
-            padding-left        : 0.5em!important;
+            width               : 90% !important;
+            margin-left         : 0.7em !important;
+            line-height         : 1.3em !important;
+            padding-left        : 0.5em !important;
         }
 
         .describtion{
-            width               : 100%!important;
+            width               : 100% !important;
 
             h3{
                 font-size       : 1.2em !important;
@@ -171,13 +171,13 @@
 
         .sub-item{
             width: 33%;
-            padding             : 0 0.5em!important;
+            padding             : 0 0.5em !important;
 
         }
 
         .img-item{
-            width           : 100%!important;
-            height          : cover!important;
+            width           : 100% !important;
+            height          : cover !important;
 
         }
 
