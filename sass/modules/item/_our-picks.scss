@@ -109,7 +109,7 @@
         .sub-item{
             float           : right !important;
             border-right    : none !important;
-            border-left     : 1px solid #f9f9f9!important;
+            border-left     : 1px solid #f9f9f9 !important;
 
             &:last-child{
                 border-left : none !important;
@@ -146,13 +146,13 @@
         }
 
         .item{
-            width               : 90%!important;
-            margin-left         : 0.8em!important;
-            line-height         : 1.7em!important;
+            width               : 90% !important;
+            margin-left         : 0.8em !important;
+            line-height         : 1.7em !important;
         }
 
         .describtion{
-            width               : 100%!important;
+            width               : 100% !important;
 
             h3{
                 font-size       : 1.2em !important;
@@ -161,13 +161,13 @@
 
         .sub-item{
             width: 33%;
-            padding             : 0 0.5em!important;
+            padding             : 0 0.5em !important;
 
         }
 
         .img-item{
-            width           : 100%!important;
-            height          : cover!important;
+            width           : 100% !important;
+            height          : auto !important;
 
         }
 
