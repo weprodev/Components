@@ -9,11 +9,11 @@
 
 
     .main-section{
-        width                   :30%;
+        width                   : 30%;
         margin                  : 0 auto;
         position                : flex;
         display                 : block;
-        background-color        :$MAIN-BG;
+        background-color        : $MAIN-BG;
         height                  : auto;
         overflow                : auto;
         padding-bottom          : 2em;
@@ -55,7 +55,7 @@
                //Horizontal line under header
               padding-bottom        : 1.3em;
               border-bottom         : 1px solid $UNDER-LINE-H;
-              display               :block;
+              display               : block;
               justify-content       : center;
               align-items           : center;
 
@@ -115,10 +115,10 @@
         .circle-left {
             @extend .section;
     
-            background-color            :$MAIN-BG ;
+            background-color            : $MAIN-BG ;
             border-radius               : 50%;
-            color                       :$C-L-TXT ;
-            padding                     :1em;
+            color                       : $C-L-TXT ;
+            padding                     : 1em;
             margin-right                : 3px;
             width                       : 0.6em;
             height                      : 0.6em;
