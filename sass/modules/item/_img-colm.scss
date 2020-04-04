@@ -1,0 +1,134 @@
+/*========================================================================================
+*********    
+*******      
+*****       DIV IMG COLM
+***         
+*/
+
+.img-colm{
+
+    .bg-color{
+        background      : black;
+        width           : 100%;
+        height          : 45em;
+
+        .section-all{
+                width           : 70%;
+                height          : 100%;
+                background      :lightcyan;
+                margin          : auto;
+                display         : flex;
+                flex-direction: column;
+
+                @include mini_laptop{
+                    width: 100%;
+                }
+                @include mobile{
+                    width: 100%;
+                 
+                 }
+
+                >.row-section{
+                        width       : 100%;
+                        height      : 33.33%;
+                        display     : flex;
+                        
+                       
+                    ////-------------------------------
+                    ///-----------------------
+                    //  SECTION IMAGE
+                    //   
+                   > .section-img {
+                        width                       : 50%;
+                        position                    : relative;
+                        display                     : flex;
+                        justify-content             : center;
+                        align-items                 : center;
+                             
+                        @include mobile{
+                            width: 100% !important;
+                            
+
+                         }
+                             >.img-box{
+                                width               : 100%;
+                                height              : 100%;
+                                background-size     : cover;
+                                position            : absolute;
+                            }//end img-box
+                        
+                            .title-img{
+                              
+                                color                   : $WHITE;
+                                font-size               : 1.8em;
+                                z-index                 : 200;
+                                font-stretch            : ultra-expanded;
+                                .txt-img{
+                                    text-align          : center;
+                                    font-weight         : 900;
+                                    margin-bottom       : -0.1em;
+                                }
+                                .sym-img1{
+                                    letter-spacing      : -0.1em;
+                                }
+                                .sym-img2{
+                                    letter-spacing      : -0.2em;
+                                    font-size           : 0.8em;
+                                }
+                            }//title img
+                    }//end section-img
+
+
+
+
+
+                    ////-------------------------------
+                    ///-----------------------
+                    //  SECTION FIGCAPTION
+                    //
+                   > .caption-box{
+                        width                   : 50%;
+                        display                 : block;
+                        justify-content         : left;
+                        align-items             : center;
+                        background              : $WHITE;
+                        padding                 : 3em;
+                        line-height             : 1.5;
+                        font-size               : 0.8em;
+                        @include tablet{
+                            padding: 2.7em;
+                            font-size: 0.7em;
+                        }
+                        @include mobile{
+                            width: 100% !important ;
+                         
+                        }
+                     > .txt-caption{
+                                font-size       : 1.1em;
+                                color           : $BLACK;
+                               
+
+                         }//end txt-cpation
+                        .header{
+                            font-weight         : bold;
+                            margin-bottom       : 0.8em;
+                            font-size           : 1.4em;
+                        }
+
+                       
+                        
+                    }//end txt-box
+
+                   
+                    .align-txt-left{
+                        text-align            : left;
+                    }
+                    .align-txt-right{
+                        text-align            : right;
+                    }
+
+
+                }//row-section
+            }//end section-all
+    }//end bg-color
+}//end img-colm
