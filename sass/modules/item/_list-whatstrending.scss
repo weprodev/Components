@@ -1,0 +1,183 @@
+/*========================================================================================
+*********    
+*******      
+*****           DIV List Wats Trending
+***         
+*/
+
+.list-trending{
+
+
+    .main-section{
+        width                   : 30%;
+        margin                  : 0 auto;
+        position                : flex;
+        display                 : block;
+        background-color        : $MAIN-BG;
+        height                  : auto;
+        overflow                : auto;
+        padding-bottom          : 2em;
+
+       
+                /*--------------------------------
+                ***  
+                **	 RESPONSIVE SECTION
+                */
+
+                @include mini-laptop{
+                width    : 40%;
+                }
+                @include tablet {
+                width    : 60%; 
+                }
+                @include mobile{
+                width    : 100%;
+                }
+         
+    
+    
+    
+  
+      .header{   //HEADER
+         
+          padding                   : 0.5em 0;
+         
+        
+         
+          h2{
+              text-align            : center;
+              color                 : $HEADER-C ;
+              margin                : 1.2em 1em;
+              font-size             : 2em;
+              letter-spacing        : 0.2em; 
+              
+
+               //Horizontal line under header
+              padding-bottom        : 1.3em;
+              border-bottom         : 1px solid $UNDER-LINE-H;
+              display               : block;
+              justify-content       : center;
+              align-items           : center;
+
+
+                    /*--------------------------------
+                    ***  
+                    **	 RESPONSIVE SECTION
+                    */
+                        
+                    @include mini-laptop{
+                        font-size     : 1.8em;
+                    }
+                    @include mobile 
+                    {
+                        font-size      : 1.7em;
+                    }
+                    @include mini_mobile{
+                        font-size       : 1.4em;
+                    }
+
+            }// end H2
+            
+        
+        
+         
+      }// end header
+        .episode-list{
+            width                       : 90%;
+            display                     : block;
+            margin                      : 0 auto;
+    
+            .row{
+            width                     : 90%;
+            height                    : 2em;
+            background                : $BG-ROW ;
+            border-left               : 0.2em solid $BG-ROW;
+            padding                   : 2em 1em;
+            margin                    : 0 auto 0.1em; 
+            align-items               : center;
+            justify-content           : space-between;
+            display                   : flex;
+    
+            &:hover{        
+                border-left             : 0.2em solid $HOVER-RED  ;           
+            }
+        }//end episode list
+    
+       
+        //section for section left and right
+        .section{
+            display                     : flex;
+            justify-content             : center;
+            align-items                 : center;
+        }
+        
+    
+        .circle-left {
+            @extend .section;
+    
+            background-color            : $MAIN-BG ;
+            border-radius               : 50%;
+            color                       : $C-L-TXT ;
+            padding                     : 1em;
+            margin-right                : 3px;
+            width                       : 0.6em;
+            height                      : 0.6em;
+        }//end circle left
+    
+        
+        .text{
+            color                       : $C-TXT;
+            justify-content             : center;
+            padding                     : 1em;
+            font-size                   : 0.8em;
+            font-stretch                : expanded;
+            letter-spacing              : 0.05em;
+        }///end text
+        
+    
+       
+        //oval right
+        .circle-right{
+            @extend .section;
+    
+            border                      : 0.09em solid $UNDER-LINE-H ;
+            background                  : $BG-ROW;
+            color                       : $C-TXT;
+            font-stretch                : extra-expanded;
+            font-size                   : 0.8em;
+            display                     : inline-flex;
+            width                       : 4em;
+            height                      : 0.2em;
+            border-radius               :  60%/95%;
+            padding                     : 1em 1.5em;
+        }//end cicle right
+       
+
+
+
+             /*--------------------------------
+            ***  
+            **	 HOVER SECTION
+            */
+
+            .row:hover{
+                .circle-left{
+                color                    : $BLACK;
+                }
+                .text{
+                color                    : $HOVER-RED;
+                }
+                .circle-right{
+                background               : $HOVER-RED;  
+                color                    : $WHITE;
+                border                   : 0.1em solid $HOVER-RED;
+                }
+            
+            }//// end hover 
+        
+        
+        }//end episode-list
+
+    }//end main-section
+
+}/// end list trending
