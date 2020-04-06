@@ -7,24 +7,34 @@
 
 .img-colm{
 
-    .bg-color{
-        background      : black;
-        width           : 100%;
-        height          : 45em;
+   
+        background      :  $CONCRETE ;
+        width           : 70%;
+        height          : auto;
+        overflow-x      : auto;
+        margin          : 1em auto;
+
+        @include mini_laptop{
+            width: 100%;
+        }
+        
 
         .section-all{
-                width           : 70%;
-                height          : 100%;
-                margin          : auto;
-                display         : flex;
-                flex-wrap       : wrap;
+                width               : 100%;
+                height              : auto;
+                margin              : 0 auto;
+                display             : flex;
+                flex-direction      : column;
+                overflow-x          : auto;
 
                 @include mini_laptop{
                     width: 100%;
                 }
+                
                 @include mobile{
                     width: 100%;
-                 
+                    flex-direction  : row;
+                    
                  }
 
                 .row{
@@ -43,11 +53,10 @@
                         position                    : relative;
                         display                     : flex;
                         justify-content             : center;
-                        align-items                 : center;
-                             
+                        align-items                 : center;   
                         @include mobile{
                             width           : 100% !important;
-                            padding         : 5em;
+                            padding         :4em  7em;
                          }
                             .img-box{
                                 width               : 100%;
@@ -55,13 +64,12 @@
                                 background-size     : cover;
                                 position            : absolute;
                             }//end img-box
-                        
-                            .title-img{
-                              
+                            .title-img{                            
                                 color                   : $WHITE;
                                 font-size               : 1.8em;
                                 z-index                 : 200;
-                                font-stretch            : ultra-expanded;
+                                font-stretch            : expanded;
+                                margin: auto;
 
                                 .txt-img{
                                     text-align          : center;
@@ -69,9 +77,11 @@
                                     margin-bottom       : -0.1em;
                                 }
                                 .sym-img1{
+                                    margin-bottom       : 0.2em;
                                     letter-spacing      : -0.1em;
                                 }
                                 .sym-img2{
+                                    margin-bottom       : 0.2em;
                                     letter-spacing      : -0.2em;
                                     font-size           : 0.8em;
                                 }
@@ -85,13 +95,12 @@
                     //
                     .caption-box{
                         width                   : 50%;
-                        
                         display                 : block;
                         justify-content         : left;
                         align-items             : center;
                         background              : $WHITE;
                         padding                 : 3em;
-                        line-height             : 1.5;
+                        line-height             : 2;
                         font-size               : 0.8em;
                         
                         @include tablet{
@@ -99,8 +108,7 @@
                             font-size       : 0.7em;
                         }
                         @include mobile{
-                            width: 100% !important ;
-                         
+                            width           : 100% !important ;
                         }
                      .txt-caption{
                                 font-size       : 1.1em;
@@ -126,8 +134,8 @@
                         text-align            : right;
                     }
 
-
+                    
                 
             }//end section-all
-    }//end bg-color
+ 
 }//end img-colm
