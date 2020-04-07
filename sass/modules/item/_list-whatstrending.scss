@@ -13,7 +13,7 @@
         margin                  : 0 auto;
         position                : flex;
         display                 : block;
-        background-color        : $MAIN-BG;
+        background-color        : $MAIN_BG;
         height                  : auto;
         overflow                : auto;
         padding-bottom          : 2em;
@@ -46,7 +46,7 @@
          
           h2{
               text-align            : center;
-              color                 : $HEADER-C ;
+              color                 : $HEADER_COLOR ;
               margin                : 1.2em 1em;
               font-size             : 2em;
               letter-spacing        : 0.2em; 
@@ -54,7 +54,7 @@
 
                //Horizontal line under header
               padding-bottom        : 1.3em;
-              border-bottom         : 1px solid $UNDER-LINE-H;
+              border-bottom         : 1px solid $UNDER_LINE_H;
               display               : block;
               justify-content       : center;
               align-items           : center;
@@ -90,8 +90,8 @@
             .row{
             width                     : 90%;
             height                    : 2em;
-            background                : $BG-ROW ;
-            border-left               : 0.2em solid $BG-ROW;
+            background                : $BG_ROW ;
+            border-left               : 0.2em solid $BG_ROW;
             padding                   : 2em 1em;
             margin                    : 0 auto 0.1em; 
             align-items               : center;
@@ -99,7 +99,7 @@
             display                   : flex;
     
             &:hover{        
-                border-left             : 0.2em solid $HOVER-RED  ;           
+                border-left             : 0.2em solid $HOVER_RED  ;           
             }
         }//end episode list
     
@@ -115,9 +115,9 @@
         .circle-left {
             @extend .section;
     
-            background-color            : $MAIN-BG ;
+            background-color            : $MAIN_BG ;
             border-radius               : 50%;
-            color                       : $C-L-TXT ;
+            color                       : $CIRCLE_LEFT_TXT ;
             padding                     : 1em;
             margin-right                : 3px;
             width                       : 0.6em;
@@ -126,7 +126,7 @@
     
         
         .text{
-            color                       : $C-TXT;
+            color                       : $CIRCLE_TXT;
             justify-content             : center;
             padding                     : 1em;
             font-size                   : 0.8em;
@@ -141,8 +141,8 @@
             @extend .section;
     
             border                      : 0.09em solid $UNDER-LINE-H ;
-            background                  : $BG-ROW;
-            color                       : $C-TXT;
+            background                  : $BG_ROW;
+            color                       : $CIRCLE_TXT;
             font-stretch                : extra-expanded;
             font-size                   : 0.8em;
             display                     : inline-flex;
@@ -165,12 +165,13 @@
                 color                    : $BLACK;
                 }
                 .text{
-                color                    : $HOVER-RED;
+                color                    : $HOVER_RED;
                 }
                 .circle-right{
-                background               : $HOVER-RED;  
+                background               : $HOVER_RED;  
                 color                    : $WHITE;
-                border                   : 0.1em solid $HOVER-RED;
+                border                   : 0.1em solid $HOVER_RED;
+                
                 }
             
             }//// end hover 
