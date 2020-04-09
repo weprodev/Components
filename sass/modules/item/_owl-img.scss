@@ -52,6 +52,9 @@
                             width               : 80%;
                             height              : 13.5em;
                             margin              : 0 auto;
+                            @include mobile{
+                                width           : 70%;
+                            }
                             
                            
                         .little-img{
@@ -71,7 +74,7 @@
                             align-items         : center;  
 
                             @include mobile{
-                                margin: 0 1em;
+                                margin              : 0 1em;
                             }
                         }// img-owl
                         
@@ -140,12 +143,18 @@
                                 font-weight         : bolder;
                                 font-size           : 2em;
                                 font-style          : italic;
+                                @include mobile{
+                                    font-size           : 1.5em;
+                                }
                             }
                             .border-updown-side1{
                                 border-bottom   : 1px solid $CONCRETE;
                                 border-top      : 1px solid $CONCRETE;
                                 padding         : 0.8em 0.2em;
                                 margin-left     : 0.5em;
+                                @include mobile{
+                                    padding         : 1em 0.3em;
+                                }
                             }// border
                             .span-center{
                                 margin          : 1.5em 0;
@@ -161,6 +170,9 @@
                                 border-top      : 1px solid $CONCRETE;
                                 padding         : 1.5em 0.5em;
                                 margin-left     : 1em;
+                                @include mobile{
+                                    padding         : 1.8em 0.1em;
+                                }
                             }// border
                         }// section side right
 
@@ -212,7 +224,7 @@
                     justify-content         : center;
                     align-items             : center;
                     padding-left            : 5px;
-                    padding-bottom          :10px;
+                    padding-bottom          : 10px;
                     letter-spacing          : 5px;
                     font-size               : 1em;
                 }//circle
