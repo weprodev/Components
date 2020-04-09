@@ -15,9 +15,11 @@
         margin          : 1em auto;
 
         @include mini_laptop{
-            width: 100%;
+            width       : 100%;
         }
-        
+        @include mobile{
+            margin      : 0 auto;
+        }
 
         .section-all{
                 width               : 100%;
@@ -28,13 +30,12 @@
                 overflow-x          : auto;
 
                 @include mini_laptop{
-                    width: 100%;
+                    width           : 100%;
                 }
                 
                 @include mobile{
-                    width: 100%;
+                    width           : 100%;
                     flex-direction  : row;
-                    
                  }
 
                 .row{
@@ -55,8 +56,8 @@
                         justify-content             : center;
                         align-items                 : center;   
                         @include mobile{
-                            width           : 100% !important;
-                            padding         :4em  7em;
+                            width                   : 100% !important;
+                            padding                 :4em  7em;
                          }
                             .img-box{
                                 width               : 100%;
@@ -69,7 +70,7 @@
                                 font-size               : 1.8em;
                                 z-index                 : 200;
                                 font-stretch            : expanded;
-                                margin: auto;
+                                margin                  : auto;
 
                                 .txt-img{
                                     text-align          : center;
@@ -77,13 +78,19 @@
                                     margin-bottom       : -0.1em;
                                 }
                                 .sym-img1{
-                                    margin-bottom       : 0.2em;
-                                    letter-spacing      : -0.1em;
+                                    margin-bottom       : -0.2em;
+                                }
+                                .sym-img1{
+                                    margin-bottom       : -0.2em;
                                 }
                                 .sym-img2{
                                     margin-bottom       : 0.2em;
-                                    letter-spacing      : -0.2em;
-                                    font-size           : 0.8em;
+                                }
+                                .class-icon{
+                                    font-size                   : 2em;
+                                    justify-content             : center;
+                                    align-items                 : center;
+                                    display                     : flex; 
                                 }
                             }//title img
                     }//end section-img
@@ -113,8 +120,6 @@
                      .txt-caption{
                                 font-size       : 1.1em;
                                 color           : $BLACK;
-                               
-
                          }//end txt-cpation
                         .header{
                             font-weight         : bold;
