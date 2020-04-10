@@ -7,8 +7,6 @@
 
 .img-colm{
 
-   
-        background      :  $CONCRETE ;
         width           : 70%;
         height          : auto;
         overflow-x      : auto;
@@ -42,6 +40,17 @@
                       
                         display     : flex;
                         flex-wrap   : wrap;
+                        
+                        @include mobile{
+                            &:nth-child(2n)
+                            {
+                                flex-direction  : column-reverse;
+                                height          : 100%;
+                              
+                            }
+                            
+
+                        }
                     }//row-section  
                     
 
@@ -57,7 +66,8 @@
                         align-items                 : center;   
                         @include mobile{
                             width                   : 100% !important;
-                            padding                 :4em  7em;
+                            padding                 : 4em  7em;
+                               
                          }
                             .img-box{
                                 width               : 100%;
@@ -111,11 +121,13 @@
                         font-size               : 0.8em;
                         
                         @include tablet{
-                            padding         : 2.7em;
+                           
                             font-size       : 0.7em;
+                           
                         }
                         @include mobile{
                             width           : 100% !important ;
+                            padding         : 2.7em;
                         }
                      .txt-caption{
                                 font-size       : 1.1em;
