@@ -8,9 +8,8 @@
         background      : $MAIN_BG_OWL ;
         width           : 70%;
         height          : auto;
-    //  overflow-x      : auto;
         margin          : 0 auto;
-        overflow: hidden;
+        overflow        : hidden;
 
     @include tablet{
         width           : 100%;
@@ -239,7 +238,7 @@
                 display         : flex;
                 line-height     : 0.5em;
                 margin          : 3.5em auto;
-                margin-bottom   : 0;
+                margin-bottom   : 2em;
                 text-align      : left;
                 flex-direction  : column;   
                 @include mobile{
