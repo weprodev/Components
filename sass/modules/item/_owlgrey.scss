@@ -1,0 +1,283 @@
+/*========================================================================================
+*********    
+*******      
+*****           DIV OWL IMG
+***         
+*/
+.owl-img{
+        background      : $MAIN_BG_OWL ;
+        width           : 70%;
+        height          : auto;
+    //  overflow-x      : auto;
+        margin          : 0 auto;
+        overflow: hidden;
+
+    @include tablet{
+        width           : 100%;
+        
+    }
+
+    .section-main{
+        width               : 100%;
+        height              : auto;
+        margin              : 0 auto;
+        display             : flex;
+        flex-direction      : column;
+
+        @include tablet{
+            width           : 100%;
+        
+        }
+    
+            .section-main-img{
+            
+                position                : relative;
+                flex-direction          : row;
+                display                 : flex;
+                justify-content         : center;
+                align-items             : center;   
+                padding-top             : 5em;
+                margin                  : 0 3em;
+                padding-bottom          : 3em;
+
+                @include mobile{
+                    margin                  : 0 1em;
+                    flex-direction          : column;
+                }
+
+                /*--------------------------------
+                ***  section img
+                **	
+                */
+                    .section-img{
+                            width               : 80%;
+                            height              : 13.5em;
+                            margin              : 0 auto;
+                            @include mobile{
+                                width           : 100%;
+                            }
+                            
+                        
+                        .little-img{
+                            width               : 3em;
+                            height              : 3em;
+                            background-size     : cover ;
+                            top                 : 50%;
+                            position            : absolute;
+                            @include mobile{
+                                display         : none;
+                            }
+                        }
+                        .img-owl{
+                            width               : 90%;
+                            height              : 13.5em;
+                            background-size     : cover;
+                            display             : flex;
+                            margin              : 0 2em;
+                            justify-content     : center;
+                            align-items         : center;  
+
+                            @include mobile{
+                                margin              : 0 auto;
+                                width: 100%;
+                            }
+                        }// img-owl
+                        
+                    }//section img
+
+                    /*--------------------------------
+                    ***  section side left img
+                    **	
+                    */
+
+                        .section-side-left{     
+                            color                   : grey;
+                            width                   : 10%;
+                            padding                 : 4em 0;
+                            display                 : flex;
+                            flex-direction          : column;
+                            position                : absolute;
+                            justify-content         : center;
+                            align-items             : center;  
+                            top                     : 1em;
+                            left                    : 2em;
+                            @include mobile{
+                                flex-direction      : row;
+                                width               : 100%;
+                                left                : 0;
+                                right               : 0;
+                                top                 : -1em;
+                                padding             : 1em 0;
+                              
+                            }
+                            .position-up{
+                                top                     : 1em;
+                                left                    : 0.7em;
+                                font-size               : 4em;
+                                margin-bottom           : 1.5em;
+                                font-family             : none;
+                                @include mobile{
+                                    margin-bottom       : 0;
+                                }
+                            }
+                            .position-down{
+                                bottom                  : 2em;
+                                left                    : 2em;
+                                width                   : 2em;
+                                height                  : 2em;
+                                @include mobile{
+                                   margin-left: 10em;
+                                    height              : 3em;
+                                 
+                                }
+                                .img-glasses{
+                                    width               : 100%; 
+                                    background-size     : cover;
+                                }
+                                .down-glass{
+                                    color               : $BLACK;
+                                    display             : flex;
+                                    justify-content     : center;
+                                    align-items         : center;  
+                                    font-size           : 0.8em;
+                                }
+                            }//postion down
+                            
+                        }//section side left
+
+                        /*--------------------------------
+                        ***  section side right img
+                        **	
+                        */
+
+                        .section-side-right{
+                            width                   : 10%;
+                            color                   : $BLACK;
+                            padding                 : 4em 0;
+                            display                 : flex;
+                            flex-direction          : column;
+                            position                : absolute;
+                            justify-content         : center;
+                            align-items             : center;  
+                            top                     : 1em;
+                            right                   : 3em;
+                            @include laptop{
+                                right               : 1em;
+                            }
+                            @include mobile{
+                                flex-direction      : row;
+                                top                 : 14em;
+                                right               : 0em;
+                                left                : 0;
+                                width               : 100%;
+                                //padding: 2em 0;
+                               
+
+                            }
+                            .span-bold{
+                                font-weight         : bolder;
+                                font-size           : 2em;
+                                font-style          : italic;
+                                @include mobile{
+                                    font-size           : 1.5em;
+                                    margin-right        : 2em;
+
+                                }
+                            }
+                            .border-updown-side1{
+                                border-bottom   : 1px solid $CONCRETE;
+                                border-top      : 1px solid $CONCRETE;
+                                padding         : 0.8em 0.2em;
+                                margin-left     : 0.5em;
+                                @include mobile{
+                                    padding         : 1em 0.3em;
+                                    border-top      : none;
+                                    border-bottom   : none;
+                                    margin-left     : 1em;
+                                }
+                            }// border
+                            .span-center{
+                                margin          : 1.5em 0;
+                                font-size       : 1em;
+                                margin-left     : 1em;
+                               
+                            }
+                        
+                            .span-thin{
+                                font-size       : 1em;
+                                // @include mobile{
+                                //     margin-left: 3em;
+                                // }
+                            }
+                            .border-updown-side2{
+                                border-bottom   : 1px solid $CONCRETE;
+                                border-top      : 1px solid $CONCRETE;
+                                padding         : 1.5em 0.5em;
+                                margin-left     : 1em;
+                                @include mobile{
+                                    padding         : 1.8em 0.1em;
+                                    border-top      : none;
+                                    border-bottom   : none;
+                                    margin-left     : 3em;
+                                   
+                                }
+                            }// border
+                        }// section side right
+
+            }//section main img
+            
+    
+            /*--------------------------------
+            ***  section text
+            **	
+            */
+
+            .section-text{
+                width           : 65%;
+                height          : auto;
+                color           : $BLACK;
+                display         : flex;
+                line-height     : 0.5em;
+                margin          : 3.5em auto;
+                margin-bottom   : 0;
+                text-align      : left;
+                flex-direction  : column;   
+                @include mobile{
+                    margin-bottom: 1em;
+                }            
+                h2{
+                    font-weight         : bold;
+                    font-size           : 2em;
+                    margin-bottom       : 0.5em;
+                    @include mobile{
+                        font-size           :1.5em ;
+                    }
+                }
+                .under-header{
+                color                : $SILVER;  
+                font-style           : italic;
+                margin-bottom        : 2em;
+                }
+                .caption{
+                    margin-bottom           : 2em;
+                    .text{
+                    line-height             : 1.6em;
+                    }
+                }
+                .circle{
+                    background              : $MAIN_BG_OWL;
+                    width                   : 3em;
+                    height                  : 3em;
+                    border-radius           : 50%;
+                    box-shadow              : 0px 4px 2px 0px grey;
+                    display                 : flex;
+                    justify-content         : center;
+                    align-items             : center;
+                    padding-left            : 5px;
+                    padding-bottom          : 10px;
+                    letter-spacing          : 5px;
+                    font-size               : 1em;
+                }//circle
+            }//secton text           
+    }//end section main
+}//end owl img
