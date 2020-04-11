@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?mv0f9m');
-  src:  url('fonts/icomoon.eot?mv0f9m#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?mv0f9m') format('truetype'),
-    url('fonts/icomoon.woff?mv0f9m') format('woff'),
-    url('fonts/icomoon.svg?mv0f9m#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?1t5jgo');
+  src:  url('fonts/icomoon.eot?1t5jgo#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1t5jgo') format('truetype'),
+    url('fonts/icomoon.woff?1t5jgo') format('woff'),
+    url('fonts/icomoon.svg?1t5jgo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -81,6 +81,15 @@
 }
 .icon-filter:before {
   content: "\e925";
+}
+.icon-add:before {
+  content: "\e929";
+}
+.icon-keyboard_control:before {
+  content: "\e92a";
+}
+.icon-eye:before {
+  content: "\e92b";
 }
 .icon-add-outline:before {
   content: "\e90c";
@@ -412,12 +421,24 @@
 .icon-linkedin2:before {
   content: "\eaca";
 }
+.icon-weather:before {
+  content: "\e92c";
+}
+.icon-weather1:before {
+  content: "\e92d";
+}
+.icon-weather2:before {
+  content: "\e92e";
+}
 .icon-trophy:before {
   content: "\e926";
 }
+.icon-sort-asc:before {
+  content: "\f0de";
+}
+.icon-sort-up:before {
+  content: "\f0de";
+}
 .icon-circle-o:before {
   content: "\f10c";
-}
-.icon-diamonds:before {
-  content: "\e919";
 }
