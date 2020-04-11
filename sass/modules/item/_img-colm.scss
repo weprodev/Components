@@ -1,157 +1,154 @@
 /*========================================================================================
 *********    
 *******      
-*****       DIV IMG COLM
+*****       DIV IMG COLUMN
 ***         
 */
 
-.img-colm{
+.img-column{
 
-        width           : 70%;
-        height          : auto;
-        overflow-x      : auto;
-        margin          : 1em auto;
+    width           : 70%;
+    height          : auto;
+    overflow-x      : auto;
+    margin          : 1em auto;
+
+    @include mini_laptop{
+        width       : 100%;
+    }
+    @include mobile{
+        margin      : 0 auto;
+    }
+
+    .section-all{
+        width               : 100%;
+        height              : auto;
+        margin              : 0 auto;
+        display             : flex;
+        flex-direction      : column;
+        overflow-x          : auto;
 
         @include mini_laptop{
-            width       : 100%;
+            width           : 100%;
         }
+        
         @include mobile{
-            margin      : 0 auto;
+            width           : 100%;
         }
 
-        .section-all{
-                width               : 100%;
-                height              : auto;
-                margin              : 0 auto;
-                display             : flex;
-                flex-direction      : column;
-                overflow-x          : auto;
-
-                @include mini_laptop{
-                    width           : 100%;
+        .row{
+            
+            display     : flex;
+            flex-wrap   : wrap;
+            
+            @include mobile{
+                &:nth-child(2n)
+                {
+                    flex-direction  : column-reverse;
+                    height          : 100%;
+                    
                 }
-                
-                @include mobile{
-                    width           : 100%;
-                    flex-direction  : row;
-                 }
+            }
 
-                .row{
-                      
-                        display     : flex;
-                        flex-wrap   : wrap;
-                        
-                        @include mobile{
-                            &:nth-child(2n)
-                            {
-                                flex-direction  : column-reverse;
-                                height          : 100%;
-                              
-                            }
-                            
+        }//row
 
-                        }
-                    }//row-section  
+        /*--------------------------------
+        ***  
+        **	 IMAGE SECTION
+        */
+        .section-img {
+            width                       : 50%;
+            position                    : relative;
+            display                     : flex;
+            justify-content             : center;
+            align-items                 : center;   
+
+            @include mobile{
+                width                   : 100% !important;
+                padding                 : 4em  7em;
                     
+            }
+                .img-box{
+                    width               : 100%;
+                    height              : 100%;
+                    background-size     : cover;
+                    position            : absolute;
+                }// img-box
 
-                    ////-------------------------------
-                    ///-----------------------
-                    //  SECTION IMAGE
-                    //   
-                   .section-img {
-                        width                       : 50%;
-                        position                    : relative;
-                        display                     : flex;
+                .title-img{        
+
+                    color                   : $WHITE;
+                    font-size               : 1.8em;
+                    z-index                 : 200;
+                    font-stretch            : expanded;
+                    margin                  : auto;
+
+                    .txt-img{
+                        text-align          : center;
+                        font-weight         : 900;
+                        margin-bottom       : -0.1em;
+                    }
+                    .sym-img1{
+                        margin-bottom       : -0.2em;
+                        font-size           : 2em;
+                    }
+                    .sym-img2{
+                        margin-bottom       : 0.2em;
+                        font-size           : 1.5em;
+                    }
+                    .class-icon{
+                        
                         justify-content             : center;
-                        align-items                 : center;   
-                        @include mobile{
-                            width                   : 100% !important;
-                            padding                 : 4em  7em;
-                               
-                         }
-                            .img-box{
-                                width               : 100%;
-                                height              : 100%;
-                                background-size     : cover;
-                                position            : absolute;
-                            }//end img-box
-                            .title-img{                            
-                                color                   : $WHITE;
-                                font-size               : 1.8em;
-                                z-index                 : 200;
-                                font-stretch            : expanded;
-                                margin                  : auto;
-
-                                .txt-img{
-                                    text-align          : center;
-                                    font-weight         : 900;
-                                    margin-bottom       : -0.1em;
-                                }
-                                .sym-img1{
-                                    margin-bottom       : -0.2em;
-                                    font-size           : 2em;
-                                }
-                                .sym-img2{
-                                    margin-bottom       : 0.2em;
-                                    font-size           : 1.5em;
-                                }
-                                .class-icon{
-                                    
-                                    justify-content             : center;
-                                    align-items                 : center;
-                                    display                     : flex; 
-                                }
-                            }//title img
-                    }//end section-img
-
-
-                    ////-------------------------------
-                    ///-----------------------
-                    //  SECTION FIGCAPTION
-                    //
-                    .caption-box{
-                        width                   : 50%;
-                        display                 : block;
-                        justify-content         : left;
-                        align-items             : center;
-                        background              : $WHITE;
-                        padding                 : 3em;
-                        line-height             : 2;
-                        font-size               : 0.8em;
-                        
-                        @include tablet{
-                           
-                            font-size       : 0.7em;
-                           
-                        }
-                        @include mobile{
-                            width           : 100% !important ;
-                            padding         : 2.7em;
-                        }
-                     .txt-caption{
-                                font-size       : 1.1em;
-                                color           : $BLACK;
-                         }//end txt-cpation
-                        .header{
-                            font-weight         : bold;
-                            margin-bottom       : 0.8em;
-                            font-size           : 1.4em;
-                        }
-
-                       
-                        
-                    }//end txt-box
-
-                   
-                    .align-txt-left{
-                        text-align            : left;
-                    }
-                    .align-txt-right{
-                        text-align            : right;
+                        align-items                 : center;
+                        display                     : flex; 
                     }
 
-                    
+                }//title-img
+
+        }// section-img
+
+        /*--------------------------------
+        ***  
+        **	 FIGCAPTION
+        */                    
+        .caption-box{
+            width                   : 50%;
+            display                 : block;
+            justify-content         : left;
+            align-items             : center;
+            background              : $WHITE;
+            padding                 : 3em;
+            line-height             : 2;
+            font-size               : 0.8em;
+            
+            @include tablet{
                 
-            }//end section-all
- 
-}//end img-colm
+                font-size       : 0.7em;
+                
+            }
+            @include mobile{
+                width           : 100% !important ;
+                padding         : 2.7em;
+            }
+            .txt-caption{
+                    font-size       : 1.1em;
+                    color           : $BLACK;
+                }//end txt-cpation
+            .header{
+                font-weight         : bold;
+                margin-bottom       : 0.8em;
+                font-size           : 1.4em;
+            }
+            
+        }// caption-box
+            
+        .align-txt-left{
+            text-align  : left;
+        }
+
+        .align-txt-right{
+            text-align  : right;
+        }
+            
+    }// section-all
+
+}// img-colm
