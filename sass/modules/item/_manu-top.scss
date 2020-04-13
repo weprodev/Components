@@ -1,0 +1,181 @@
+/*========================================================================================
+*********   NAVIGATION TOP
+*******      
+*****       
+***         
+*/
+body{
+    background-color: gray;
+}
+.menu-top--item{
+    
+    header{
+        width: 100%;
+        margin: 0em;
+        padding: 0em;
+        z-index: 400;
+
+        .top-section{
+            width: 100%;
+            height: 3em;
+            background-color: $BELIZE_HOLE;
+            padding-right: 2em;
+
+            .lang{
+                width: 6em;
+                float: right;
+                margin-right: 2em;
+
+                .list-lang li{
+                    float: left;
+                    padding: 0.7em;
+                    margin-top: 0.3em;
+
+                    .a-lang{
+                        color: $WHITE;
+                        text-decoration: none;
+                        font-weight: bold;
+
+                        &:hover{
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }//lang
+        }//top-section
+        .bottom-section{
+            width: 100%;
+            height: 7em;
+            background-color: $mainColorSite  ;
+            padding-left: 2em;
+            padding-top: 0.5em;
+            @include laptop{
+                padding-left: 1em;
+            }
+            .showNav{
+                position: absolute;
+                left: 93%;
+                top: 3.2em;
+                color: $WHITE;
+                @include mobile{
+                    left: 85%;
+                }
+            }
+            .logo{
+                width: 13em;
+                height: 6em;
+                float: left;
+                @include laptop{
+                    width: 10em;
+                    height: 5em;
+                    margin-top: 0.5em;
+                }
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+            nav{
+                margin-top: 2em;
+                height: 3em;
+                @include led4k{
+                    margin-top: 1.2em;
+                }
+                @include tablet{
+                    width: 100%;
+                    margin-top: 0em;
+                }
+                ul{
+                    height: 100%;
+                    
+                    li{ 
+                        @include tablet{
+                            background-color: $WHITE;
+                            border-bottom: 0em;
+                        }
+                        position: relative;                
+                        a{
+                            @include tablet{
+                                color: $mainColorSite;
+                            }
+                            color: $WHITE;
+                            font-size: 1em;
+                            font-weight: bold;
+                            padding: 0.3em 1em;
+                            @include led4k{
+                                font-size: 1.5em;
+                            }
+                            @include laptop{
+                                font-size: 1em;
+                                padding: 0.3em 0.65em;
+                            }
+                        }
+                        a:hover{
+                            text-decoration: none;
+                            background-color: transparent;
+                        }
+                        ul{
+                            display: none;
+                        }
+                        &:hover{ 
+                            ul{
+                                display: block;
+                                position: absolute;
+                                top: 2.4em;
+                                width: 11em;
+                                height: auto;
+                                background-color: $WHITE;
+                                border-radius: 0.15em;
+                                z-index: 200 !important;
+                                @include tablet{
+                                    width: 100%;
+                                    display: block;
+                                }
+                                li{
+                                    height: 2.5em;
+                                    width: 100%;
+                                    margin: 0em; 
+                                    border-radius: 0.15em;
+                                    a{
+                                        line-height: 1.7em;
+                                        color: $BLACK;
+                                        width: 100%;
+                                        height: 100%;
+                                        margin: 0em;
+                                        font-size: 1em;
+                                        display: block;
+                                        padding: 0.3em 1em;
+                                        &:hover{
+                                            background-color: $secondColrSite;
+                                            border-radius: 0.15em;
+                                            color: $WHITE;
+                                        }
+                                        @include tablet{
+                                            padding-left: 3em;
+                                        }
+                                    }
+                                }//li-dropdown
+                            }//ul-dropdown
+                        }//li:hover
+                    }//li
+                }//ul
+            }//nav
+            
+        }//bottom-section
+
+    }//header
+
+}//menu-top--item
+.sticky{
+    position: fixed;
+    top: 0em;
+    width: 100%;
+}
+.content{
+    padding: 16px;
+}
+.sticky + .content{
+    padding-top: 60px;
+}
