@@ -20,6 +20,29 @@ $(document).ready(function(){
         $(this).parent('nav').removeClass('showNavigation');
     });
 
+    $("#showNav").click(function(){
+      $("#nav-list").animate({
+          left : 0,
+          opacity : 1,
+          width : "100%",
+      },500,);
+      $("#hideNav").css("display", "block");
+      $(this).hide();
+  });
+
+  $("#hideNav").click(function(){
+      $("#nav-list").animate({
+          left : "-100%",
+          opacity : 0,
+          width : "100%",
+      },500,);
+      $("#showNav").css("display", "block");
+      $(this).hide();
+  });
+  $("#nav-list").scroll(function(){
+      $(".logo").hide();
+      $("#nav-list").css("padding-top", "0em");
+  });
 
 
 });
@@ -27,7 +50,7 @@ $(document).ready(function(){
 
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("bottom-section");
+var navbar = document.getElementById("container-top");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
@@ -37,3 +60,28 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+
+// $(document).ready(function() {
+//   $("#showNav").click(function() {
+//     $("ul.nav-list").addClass('show');
+//   });
+
+//   $("#hideNav").click(function() {
+//     $("ul.nav-list").removeClass('show');
+//   });  
+// });
+
+
+$(document).ready(function(){
+
+  /*--------------------------------
+  ***  NAVIGATION ON SMALL DEVICE
+  **   AND OPEN AND CLOSE
+  */
+
+  
+
+
+
+});

@@ -1,0 +1,278 @@
+*{
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.lang-above{
+    width: 100%;
+    height: 2em;
+    background-color: $borderColor;
+    display: block;
+    ul{
+        float: right;
+        margin-right: 3em;
+        display: flex;
+        li{
+            margin: 0 0.5em;
+            a{
+                text-decoration: none;
+                color: $WHITE;
+                line-height: 2em;
+                &:hover{
+                    background-color: transparent;
+
+                }
+            }
+        }
+    }
+}
+.header-complete-page{
+    width: 100%;
+    position: absolute;
+    top: 2em;
+    left: 0em;
+
+    .container-top{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1.5em;
+        background-color: $mainColorSite;
+        @include tablet{
+            // height: 100vh;
+        }
+
+        nav{
+            width: 100%;
+            height: 6em;
+            display: flex;
+            // &:active{
+            //     .icon-cross{
+            //         display: block;
+            //     }
+            //     .icon-menu5{
+            //         display: none;
+            //     }
+               
+            //     .nav-list{
+            //         display: flex;
+            //     }
+            // }
+            .menu-icons{
+                color: $WHITE;
+                font-size: 2em ;
+                position: absolute;
+                top: 50%;
+                right: 2em;
+                transform: translateY(-50%);
+                cursor: pointer;
+                z-index: 1500;
+                display: none;
+                @include tablet{
+                    right: 1em;
+                }
+            }
+            @include tablet{
+                .icon-menu5{
+                    display: block;
+                }
+            }
+            .logo{
+                width: 4em;
+                height: 4em;
+                float: left;
+                position: absolute;
+                top: 50%;
+                left: 2em;
+                transform: translateY(-50%);
+                display: block;
+                @include tablet{
+                    z-index: 1010;
+                }
+                @include mobile{
+                    display: none;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100%;
+                }
+            }
+            
+            .nav-list{
+                display: flex;
+                margin-left: 5em;
+                @include tablet{
+                    position: fixed;
+                    top: 3.5em;
+                    left: -100%;
+                    height: 100%;
+                    flex-direction: column;
+                    z-index: 1000;
+                    opacity: 0;
+                    margin-left: 0em;
+                    display: block;
+                    background-color: $mainColorSite;
+                    overflow-y: scroll;
+                    padding-top: 3em;
+                    padding-left: 0.5em;
+                }
+                @include mobile{
+                    padding-top: 0em;
+                }
+
+                li{
+                    line-height: 6em;
+                    position: relative;
+                    &:hover{
+                        .sub-menu{
+                            display: block;
+                            top: 6em;
+                            opacity: 1;
+                            visibility: visible;
+                            @include tablet{
+                                opacity: 1;
+                                visibility: visible;
+                                max-height: initial;
+                                width: 50%;
+                            }
+                        }
+                    }
+                    @include tablet{
+                        line-height: 3.2em;
+                    }
+                    .sub-menu{
+                        width: 20em;
+                        display: none;
+                        position: absolute;
+                        top: 12em;
+                        background-color: $WHITE;
+                        border-top: 0.2em solid $secondColrSite;
+                        opacity: 0;
+                        visibility: hidden;
+                        z-index: 120;
+                        transition: all 0.6s;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: -2.5em;
+                            left: 3em;
+                            border: 1.2em solid transparent;
+                            border-bottom-color: $secondColrSite;
+                        }
+                        @include tablet{
+                            position: initial;
+                            border: 3px solid transparent;
+                            border-left-color: $secondColrSite;
+                            margin-left: 1em;
+                            max-height: 0em;
+                            &::before{
+                                display: none;
+                            }
+                        }
+                        
+                        li{
+                            line-height: 4em;
+                            transition: all 0.6s;
+                            &:hover{
+                                .two-sub-menu{
+                                    display: block;
+                                    opacity: 1;
+                                    visibility: visible;
+                                    top: 0em;
+                                    left: 100%;
+                                    @include tablet{
+                                        opacity: 1;
+                                        visibility: visible;
+                                        max-height: initial;
+                                        width: 10em;
+                                    }
+                                }
+                            }
+                            @include tablet{
+                                line-height: 2.5em;
+                            }
+                            a{  
+                                color: $BLACK;
+                                transition: all 0.6s;
+                                &:hover{
+                                    background-color: $secondColrSite;
+                                    color: $WHITE;
+                                }
+                            }
+                            .two-sub-menu{
+                                width: 20em;
+                                display: none;
+                                position: absolute;
+                                background-color: $WHITE;
+                                border-top: 0.2em solid $secondColrSite;
+                                opacity: 0;
+                                visibility: hidden;
+                                z-index: 120;
+                                transition: all 0.6s;
+                                border-top: none;
+                                border-left: 0.2em solid $secondColrSite;
+                                top: 0em;
+                                left: 160%;
+                                &:before{
+                                    content: "";
+                                    position: absolute;
+                                    top: 0.9em;
+                                    left: -2.5em;
+                                    border: 1.2em solid transparent;
+                                    border-right-color: $secondColrSite;
+                                }
+                                @include tablet{
+                                    position: initial;
+                                    border: 3px solid transparent;
+                                    border-left-color: $secondColrSite;
+                                    margin-left: 1em;
+                                    max-height: 0em;
+                                    &::before{
+                                        display: none;
+                                    }
+                                }
+                            }//sub-menu
+                        }//li
+                    }//sub-menu
+                    a{
+                        display: block;
+                        color: $WHITE;
+                        padding: 0em 1.5em;
+                        text-transform: uppercase;
+                        transition: all 0.6s;
+                        &:hover{
+                            color: $WHITE;
+                            background-color: transparent;
+                        }
+                    }
+                }//li
+            }//nav-list
+        }//nav
+    }//container-top
+}//header-complete-page
+
+////
+///     FIXED SECTION
+//  
+//
+.sticky{
+    position: fixed;
+    top: 0em;
+    width: 100%;
+}
+.content{
+    padding-top: 6em;
+}
+.sticky + .content{
+    padding-top: 6em;
+}
+//------------------------------------
