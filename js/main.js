@@ -40,8 +40,8 @@ $(document).ready(function(){
       $(this).hide();
   });
   $("#nav-list").scroll(function(){
-      $(".logo").hide();
-      $("#nav-list").css("padding-top", "0em");
+      // $(".logo").hide();
+      $("#nav-list").css("padding-top", "2em");
   });
 
 
