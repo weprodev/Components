@@ -1,0 +1,143 @@
+/*========================================================================================
+*********    
+*******      
+*****       DIV TIMELINE POST
+***         
+*/
+
+  
+.timeline-post{
+
+    background-color        : $MAIN_BG_TL;
+    height: auto;
+    // * {
+    //     box-sizing: border-box;
+    //   }
+      
+   .timeline{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow:column wrap;
+        position: relative;
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: $MIDDLE_LINE;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            
+        }
+
+   }//section post
+   .post{
+    background-color: $WHITE;
+    width: 45%;
+    height: auto;
+    margin: 1em;
+    border-radius: 6px;
+
+    .header{
+        display: flex;
+        align-items: center;
+        color:$BLACK;
+        position: relative;
+
+            //circle for post left
+        &::before{  
+            content:'';
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $MIDDLE_LINE;
+            box-shadow: 0 0 0 5px $MAIN_BG_TL;
+            right: -2.8em;
+            z-index: 2;
+        }
+
+             //arrow for post left
+        &::after{  
+            content             : " ";
+            height              : 0;
+            position            : absolute;
+            width               : 0;
+            z-index             : 1;
+            left                : 100%;
+            border              : medium solid white;
+            border-width        : 10px 0 10px 10px;
+            border-color        : transparent transparent transparent white;
+
+        }
+
+        .photo-profile{
+            padding             : 1em;
+        }
+
+        .title-post{
+            text-align          : left;
+
+            h2{
+                color           : $BLACK;
+                padding-bottom  : 0.7em;
+            }
+            .time{
+                color           : grey;
+                font-size       : 0.7em;
+            }
+        }
+        
+    }//head
+    .caption{
+        padding             : 1em;
+        padding-top         : 0;
+        font-size           : 0.8em;
+
+        .img-caption{
+            padding-top: 1em;
+            width: 100%;
+        }
+    }
+    .socialmedia{
+       display: flex;
+       flex-direction: row;
+       font-size: 1em;
+       font-weight: bold;
+       font-size: 200;
+
+       .sharebox{
+        display: inline;
+        text-align: center;
+        justify-content: center;
+        color: grey;
+        border-top: 1px solid grey;
+        padding: 0.5em 1em;
+        &:nth-child(2n)
+        {
+            border-left: 1px solid grey;
+        }
+        .icon{
+            width: 2em;
+            height: 2em;
+            background-size: cover;
+            background-color: $WHITE;
+        }
+       }
+       span{
+           position: relative;
+           bottom: 0.5em;
+       }
+       .size1{
+           width: 30%;
+       }
+       .size2{
+            width: 50%;
+       }
+       
+    }
+
+}//post
+}//timeline post
