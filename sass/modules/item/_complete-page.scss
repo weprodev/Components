@@ -40,6 +40,7 @@ ul{
     position: absolute;
     top: 2em;
     left: 0em;
+    z-index: 2000;
 
     .container-top{
         width: 100%;
@@ -258,3 +259,58 @@ ul{
     padding-top: 6em;
 }
 //------------------------------------
+.content{
+    .bg-with-text--item{
+        margin-top: 1em;
+        .travel-background{
+            
+            background-image: none;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            @include mini_laptop{
+                width: 100%;
+            }
+            @include tablet{
+                width: 100%;
+            }
+            .glass-div{
+                background-color: rgba($color:$BLACK, $alpha: 0.5);
+            }
+        }//travel-background
+    }//bg-with-text--item
+
+    .post-column--item{
+        .background-image{
+            background-image: none;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            @include mini_laptop{
+                width: 100%;
+            }
+            .blur-bg-black{
+                background-color: rgba($color: #000000, $alpha: 0.0);
+                .post-column{
+                    width: 100%;
+                    .header{
+                        color: $BLACK;
+                    }
+                }
+            }
+        }//background-image
+    }//post-column--item
+    .our--piks{
+        margin-bottom: 3em;
+    }//our--picks
+
+    .footer--item{
+        @include tablet{
+            height: 40em;
+        }
+        @include mobile{
+            height: 60em;
+        }
+    }
+
+}//content
