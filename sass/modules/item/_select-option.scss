@@ -1,0 +1,114 @@
+/*========================================================================================
+*********    
+*******      
+*****       SELECT YOUR OPTION FEATURE 
+***         
+*/
+* {
+    margin      : 0;
+    padding     : 0;
+    box-sizing  : border-box;
+}
+html {
+    display : grid;
+}
+body {
+    display : grid;
+    height  : 100vh;
+    .select-option-section {
+        display     : grid;
+        place-items : center;
+        height      : 100%;
+        .wrapper {
+            width           : 22em;
+            background-color: $WHITE;
+            border-radius   : 0.6em;
+            box-shadow      : 0.3em 0.3em 2em rgba($color: $mainColorWeprodev, $alpha: 0.5);
+            @include mini_mobile{
+                width   : 80%;
+            }
+            .title {
+                font-size       : 1.6em;
+                line-height     : 2.2em;
+                background-color: $mainColorWeprodev;
+                color           : $WHITE;
+                font-weight     : 600;
+                text-align      : center;
+                border-radius   : 0.6rem 0.6rem 0rem 0rem;
+                @include mini_mobile{
+                    font-size   : 1.4em;
+                }
+            } //title
+            .box {
+                background-color    : $WHITE;
+                padding             : 1.1em 2.3em;
+                border-radius       : 0.6rem;
+                @include mini_mobile{
+                    padding     : 1.1em 1em;
+                }
+                label {
+                    display         : flex;
+                    align-items     : center;
+                    height          : 3em;
+                    width           : 100%;
+                    border          : 1px solid $SILVER;
+                    border-radius   : 2em;
+                    margin          : 0.7em 0em;
+                    padding-left    : 1.5em;
+                    transition      : all 0.3s ease;
+                    cursor: pointer;
+                    @include mini_mobile{
+                        padding-left    : 0.5em;
+                    }
+                    .dot {
+                        height          : 1.5em;
+                        width           : 1.5em;
+                        background-color: $CLOUDS;
+                        border-radius   : 2em;
+                        position        : relative;
+                        &::before {
+                            position        : absolute;
+                            content         : "";
+                            width           : 0.8em;
+                            height          : 0.8em;
+                            top             : 50%;
+                            left            : 50%;
+                            border-radius   : 2em;
+                            transform       : translate(-50%, -50%) scale(2);
+                            transition      : all 0.3s ease;
+                        } //dot::before
+                    } //dot
+                    .text {
+                        color           : rgba($color: $BLACK, $alpha: 0.7);
+                        font-size       : 1.1em;
+                        padding-left    : 1em;
+                        transition      : all 0.3s ease;
+                        @include mini_mobile{
+                            font-size   : 0.9em;
+                            padding-left: 0.5em;
+                        }
+                    }
+                } //label
+                #option-1:checked ~ .option-1,
+                #option-2:checked ~ .option-2,
+                #option-3:checked ~ .option-3,
+                #option-4:checked ~ .option-4 {
+                    background-color    : $mainColorWeprodev;
+                    border-color        : $mainColorWeprodev;
+                    .text {
+                        color   : $WHITE;
+                    }
+                    .dot {
+                        &::before {
+                            background-color    : $mainColorWeprodev;
+                            transform           : translate(-50%, -50%) scale(1);
+                        }
+                    }
+                } //option-4:checked ~ .option-4
+                input[type="radio"] {
+                    display : none;
+                }
+            } //box
+        } //wrapper
+    } //select-option-section
+} //body
