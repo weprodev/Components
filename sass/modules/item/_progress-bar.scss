@@ -1,0 +1,118 @@
+/*========================================================================================
+*********    
+*******      
+*****       PROGRESS BAR FEATURE 
+***         
+*/
+*{
+    margin      : 0em;
+    padding     : 0em;
+    box-sizing  : border-box;
+
+}
+body{
+    display     : grid;
+    height      : 100vh;
+    .progress-bar--item{
+        display     : grid;
+        place-items : center;
+        height      : 100%;
+        .skills-bar{
+            width               : 25em;
+            background-color    : $WHITE;
+            border-radius       : 0.3em;
+            box-shadow          : 0.3em 0.3em 2em rgba($color: $mainColorWeprodev, $alpha: 0.5);
+            padding             : 1.5em 2em;  
+            @include mobile{
+                width: 24em;
+            }
+            @include mini_mobile{
+                width: 80%;
+            }
+            .bar{
+                margin      : 2em 0;
+                &:first-child{
+                    margin  : 0em 0em;
+                }
+                .info{
+                    margin  : 0.4em;
+                    @include mini_mobile{
+                        margin-left : 0;
+                        span{
+                            font-size   : 1em;
+                        }
+                    }
+                    span{
+                        font-size   : 1.1em;
+                        font-weight : 600;
+                    }
+                }//info
+                .progress-line{
+                    width           : 100%;
+                    height          : 0.6em;
+                    background-color: $CLOUDS;
+                    position        : relative;
+                    border-radius   : 1em;
+                    transform-origin: left;
+                    transform       : scaleX(0);
+                    animation       : animate 0.4s cubic-bezier(1,0, 0.5, 1) forwards;
+
+/*========================================================================================
+********
+****                FOR LOOP FOR WIDTH PROGRESS LINE AND CONTENT AFTER
+*/
+                    @for $i from 0 through 100 {
+                        .width-#{$i}{
+                            width: $i* 1%;
+                            &::after{
+                                content: "#{$i * 1%}";
+                            }
+                        }
+                    }
+
+                    span{
+                        height          : 100%;
+                        background-color: $mainColorWeprodev;
+                        position        : absolute;
+                        border-radius   : 1em;
+                        transform-origin: left;
+                        transform       : scaleX(0);
+                        animation       : animate 0.4s 0.4s cubic-bezier(1,0, 0.5, 1) forwards;
+                        @keyframes animate {
+                            100%{
+                                transform   : scaleX(1);
+                            }
+                        }
+                        &::before{
+                            content             : '';
+                            position            : absolute;
+                            right               : 0;
+                            top                 : 0.8em;
+                            height              : 0;
+                            width               : 0;
+                            border              : 0.43em solid transparent;
+                            border-bottom-width : 0;
+                            border-right        : 0.43em solid $BLACK;
+                        }//span::before
+                        &::after{
+                            position            : absolute;
+                            content             : "80%";
+                            right               : 0;
+                            top                 : 1.2em;
+                            color               : $WHITE;
+                            font-size           : 1em;
+                            padding             : 0.11em 0.5em;
+                            font-weight         : 500;
+                            border-radius       : 0.2em 0em 0.2em 0.2em;
+                            background-color    : $BLACK;
+                            @include mini_mobile{
+                                font-size       : 0.8em;
+                                line-height     : 1.2;
+                            }
+                        }//span::after
+                    }//span
+                }//progress-line
+            }//bar     
+        }//skills-bar
+    }//progress-bar--item
+}//body
