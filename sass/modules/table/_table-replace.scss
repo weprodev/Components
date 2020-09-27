@@ -1,0 +1,33 @@
+/*========================================================================================
+*********    
+*******      
+*****       TABLE REPLACE 
+***         
+*/
+
+.table-replace--table{
+    height      : 100vh;
+    direction   : rtl;
+    padding     : 1em;
+    .table-replace{
+        border  : 1px solid $BLACK;
+        margin  : 2em;
+        th , td{
+            border  : 1px solid $BLACK;
+            padding : 1em;
+        }
+    }
+    .editGraduate , .submitEdit{
+        background-color: $secondColrSite;
+        padding         : 0.5em;
+        border-radius   : 0.3em;
+        &:hover{
+            background-color    : $secondColrSite;
+            color               : $BLACK;
+        }
+    }
+    .no-click{
+        pointer-events      : none;
+        background-color    : rgba($color: $secondColrSite, $alpha: 0.2);
+    }
+}
