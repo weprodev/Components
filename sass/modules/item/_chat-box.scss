@@ -12,25 +12,31 @@
 
 body {
     overflow: hidden;
-    #click{
-        &:checked ~ label i.fas{
+
+    #click {
+        display: none;
+
+        &:checked~label i.fas {
             opacity: 1;
             pointer-events: auto;
-            transform: translate(-50%,-50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
         }
-        &:checked ~ label i.fab{
+
+        &:checked~label i.fab {
             opacity: 0;
             pointer-events: none;
-            transform: translate(-50%,-50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
         }
-        &:checked ~ .chat-box--item{
+
+        &:checked~.chat-box--item {
             opacity: 1;
             bottom: 5em;
             pointer-events: auto;
         }
     }
+
     label {
-        position: absolute;
+        position: fixed;
         right: 2em;
         bottom: 1.2em;
         height: 3.2em;
@@ -49,14 +55,16 @@ body {
             color: $WHITE;
             transition: all 0.5s ease;
         }
-        .fas{
+
+        .fas {
             opacity: 0;
             pointer-events: none;
+            font-size: 1.5em;
         }
     }
 
     .chat-box--item {
-        position: absolute;
+        position: fixed;
         right: 2em;
         bottom: 0em;
         max-width: 25em;
@@ -64,17 +72,18 @@ body {
         border-radius: 1em;
         box-shadow: 0em 1em 1.2em rgba($color: $BLACK, $alpha: 0.1);
         opacity: 0;
-        transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.155);
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.155);
         pointer-events: none;
 
         .header-chat-box {
             background: linear-gradient(left, #a445b2, #fa4299);
             color: $WHITE;
-            line-height: 2;
+            line-height: 2.5;
             border-radius: 1em 1em 0em 0em;
             padding: 0em 1.2em;
             font-size: 1.2em;
             font-weight: 600;
+            text-align: center;
         }
 
         .chat-box {
@@ -87,6 +96,53 @@ body {
                 font-size: 1.1em;
                 line-height: 1.5;
                 font-weight: 500;
+
+                .try-agin-chat {
+                    display: none;
+                }
+            }
+
+            .chat-box-description-success {
+                color: $NEPHRITIS;
+                text-align: center;
+                font-size: 1.3em;
+                line-height: 1.5;
+                font-weight: 600;
+                border: 1px solid $CLOUDS;
+                padding: 1em;
+                border-radius: 1em;
+
+                .try-agin-chat {
+                    display: none;
+                }
+            }
+
+            .chat-box-description-danger {
+                @extend .chat-box-description-success;
+                color: $ALIZARIN;
+
+                .try-agin-chat {
+                    display: block;
+                    width: 100%;
+                    background: linear-gradient(left, #a445b2, #fa4299);
+                    color: $WHITE;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 1.1em;
+                    font-weight: 600;
+                    transition: all 0.1s ease-in;
+                    border-radius: 1em;
+                    line-height: 1.8;
+                    margin-top: 1em;
+                    &:active {
+                        transform: scale(0.9);
+                    }
+                }
+            }
+
+            .chat-box-form-none {
+                display: none;
             }
 
             .chat-box-form {
