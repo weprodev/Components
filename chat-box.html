@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <meta property="og:title" content="Ready To Design" />
+    <meta property="og:site_name" content="Ready To Design" />
+    <meta property="og:description" content="Ready To Design" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://mekaeil.me" />
+    <meta name="keywords" content="">
+    <meta name="description" content="Ready To Design">
+    <meta name="robots" content="index follow">
+    <meta name="copyright" content="2017-2018">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://mekaeil.me">
+    <meta name="twitter:domain" content="http://mekaeil.me">
+    <meta name="twitter:title" content="Ready To Design">
+    <meta name="twitter:description" content="Ready To Design">
+    <meta name="twitter:image" content="http://mekaeil.me">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- <link rel="icon" type="image/png" href="img/favicon.ico"> -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="stylesheet" href="css/style.css" media="all">
+</head>
+
+<body>
+
+    <!---------------------------- FOR USE CHAT BOX PLEASE ----------------------->
+    <!---------------------------------------------------------------------------->
+    <!--------------------------------- COPY FROM HERE --------------------------->
+    <input type="checkbox" id="click">
+    <label for="click">
+        <i class="fab icon-mail4"></i>
+        <i class="fas icon-cross"></i>
+    </label>
+    <div class="chat-box--item">
+        <div class="header-chat-box">Welcome to weprodev</div>
+        <div class="chat-box">
+            <div class="chat-box-description-danger" id="chat-box-description">
+                please fill out the form below to start chatting with the next available agent. 
+                <button type="button" class="try-agin-chat" id="try-agin-chat">try agin</button>
+            </div>
+            <form action="#" class="chat-box-form-none" id="form-chat">
+                <div class="field">
+                    <input type="text" placeholder="your name" required>
+                </div>
+                <div class="field">
+                    <input type="email" placeholder="your email" required>
+                </div>
+                <div class="field textarea">
+                    <textarea cols="30" rows="10" placeholder="Exp" placeholder="Explain your queries ..."></textarea>
+                </div>
+                <div class="field">
+                    <button type="submit">start chat</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const tryAginChat = document.getElementById('try-agin-chat');
+        let formChat = document.getElementById('form-chat');
+        let chatBoxDescription = document.getElementById('chat-box-description');
+        tryAginChat.addEventListener('click' , function(){
+            formChat.classList.remove("chat-box-form-none");
+            formChat.classList.add("chat-box-form");
+            chatBoxDescription.classList.remove("chat-box-description-danger");
+            chatBoxDescription.classList.add("chat-box-description");
+        });
+
+        let myForm = document.querySelector("form");
+        myForm.addEventListener('submit', function(event){
+
+            // 
+            // code for preventDefault Form
+            // 
+            event.preventDefault();
+            // 
+            // 
+            // 
+        });
+    </script>
+    <!---------------------------------------------------------------------------->
+    <!---------------------------- PLEASE COPY HERE ------------------------------>
+    <!---------------------------------------------------------------------------->
+</body>
+
+</html>
